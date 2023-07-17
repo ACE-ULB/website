@@ -1,5 +1,5 @@
 ---
 layout: home
-title: Le Cercle
+title: Folklore
 ---
 {% include navigation.html %}

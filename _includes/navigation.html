@@ -4,13 +4,26 @@
     <img src="images/ACE.png" alt="Logo ACE" width="80">
     </a>
     <div class="d-flex" id="navbarSupportedContent">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav nav-pills">
     {% for item in site.data.navigation %}
-        <li class="nav-item">
-            <a href="{{ item.link }}" {% if page.url == item.link %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+    {% if item.sub != 'none' %}
+        <li class="nav-item dropdown">
+            <a href="{{ item.link }}" role="button" data-bs-toggle="dropdown" aria-expanded="true" {% if page.url == item.link %} class="nav-link dropdown-toggle active" {% else %} class="nav-link dropdown-toggle" {% endif %}>
             {{ item.name }}
             </a>
+            <ul class="dropdown-menu">
+                {% for _item in item.sub %}
+                <li><a class="dropdown-item" href="{{_item.link}}">{{_item.name}}</a></li>
+                {% endfor %}
+            </ul>    
         </li>
+    {% else %}
+    <li class="nav-item">
+        <a href="{{ item.link }}" {% if page.url == item.link %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+        {{ item.name }}
+        </a>   
+    </li>
+    {% endif %}
     {% endfor %}
     <div class="align-self-center">
         <a href="https://facebook.com/AssociationDesCerclesEtudiants">

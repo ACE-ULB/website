@@ -1,5 +1,5 @@
 ---
 layout: home
-title: Le Cercle
+title: Actions
 ---
 {% include navigation.html %}
