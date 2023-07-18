@@ -2,6 +2,6 @@
 .jekyll-cache
 .jekyll-metadata
 vendor
-/images/
+/assets/
 _site/LICENSE
 _site/README.md
