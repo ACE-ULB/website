@@ -23,7 +23,7 @@ email: comite@ace-ulb.be
 description: >- # this means to ignore newlines until "baseurl:"
   Site officiel de l'Association des Cercles Étudiants de l'ULB - ACE ASBL.
   Cercle administrateur représentant les intérêt de ses 31 cercles membres auprès de l'ULB et autres instances.
-baseurl: /website # the subpath of your site, e.g. /blog
+baseurl: / # the subpath of your site, e.g. /blog
 url: https://ace-ulb.github.io # the base hostname & protocol for your site, e.g. http://example.com
 domain: ace-ulb.github.io
 twitter_username: ULB
