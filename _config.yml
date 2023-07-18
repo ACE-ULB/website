@@ -43,7 +43,7 @@ plugins:
 # their entries' file path in the `include:` list.
 #
 exclude:
-    - LICENSE
+#   - LICENSE
     - README.md
 #   - .sass-cache/
 #   - .jekyll-cache/
