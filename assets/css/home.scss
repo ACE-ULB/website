@@ -1,0 +1,34 @@
+---
+---
+@import "main.scss";
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: green;
+    text-decoration: none;
+}
+.jumbotron {
+    color: white;
+    background-image: url("../images/home_bckg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    filter: blur(4px) sepia(30%) brightness(50%);
+}
+.logo {
+    height: 80vh;
+    margin-top: 12vh;
+    margin-left: 3vw;
+}
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');
+.title {
+    text-transform:uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+.text-title {
+    color: #ffd
+}
