@@ -1,0 +1,20 @@
+<ul class="cards">
+  {% for item in site.data.comite %}
+    <li>
+      <a href="" class="card">
+        <img src="assets/images/bckg_comite_card.jpg" class="card__bckg"/>
+        <img src="assets/images/comite/{{item.name}}.png" class="card__image" alt="{{item.name}}"/>
+        <div class="card__overlay">
+          <div class="card__header">                   
+            <img class="card__thumb" src="assets/images/cercles ACE/{{item.cercle}}.png" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">{{item.name}}</h3>            
+              <span class="card__status">{{item.poste}}</span>
+            </div>
+          </div>
+          <p class="card__description">{{item.description}}</p>
+        </div>
+      </a>      
+    </li>
+  {% endfor %}
+</ul>

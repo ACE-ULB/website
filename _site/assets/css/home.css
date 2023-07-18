@@ -284,3 +284,5 @@ a:hover { color: green; text-decoration: none; }
 .logo { height: 80vh; margin-top: 12vh; margin-left: 3vw; }
 
 .title { text-transform: uppercase; font-family: 'Oswald', sans-serif; }
+
+.text-title { color: #ffd; }
