@@ -8,12 +8,12 @@
     {% for item in site.data.navigation %}
     {% if item.sub != 'none' %}
         <li class="nav-item dropdown">
-            <a href="{{ item.link }}" role="button" data-bs-toggle="dropdown" aria-expanded="true" {% if page.url == item.link %} class="nav-link dropdown-toggle active" {% else %} class="nav-link dropdown-toggle" {% endif %}>
+            <a href=".{{ item.link }}" role="button" data-bs-toggle="dropdown" aria-expanded="true" {% if page.url == item.link %} class="nav-link dropdown-toggle active" {% else %} class="nav-link dropdown-toggle" {% endif %}>
             {{ item.name }}
             </a>
             <ul class="dropdown-menu">
                 {% for _item in item.sub %}
-                <li><a class="dropdown-item" href="{{_item.link}}">{{_item.name}}</a></li>
+                <li><a class="dropdown-item" href=".{{_item.link}}">{{_item.name}}</a></li>
                 {% endfor %}
             </ul>    
         </li>

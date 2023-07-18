@@ -6,7 +6,7 @@ stylesheet:
     - name: comite_card
 ---
 {% include navigation.html %}
-<h1 id="ace" class="container">Qui sommes-nous ?</h1>
+<h1 id="about-us" class="container">Qui sommes-nous ?</h1>
 L’Association des Cercles Étudiants (en abrégé, ACE) est une association étudiante représentative, qui fédère et rassemble les cercles folkloriques de l’Université libre de Bruxelles. Pour le moment, nos cercles membres sont au nombre de 31, et parmi eux on peut trouver des cercles liés à des facultés, des sections d’études ou encore des régions de Belgique. Malgré leur diversité et leurs particularités, nos cercles ont tous pour but cette envie de rassembler des étudiantes et des étudiants autour de projets et de moments communs.
 Les cercles folkloriques ont pour objectif de perpétuer le folklore et les traditions de l’ULB, ainsi que l’esprit de liberté, de solidarité, d’humour et de dérision qui est caractéristique de la vie étudiante en général. Depuis la création de notre université en 1834, les traditions étudiantes et folkloriques de l’ULB ne cessent de se transmettre, tout en évoluant et en s’enrichissant avec le temps.
 À travers nos cercles et nos guildes membres, les étudiantes et étudiants font vivre ce folklore et ces traditions en organisant des événements folkloriques, des soirées sur les campus, des TD à la Jefke, des cantus, des activités socioculturelles et sportives, des conférences, des projets sociaux, des bals, des voyages, ainsi que d’autres moments de partage et de rencontre en général. Certains de nos cercles organisent également des baptêmes, à chaque début d’année académique.

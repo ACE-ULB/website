@@ -17,6 +17,3 @@ stylesheet:
     <p>Guindaille Propre, Guindaille Safe, Guindaille Durable</p>
   </div>
   </div>
-
-<h1>Comite</h1>
-{% include comite_card.html %}
