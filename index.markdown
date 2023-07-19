@@ -10,15 +10,23 @@ stylesheet:
 {% include navigation.html %}
 <div class="jumbotron jumbotron-fluid position-static">
 </div>
-  <div class="position-absolute top-0 start-50">
+<div class="container-fluid position-absolute"><div class="row">
+  <div class="container jumbo-text col-lg-6 col-12">
+    <div class="box">
+      <div class="title">
+        <span class="block"></span>
+        <h1>Association des Cercles Étudiants<span></span></h1>
+      </div>
+      <div class="role">
+        <div class="block"></div>
+        <p>Guindaille Propre, Guindaille Safe, Guindaille Durable</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 col-12">
     <img src="assets/images/ACE.png" class="logo"/>
   </div>
-  <div class="text-title">
-  <div class="container position-absolute top-50 start-50 translate-middle">
-    <h1 class="display-5 title">Association des Cercles Étudiants</h1>
-    <p class="d-flex flex-row-reverse" style="padding-right:26vw;">Guindaille Propre, Guindaille Safe, Guindaille Durable</p>
-  </div>
-  </div>
+</div></div>
 
 <div class="accordion">
   <div class="accordion-item">
