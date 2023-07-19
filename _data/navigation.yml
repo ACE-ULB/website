@@ -1,5 +1,9 @@
 - name: Le Cercle
   link: /about.html
+  section_card: À propos de l'ACE
+  image_card: 
+  description: Pour savoir comment fonctionne notre cercle, son ordre et son histoire; quelles sont les personnes qui le compose ainsi que ses cercles membres. Mais aussi si vous souhaitez savoir comment devenir membre du cercle ou un cercle ACE.
+  read_time: 3.5
   sub:
     - name: L'ACE
       link: /about.html#about-us
@@ -15,6 +19,10 @@
       link: /about.html#join
 - name: Événements
   link: /events.html
+  section_card: Événements Important
+  image_card:
+  description: Un résumé détaillé des événements les plus important pour l'ACE, ses cercles membres et l'ULB !
+  read_time: 2.5
   sub:
     - name: Saint-Verhaegen
       link: /events.html#st-v
@@ -24,6 +32,10 @@
       link: /events.html#CAB
 - name: Actions
   link: /activities.html
+  image_card:
+  section_card: Activités & Projets
+  description: L'ACE et ses cercles membres font de leur mieux pour rendre le folklore plus safe et inclusif, pour ce faire, plusieurs projets et actions ont été mit en place. Vous trouverez ici les explications de chacun d'eux.
+  read_time: 4.5
   sub:
     - name: Fonds Solidaire Auguste Baron
       link: /activities.html#FSAB
@@ -47,6 +59,10 @@
       link: /activities.html#social
 - name: Folklore
   link: /folklore.html
+  section_card: Le Folklore ULBiste
+  image_card:
+  description: Depuis presque aussi vieux que l'ULB existe et encore plus en Balgique, le folklore, la guindaille et le baptême sont des pierres angulaire de notre héritage culturel. Dans cette section, vous en apprendrez plus sur son fonctionnement et son histoire.
+  read_time: 3
   sub:
     - name: Le monde associatif ULB
       link: /folklore.html#intro
@@ -61,5 +77,6 @@
     - name: FAQ - Nouveau·elle à l'ULB
       link: /faq.html
 - name: Espace Membres
+  section_card: none
   link: https://ag-ace.notion.site/Association-des-Cercles-Etudiants-ULB-25585d934609447e959b9cc6d6d6f8b0?pvs=4
   sub: none

@@ -1,9 +1,9 @@
 ---
 ---
-@import "main.scss";
+@import "main";
 
 nav a:link, a:visited {
-    color: default;
+    color: white;
     text-decoration: none;
 }
 nav a:hover {
@@ -31,4 +31,12 @@ nav a:hover {
 }
 .text-title {
     color: #eee
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap');
+.cal-title {
+    text-transform: uppercase;
+    font-family: 'Ubuntu', bold;
+    margin-top: auto;
+    margin-left: auto;
+    font-size: 50px;
 }
