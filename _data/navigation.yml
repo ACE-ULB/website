@@ -1,9 +1,9 @@
 - name: Le Cercle
   link: /about.html
   section_card: À propos de l'ACE
-  image_card: 
+  image_card: about-us.png
   description: Pour savoir comment fonctionne notre cercle, son ordre et son histoire; quelles sont les personnes qui le compose ainsi que ses cercles membres. Mais aussi si vous souhaitez savoir comment devenir membre du cercle ou un cercle ACE.
-  read_time: 3.5
+  read_time: 3.529 NOVEMBRE 2019 / LIEU À DÉCOUVRIR BIENTÔT
   sub:
     - name: L'ACE
       link: /about.html#about-us
@@ -20,7 +20,7 @@
 - name: Événements
   link: /events.html
   section_card: Événements Important
-  image_card:
+  image_card: events.jpg
   description: Un résumé détaillé des événements les plus important pour l'ACE, ses cercles membres et l'ULB !
   read_time: 2.5
   sub:
@@ -32,7 +32,7 @@
       link: /events.html#CAB
 - name: Actions
   link: /activities.html
-  image_card:
+  image_card: actions.jpg
   section_card: Activités & Projets
   description: L'ACE et ses cercles membres font de leur mieux pour rendre le folklore plus safe et inclusif, pour ce faire, plusieurs projets et actions ont été mit en place. Vous trouverez ici les explications de chacun d'eux.
   read_time: 4.5
@@ -60,8 +60,8 @@
 - name: Folklore
   link: /folklore.html
   section_card: Le Folklore ULBiste
-  image_card:
-  description: Depuis presque aussi vieux que l'ULB existe et encore plus en Balgique, le folklore, la guindaille et le baptême sont des pierres angulaire de notre héritage culturel. Dans cette section, vous en apprendrez plus sur son fonctionnement et son histoire.
+  image_card: folklore.jpg
+  description: Depuis presque aussi longtemps que l'ULB existe et encore plus en Belgique, le folklore, la guindaille et le baptême sont des pierres angulaire de notre héritage culturel. Dans cette section, vous en apprendrez plus sur son fonctionnement et son histoire.
   read_time: 3
   sub:
     - name: Le monde associatif ULB

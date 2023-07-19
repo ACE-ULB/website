@@ -20,9 +20,8 @@ nav a:hover {
     filter: blur(4px) sepia(30%) brightness(50%);
 }
 .logo {
-    height: 80vh;
-    margin-top: 12vh;
-    margin-left: 3vw;
+    height: 80%;
+    margin-top: 10%;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 .cal-title {
@@ -107,8 +106,8 @@ nav a:hover {
       position: relative;
       display: flex;
       align-items: center;
-      height: 30px;
-      margin-top: -3vw;
+      height: 25%;
+      margin-top: -11vh;
       margin-left: 3vw;
 
       .block {
@@ -122,6 +121,7 @@ nav a:hover {
       }
 
       p {
+        font-size: 0.9vw;
         animation: secFadeIn 2s forwards;
         animation-delay: 3.2s;
         opacity: 0;

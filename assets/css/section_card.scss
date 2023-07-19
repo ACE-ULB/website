@@ -3,7 +3,7 @@
 /* Credit Code : https://codepen.io/jsulpis/pen/XWypVxM */
 
 .section-card {
-    --transition-duration: 700ms;
+    --transition-duration: 500ms;
     color: white;
     position: relative;
     border-radius: 0.6em;
@@ -35,6 +35,7 @@
     transition: transform var(--transition-duration);
     object-fit: cover;
     object-position: center;
+    filter: contrast(80%);
   }
   
   .section-card-content {
@@ -98,6 +99,8 @@
   
     .section-card-img {
       transform: scale(1.03);
+      filter: brightness(70%) blur(90%);
+      opacity: 0.4;
     }
   
     .section-card-synopsis {
