@@ -40,15 +40,15 @@ export const H3 = styled.h3`
 `;
 
 export const Center = styled.div`
-  padding: 50px 0px;
+  padding: 0px 0px;
   margin: auto;
 
   @media (max-width: 1280px) {
-    width: 75%;
+    width: 85%;
   }
 
   @media (min-width: 1280px) {
-    width: 50%;
+    width: 70%;
   }
 `;
 

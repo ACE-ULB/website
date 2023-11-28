@@ -10,15 +10,7 @@ import '../assets/css/animation.scss';
 
 export default () => {
   return (
-    <section
-      className=""
-      style={{
-        "background-size": "cover",
-        "-webkit-background-size": "cover",
-        "-moz-background-size": "cover",
-        "-o-background-size": "cover"
-      }}
-    >
+    <section>
       <Banner
             className="img-fluid w-100"
             src={require("../assets/img/banner.jpg")}
