@@ -1,12 +1,12 @@
 import React from "react";
 
-const ACE = ({ color }) => (
+const ACE = ({ color, width, height }) => (
   <svg
     version="1.0"
     xmlns="http://www.w3.org/2000/svg"
     fill={color}
-    width="150.000000pt"
-    height="119.000000pt"
+    width={width}
+    height={height}
     viewBox="0 0 300.000000 119.000000"
     preserveAspectRatio="xMidYMid meet"
   >

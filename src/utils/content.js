@@ -25,6 +25,6 @@ export function filterCards(summaryJson, POST_SOURCE) {
   return summaryJson && summaryJson.fileMap && Object.keys(summaryJson.fileMap)
     .filter((file) => file.indexOf(POST_SOURCE) === 0)
     .map(file => summaryJson.fileMap[file])
-    .map(card => Object.assign({}, card, { href: card.website }))
+    .map(card => Object.assign({}, card, { href: card.website, fb: card.facebook, ig: card.instagram }))
     .sort((a, b) => a.acronyme.localeCompare(b.acronyme));
 }

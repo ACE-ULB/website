@@ -1,6 +1,8 @@
 ---
 acronyme: CO
 cercle: Cercle d'Ostéopathie
-website: http://www.cercleosteo.be
+website: http://cercleosteo.be
+facebook: https://facebook.com/cercledosteopathie/
+instagram: https://instagram.com/cercledosteopathie/
 brief: Cercle des Étudiant•e•s de la Faculté des Sciences de la Motricité orienté en Ostéopathie
 ---

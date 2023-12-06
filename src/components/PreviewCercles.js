@@ -1,7 +1,15 @@
 import React from "react";
-import { Button, Card, CardTitle, CardText, CardLink, CardBody } from "reactstrap";
+import { Button, Row, Col, Card, CardTitle, CardText, CardLink, CardBody } from "reactstrap";
 import { Link } from "react-router-dom";
 import { H3, Text } from "./Titles.js";
+import { NavHashLink } from "react-router-hash-link";
+import * as SVGs from "../assets/svg";
+
+const NavLinkS = ({ to, children }) => (
+  <NavHashLink activeClassName="" className="font-white nav-link" to={to}>
+    {children}
+  </NavHashLink>
+);
 
 export default props => {
   return (
@@ -26,10 +34,29 @@ export default props => {
       <CardText className="text-center">
         <Text>{props.brief}</Text>
       </CardText>
-      <CardLink>
-        <Link to={props.href} target="_blank">
-          <Button block>Leur site web</Button>
-        </Link>
+      <CardLink
+      style={{
+        display: 'flex', 
+        alignItems: 'center', 
+        justifyContent: 'center'
+      }}>
+        <Row className="m-0">
+          <Col lg="4">
+            <NavLinkS to={props.href} target="_blank">
+              <SVGs.Website color="#000" size="40" />
+            </NavLinkS>
+          </Col>
+          <Col lg="4">
+            <NavLinkS to={props.fb} target="_blank">
+              <SVGs.Facebook color="#1877F2" size="40" />
+            </NavLinkS>
+          </Col>
+          <Col lg="4">
+            <NavLinkS to={props.ig} target="_blank">
+              <SVGs.Instagram color="#833AB4" size="40" />
+            </NavLinkS>
+          </Col>
+        </Row>
       </CardLink>
     </CardBody>
     </Card>

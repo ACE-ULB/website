@@ -31,31 +31,31 @@ export default () => {
           <Col lg="1"></Col>
           <Col lg="2">
             <NavLinkS to="/cercle">
-              <p><SVGs.ACE color="#FF5656" /></p>
+              <p><SVGs.ACE color="#FF5656" width="150pt" height="119pt"/></p>
               <p><H3>Le Cercle</H3></p>
             </NavLinkS>
           </Col>
           <Col lg="2">
             <NavLinkS to="/events">
-              <p><SVGs.Beers color="#FFCC37" /></p>
+              <p><SVGs.Beers color="#FFCC37" width="150pt" height="119pt"/></p>
               <p><H3>Évènements</H3></p>
             </NavLinkS>
           </Col>
           <Col lg="2">
             <NavLinkS to="/actions">
-              <p><SVGs.Solidarity color="#84C825" /></p>
+              <p><SVGs.Solidarity color="#84C825" width="150pt" height="119pt"/></p>
               <p><H3>Actions</H3></p>
             </NavLinkS>
           </Col>
           <Col lg="2">
             <NavLinkS to="/folklore">
-              <p><SVGs.Penne color="#1875C3" /></p>
+              <p><SVGs.Penne color="#1875C3" width="160pt" height="119pt"/></p>
               <p><H3>Folklore</H3></p>
             </NavLinkS>
           </Col>
           <Col lg="2">
             <NavLinkS to="/members">
-              <p><SVGs.ULB color="#6F4B92" /></p>
+              <p><SVGs.ULB color="#6F4B92" width="120pt" height="119pt"/></p>
               <p><H3>Espace Membres</H3></p>
             </NavLinkS>
           </Col>
