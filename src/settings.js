@@ -20,7 +20,7 @@ export default {
       phone: "02 650 25 14",
       bank: "BE52 3631 1343 8409",
       additional:
-        "Notre local est situé sur le <i>Campus du Solbosch</i>. Dirigez-vous vers les préfabriqués multi-couleurs à côté du <i>parking du Janson</i>, empruntez les escaliers au centre vers le <i>bâtiment F</i>. Sur votre droite se trouverons quelques marches menant à une <i>grande baie vitrée aux chassis blanc</i>. Vous y êtes !"
+        "Notre local est situé sur le <i>Campus du Solbosch</i>. Dirigez-vous vers les préfabriqués multi-color à côté du <i>parking du Janson</i>, empruntez les escaliers au centre vers le <i>bâtiment F</i>. Sur votre droite se trouverons quelques marches menant à une <i>grande baie vitrée aux chassis blanc</i>. Vous y êtes !"
     },
     contact: {
       facebook: "https://www.facebook.com/AssociationDesCerclesEtudiants",

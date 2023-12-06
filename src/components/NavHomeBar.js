@@ -3,6 +3,13 @@ import { Col, Row } from "reactstrap";
 import styled from "styled-components";
 import { H3 } from "./Titles"
 import * as SVGs from "../assets/svg";
+import { NavHashLink } from "react-router-hash-link";
+
+const NavLinkS = ({ to, children }) => (
+  <NavHashLink activeClassName="" className="font-white nav-link" to={to}>
+    {children}
+  </NavHashLink>
+);
 
 export const NavHome = styled.div`
   font-weight: 200;
@@ -23,24 +30,34 @@ export default () => {
         <Row className="align-items-center text-center w-100">
           <Col lg="1"></Col>
           <Col lg="2">
-          <p><SVGs.ACE color="#FF5656" /></p>
-          <p><H3>Le Cercle</H3></p>
+            <NavLinkS to="/cercle">
+              <p><SVGs.ACE color="#FF5656" /></p>
+              <p><H3>Le Cercle</H3></p>
+            </NavLinkS>
           </Col>
           <Col lg="2">
-          <p><SVGs.Beers color="#FFCC37" /></p>
-          <p><H3>Évènements</H3></p>
+            <NavLinkS to="/events">
+              <p><SVGs.Beers color="#FFCC37" /></p>
+              <p><H3>Évènements</H3></p>
+            </NavLinkS>
           </Col>
           <Col lg="2">
-          <p><SVGs.Solidarity color="#84C825" /></p>
-          <p><H3>Actions</H3></p>
+            <NavLinkS to="/actions">
+              <p><SVGs.Solidarity color="#84C825" /></p>
+              <p><H3>Actions</H3></p>
+            </NavLinkS>
           </Col>
           <Col lg="2">
-          <p><SVGs.Penne color="#1875C3" /></p>
-          <p><H3>Folklore</H3></p>
+            <NavLinkS to="/folklore">
+              <p><SVGs.Penne color="#1875C3" /></p>
+              <p><H3>Folklore</H3></p>
+            </NavLinkS>
           </Col>
           <Col lg="2">
-          <p><SVGs.ULB color="#6F4B92" /></p>
-          <p><H3>Espace Membres</H3></p>
+            <NavLinkS to="/members">
+              <p><SVGs.ULB color="#6F4B92" /></p>
+              <p><H3>Espace Membres</H3></p>
+            </NavLinkS>
           </Col>
         </Row>
       </NavHome>
