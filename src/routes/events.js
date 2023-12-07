@@ -1,10 +1,18 @@
 import React from "react";
 import Slider from "react-slick";
-import { Separator, Navbar } from "../components";
-import { H3, Text, Center, Quote, Cite, H1 } from "../components/Titles";
-import { Overlay, Floating } from "../components/Images";
-import { Col, Row, Card } from "reactstrap";
+import { Separator, Banner, ContentBar } from "../components";
+import { H3, Text, Center } from "../components/Titles";
+import { Overlay } from "../components/Images";
+import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
+import style from "../assets/css/style.scss";
+
+const contentArrays = [
+    {svg: "Contract", id: "events/#st-v", title: "Saint-Verhaegen", width: "100pt", height: "100pt"},
+    {svg: "Question", id: "events/#ntv", title: "Nuit Théodore Verhaegen", width: "100pt", height: "100pt"},
+    {svg: "Team", id: "events/#cab", title: "Cantus Auguste Baron", width: "100pt", height: "100pt"},
+]
+
 export default () => {
 
     return (
@@ -12,6 +20,8 @@ export default () => {
         <Helmet>
             <title>Association des Cercles Étudiants - Événements</title>
         </Helmet>
+        <Banner img="events" title="Nos Événements" svg="Beers" color={style.pal1} h="380pt"/>
+        <ContentBar links={contentArrays}/>
         <Separator title={"Saint-Verhaegen"} />
         <section className="section section-lg section-shaped pg-250">
         <div className="h-100" id="st-v">

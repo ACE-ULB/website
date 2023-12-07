@@ -1,10 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
 import '../assets/css/display.scss';
-import { Separator, Preview, PreviewCercles, Navbar } from "../components";
-import { H3, Text, Center, Quote, Cite, H1 } from "../components/Titles";
-import { Overlay, Floating } from "../components/Images";
-import { Col, Row, Card } from "reactstrap";
+import style from "../assets/css/style.scss";
+import { Separator, Preview, PreviewCercles, Banner, ContentBar } from "../components";
+import { H3, Text, Center, H1 } from "../components/Titles";
+import { Overlay } from "../components/Images";
+import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
 import * as SVGs from "../assets/svg";
 import { filterPosts, filterCards } from "../utils/content";
@@ -16,6 +17,15 @@ try {
   var CERCLES_SUMMARY_JSON = { fileMap: [] };
 }
 
+const contentArrays = [
+  {svg: "Contract", id: "cercle/#admin", title: "Administratif", width: "100pt", height: "100pt"},
+  {svg: "Question", id: "cercle/#objectifs", title: "Le Cercle", width: "100pt", height: "100pt"},
+  {svg: "Team", id: "cercle/#comite", title: "Le Comité", width: "100pt", height: "100pt"},
+  {svg: "ULB", id: "cercle/#cercles", title: "Cercles Membres", width: "120pt", height: "100pt"},
+  {svg: "Medal", id: "cercle/#OdP", title: "Ordre du Prisme", width: "100pt", height: "100pt"},
+  {svg: "Hands", id: "cercle/#join-us", title: "Rejoins-nous", width: "100pt", height: "100pt"},
+]
+
 export default () => {
     const admin = filterPosts(ADMIN_SUMMARY_JSON, 'src/assets/admin');
     const cercles = filterCards(CERCLES_SUMMARY_JSON, 'src/assets/cercles');
@@ -25,6 +35,8 @@ export default () => {
         <Helmet>
             <title>Association des Cercles Étudiants - Le Cercle</title>
         </Helmet>
+        <Banner img="cercle" title="Le Cercle" svg="ACE" h="300pt"/>
+        <ContentBar links={contentArrays}/>
         <Separator title={"Administratif"} />
         <div id="admin">
         <Slider
@@ -64,7 +76,7 @@ export default () => {
         </section>
         <Separator title="Le Comité" />
         <section className="section section-lg section-shaped pg-250">
-        <div className="h-100" id="comité">
+        <div className="h-100" id="comite">
         
         </div>
         </section>
@@ -127,7 +139,7 @@ export default () => {
         <Row className="m-0">
           <Col lg="6" className="d-flex align-items-center flex-column">
             <div className="text-center">
-              <SVGs.ACE color="#FF5656" />
+              <SVGs.ACE color="#FF5656" width="150pt" height="120pt"/>
               <H1>Membre du Comité</H1>
             </div>
               <Center>
@@ -151,7 +163,7 @@ export default () => {
           </Col>
           <Col lg="6">
             <div className="text-center">
-              <SVGs.ULB color="#6F4B92" />
+              <SVGs.ULB color="#6F4B92" width="120pt" height="120pt"/>
               <H1>Cercle Membre</H1>
             </div>
             <div style={{margin:"auto"}}>

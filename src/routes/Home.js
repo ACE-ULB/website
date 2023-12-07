@@ -1,10 +1,18 @@
 import React from "react";
 import Slider from "react-slick";
-import { Banner, Map, NavHomeBar } from "../components/";
+import { Banner, Map, ContentBar } from "../components/";
 import { H3, Text, Center } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
+
+const contentArrays = [
+  {svg: "ACE", id: "cercle", title: "Le Cercle", width: "150pt", height: "120pt"},
+  {svg: "Beers", id: "events", title: "Événements", width: "150pt", height: "120pt"},
+  {svg: "Solidarity", id: "actions", title: "Actions", width: "150pt", height: "120pt"},
+  {svg: "Penne", id: "folklore", title: "Folklore", width: "160pt", height: "120pt"},
+  {svg: "ULB", id: "members", title: "Espace Membres", width: "120pt", height: "120pt"},
+]
 
 export default () => {
 
@@ -14,7 +22,7 @@ export default () => {
             <title>Association des Cercles Étudiants - Acceuil</title>
         </Helmet>
         <Banner/>
-        <NavHomeBar className="color-main font-white"/>
+        <ContentBar links={contentArrays}/>
         <section className="section section-lg section-shaped pg-250">
         <div className="h-100" id="caroussel">
           <Row className="align-items-center m-0">

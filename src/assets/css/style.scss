@@ -41,3 +41,12 @@ html {
 .color-light {
   background-color: $light;
 }
+
+:export {
+  palh: $banner-head;
+  pal0: $palette-first;
+  pal1: $palette-seconde;
+  pal2: $palette-third;
+  pal3: $palette-four;
+  pal4: $palette-five;
+}

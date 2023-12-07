@@ -8,3 +8,8 @@ export { default as Instagram } from "./instagram";
 export { default as Website } from "./website";
 export { default as Discord } from "./discord";
 export { default as Mail } from "./mail";
+export { default as Contract} from "./contract";
+export { default as Question } from "./question";
+export { default as Team } from "./team";
+export { default as Medal } from "./medal";
+export { default as Hands } from "./hands" 
