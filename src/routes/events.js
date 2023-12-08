@@ -5,7 +5,6 @@ import { H3, Text, Center } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
-import style from "../assets/css/style.scss";
 
 const contentArrays = [
     {svg: "Teddy", id: "events/#st-v", title: "Saint-Verhaegen", width: "100pt", height: "100pt"},

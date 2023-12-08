@@ -57,7 +57,7 @@ export default ({ img, title, svg, h }) => {
             }}>
             <div className="anim_box">
               <div className="anim_title">
-                <span className="anim_block" style={{margin:"0 0 0 -500px"}}></span>
+                <span className="anim_block" style={{margin:"0 0 0 -300px"}}></span>
                   <h1>{title}<span></span></h1>
               </div>
             </div>

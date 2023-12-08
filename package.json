@@ -68,8 +68,10 @@
     "build:content:watch": "processmd src/assets/admin/**/*.md --outputDir src/assets/admin --preview 110 --summaryOutput src/assets/admin/summary.json --watch",
     "build:cercles": "processmd src/assets/cercles/**/*.md --outputDir src/assets/cercles/json --preview 110 --summaryOutput src/assets/cercles/summary.json",
     "build:cercles:watch": "processmd src/assets/cercles/**/*.md --outputDir src/assets/cercles/json --preview 110 --summaryOutput src/assets/cercles/summary.json --watch",
+    "build:guildes": "processmd src/assets/guildes/**/*.md --outputDir src/assets/guildes/json --preview 110 --summaryOutput src/assets/guildes/summary.json",
+    "build:guildes:watch": "processmd src/assets/guildes/**/*.md --outputDir src/assets/guildes/json --preview 110 --summaryOutput src/assets/guildes/summary.json --watch",
     "postbuild": "react-snap",
-    "predeploy": "npm run build:content && build:cercles && npm run build",
+    "predeploy": "npm run build:content && build:cercles && build:guildes && npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
