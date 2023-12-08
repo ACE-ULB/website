@@ -12,4 +12,7 @@ export { default as Contract} from "./contract";
 export { default as Question } from "./question";
 export { default as Team } from "./team";
 export { default as Medal } from "./medal";
-export { default as Hands } from "./hands" 
+export { default as Hands } from "./hands";
+export { default as Teddy } from "./teddy";
+export { default as Party } from "./party";
+export { default as Candle } from "./candle";

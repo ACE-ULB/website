@@ -8,9 +8,9 @@ import { Helmet } from "react-helmet";
 import style from "../assets/css/style.scss";
 
 const contentArrays = [
-    {svg: "Contract", id: "events/#st-v", title: "Saint-Verhaegen", width: "100pt", height: "100pt"},
-    {svg: "Question", id: "events/#ntv", title: "Nuit Théodore Verhaegen", width: "100pt", height: "100pt"},
-    {svg: "Team", id: "events/#cab", title: "Cantus Auguste Baron", width: "100pt", height: "100pt"},
+    {svg: "Teddy", id: "events/#st-v", title: "Saint-Verhaegen", width: "100pt", height: "100pt"},
+    {svg: "Party", id: "events/#ntv", title: "Nuit Théodore Verhaegen", width: "100pt", height: "100pt"},
+    {svg: "Candle", id: "events/#cab", title: "Cantus Auguste Baron", width: "100pt", height: "100pt"},
 ]
 
 export default () => {
@@ -20,7 +20,7 @@ export default () => {
         <Helmet>
             <title>Association des Cercles Étudiants - Événements</title>
         </Helmet>
-        <Banner img="events" title="Nos Événements" svg="Beers" color={style.pal1} h="380pt"/>
+        <Banner img="events" title="Nos Événements" svg="Beers" h="380pt"/>
         <ContentBar links={contentArrays}/>
         <Separator title={"Saint-Verhaegen"} />
         <section className="section section-lg section-shaped pg-250">
