@@ -1,0 +1,57 @@
+@import "variables.scss";
+@import "colors.scss";
+
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+.color-main {
+  background-color: $color-main;
+}
+
+.color-secondary {
+  background-color: $color-secondary;
+}
+
+.color-test {
+  background-color: red;
+}
+
+.color-normal {
+  background-color: $normal;
+}
+
+.color-lightest {
+  background-color: $lightest;
+}
+
+.font-lightest {
+  color: $lightest;
+}
+
+.font-white {
+  color: $color-white !important;
+}
+
+.color-light {
+  background-color: $light;
+}
+
+a:link, a:visited, a:active {
+  color : $color-secondary;
+  text-decoration: none;
+}
+
+:export {
+  palh: $banner-head;
+  pal0: $palette-first;
+  pal1: $palette-seconde;
+  pal2: $palette-third;
+  pal3: $palette-four;
+  pal4: $palette-five;
+}
