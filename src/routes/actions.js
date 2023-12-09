@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { Separator, Banner, ContentBar, PreviewCercles } from "../components";
+import { Separator, Banner, ContentBar, PreviewCercles, Navbar } from "../components";
 import { H3, Text, Center } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
@@ -33,6 +33,7 @@ export default () => {
         <Helmet>
             <title>Association des Cercles Étudiants - Actions</title>
         </Helmet>
+        <Navbar/>
         <Banner img="actions" title="Actions et Projets" svg="Solidarity" h="380pt"/>
         <ContentBar links={contentArrays}/>
         <Separator title={"Fonds de Solidarité Auguste Baron"} />

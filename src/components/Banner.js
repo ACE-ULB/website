@@ -21,7 +21,7 @@ export default ({ img, title, svg, h }) => {
           require(`../assets/img/${img}.png`)}
       />
       {HOME_SOURCE === window.location.pathname ? (
-        <Row className="position-relative z-1 align-items-center m-0">
+        <Row className="position-relative align-items-center m-0">
           <Col lg="6" sm="0" className="position-relative anim_title d-none d-sm-block"
             style={{
               marginLeft: "6vw",
@@ -48,7 +48,7 @@ export default ({ img, title, svg, h }) => {
           </Col>
         </Row>
       ) : (
-        <Row className="position-relative z-1 align-items-center m-0">
+        <Row className="position-relative align-items-center m-0">
           <Col lg="6" sm="0" className="position-relative anim_title d-none d-sm-block"
             style={{
               marginLeft: "25vw",

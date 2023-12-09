@@ -1,15 +1,14 @@
 import React from "react";
 import {
-  Button,
   NavItem,
   NavLink,
   Nav,
   Container,
   Row,
-  Col,
-  UncontrolledTooltip
+  Col
 } from "reactstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import NavSocial from './NavSocial';
 import SETTINGS from '../settings';
 
 export default () => {
@@ -30,6 +29,7 @@ export default () => {
                   MIT License
                 </NavLink>
               </NavItem>
+              <NavSocial/>
             </Nav>
           </Col>
         </Row>

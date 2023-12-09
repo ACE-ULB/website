@@ -36,6 +36,8 @@ export default () => {
       <div className="h-100 w-100">
         <Row className="align-items-center m-0">
           <Col lg="6" className='p-0'>
+            <Row className="align-items-center m-0">
+            <Col lg="6" className='p-0'>
             <Center>
               <H3 className="text-center"><FontAwesomeIcon icon={['fas', 'map-marker-alt']} /> Où nous trouver </H3>
               <Text>
@@ -55,13 +57,26 @@ export default () => {
                     <li><FontAwesomeIcon icon={['fas', 'phone']} />{` ${SETTINGS.location.phone}`}</li>
                     ) : null
                   }
-                  {SETTINGS.location.bank ? (
-                    <li><FontAwesomeIcon icon={['fas', 'wallet']} />{` ${SETTINGS.location.bank}`}</li>
-                    ) : null
-                  }
                 </ul>
               </Text>
-              {SETTINGS.location.additional ? (
+            </Center>
+            </Col>
+            <Col lg="6" className='p-0'>
+            <Center>
+              <H3 className="text-center" style={{marginLeft:"-35px"}}><FontAwesomeIcon icon={['fas', 'hand-holding-heart']} /> Donate </H3>
+              <Text>
+                <ul style={{listStyleType: "none"}}>
+                  <li><FontAwesomeIcon icon={['fas', 'building']} />{` ${SETTINGS.location.bank.general.name} : ${SETTINGS.location.bank.general.iban}`}</li>
+                  <li><FontAwesomeIcon icon={['fas', 'beer-mug-empty']} />{` ${SETTINGS.location.bank.folklore.name} : ${SETTINGS.location.bank.folklore.iban}`}</li>
+                  <li><FontAwesomeIcon icon={['fas', 'music']} />{` ${SETTINGS.location.bank.cantus.name} : ${SETTINGS.location.bank.cantus.iban}`}</li>
+                  <li><FontAwesomeIcon icon={['fas', 'graduation-cap']} />{` ${SETTINGS.location.bank.fsab.name} : ${SETTINGS.location.bank.fsab.iban}`}</li>
+                </ul>
+              </Text>
+            </Center>
+            </Col>
+            </Row>
+          <Center>
+            {SETTINGS.location.additional ? (
                   <Card body >
                     <CardText>
                       <Text><span dangerouslySetInnerHTML={{ __html: SETTINGS.location.additional }}></span></Text>
@@ -69,12 +84,12 @@ export default () => {
                   </Card>
                 ) : null
               }
-            </Center>
+          </Center>
           </Col>
           <Col lg="6" className='p-0'>
-            <Map style={{zIndex: -1, width: "100%", height: "500px"}} center={SETTINGS.location.position} zoom={16} zoomControl={false} attributionControl={false}>
+            <Map style={{zIndex: -1, width: "100%", height: "500px"}} center={SETTINGS.location.position} zoom={19} zoomControl={false} attributionControl={false}>
               <TileLayer
-                url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.png"
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
               <Marker position={SETTINGS.location.position} icon={MarkerIcon}/>
             </Map>

@@ -23,3 +23,4 @@ export { default as Museum } from "./museum";
 export { default as Love } from "./love";
 export { default as Health } from "./health";
 export { default as Loudspeaker} from "./loudspeaker";
+export { default as Toge } from "./toge";

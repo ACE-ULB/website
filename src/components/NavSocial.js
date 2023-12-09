@@ -1,13 +1,13 @@
 import React from "react";
-import { UncontrolledTooltip } from "reactstrap";
+import { NavItem, NavLink, UncontrolledTooltip } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SETTINGS from "../settings";
 
-export const Facebook = ({ color }) => {
-  return (
-    SETTINGS.contact.facebook && (
-      <div>
-        <a
+export default ({ color }) => (
+  <>
+    {SETTINGS.contact.facebook && (
+      <NavItem>
+        <NavLink
           className="nav-link-icon"
           style={{ color: color }}
           href={SETTINGS.contact.facebook}
@@ -16,19 +16,15 @@ export const Facebook = ({ color }) => {
         >
           <FontAwesomeIcon icon={["fab", "facebook"]} />
           <span className="nav-link-inner--text d-lg-none ml-2">Facebook</span>
-        </a>
+        </NavLink>
         <UncontrolledTooltip delay={0} target="facebooktooltip">
           Suivez nous sur Facebook
         </UncontrolledTooltip>
-      </div>
-    )
-  );
-};
-export const Instagram = ({ color }) => {
-    return (
-      SETTINGS.contact.instagram && (
-      <div>
-        <div
+      </NavItem>
+    )}
+    {SETTINGS.contact.instagram && (
+      <NavItem>
+        <NavLink
           className="nav-link-icon"
           style={{ color: color }}
           href={SETTINGS.contact.instagram}
@@ -37,40 +33,33 @@ export const Instagram = ({ color }) => {
         >
           <FontAwesomeIcon icon={["fab", "instagram"]} />
           <span className="nav-link-inner--text d-lg-none ml-2">Instagram</span>
-        </div>
+        </NavLink>
         <UncontrolledTooltip delay={0} target="instagramtooltip">
           Suivez nous sur Instagram
         </UncontrolledTooltip>
-      </div>
-    )
-    );
-};
-export const Discord = ({ color }) => {
-    return (
-      SETTINGS.contact.discord && (
-      <div>
-        <div
+      </NavItem>
+    )}
+    {SETTINGS.contact.discord && (
+      <NavItem>
+        <NavLink
           className="nav-link-icon"
           style={{ color: color }}
           href={SETTINGS.contact.discord}
-          id="instagramtooltip"
+          id="discordtooltip"
           target="_blank"
+          disabled
         >
           <FontAwesomeIcon icon={["fab", "discord"]} />
           <span className="nav-link-inner--text d-lg-none ml-2">Discord</span>
-        </div>
-        <UncontrolledTooltip delay={0} target="instagramtooltip">
+        </NavLink>
+        <UncontrolledTooltip delay={0} target="discordtooltip">
           Rejoignez-nous sur Discord
         </UncontrolledTooltip>
-      </div>
-    )
-    );
-};
-export const Mail = ({ color }) => {
-    return (
-      SETTINGS.contact.email && (
-      <div>
-        <div
+      </NavItem>
+    )}
+    {SETTINGS.contact.email && (
+      <NavItem>
+        <NavLink
           className="nav-link-icon"
           style={{ color: color }}
           href={`mailto:${SETTINGS.contact.email}`}
@@ -79,11 +68,11 @@ export const Mail = ({ color }) => {
         >
           <FontAwesomeIcon icon={["fas", "envelope"]} />
           <span className="nav-link-inner--text d-lg-none ml-2">Mail</span>
-        </div>
+        </NavLink>
         <UncontrolledTooltip delay={0} target="mailtooltip">
           Envoyez nous un email
         </UncontrolledTooltip>
-      </div>
-    )
-    );
-};
+      </NavItem>
+    )}
+  </>
+);

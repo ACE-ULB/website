@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import '../assets/css/display.scss';
 import style from "../assets/css/style.scss";
-import { Separator, Preview, PreviewCercles, Banner, ContentBar } from "../components";
+import { Separator, Preview, PreviewCercles, Banner, ContentBar, Navbar } from "../components";
 import { H3, Text, Center, H1 } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
@@ -35,6 +35,7 @@ export default () => {
         <Helmet>
             <title>Association des Cercles Étudiants - Le Cercle</title>
         </Helmet>
+        <Navbar/>
         <Banner img="cercle" title="Le Cercle" svg="ACE" h="300pt"/>
         <ContentBar links={contentArrays}/>
         <Separator title={"Administratif"} />

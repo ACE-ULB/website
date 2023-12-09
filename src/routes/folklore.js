@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { Separator, Banner, ContentBar, PreviewCercles } from "../components";
+import { Separator, Banner, ContentBar, PreviewCercles, Navbar } from "../components";
 import { H3, Text, Center } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
@@ -24,7 +24,7 @@ const contentArrays = [
     {svg: "ULB", id: "folklore/#asbls", title: "ASBLs", width: "100pt", height: "100pt"},
     {svg: "Loudspeaker", id: "folklore/#librex", title: "Libre-Examen", width: "100pt", height: "100pt"},
     {svg: "Beers", id: "folklore/#ulb", title: "À l'ULB", width: "120pt", height: "100pt"},
-    {svg: "Penne", id: "folklore/#bapteme", title: "Baptême", width: "120pt", height: "100pt"},
+    {svg: "Toge", id: "folklore/#bapteme", title: "Baptême", width: "100pt", height: "100pt"},
     {svg: "Candle", id: "folklore/#chantant", title: "Chantant", width: "100pt", height: "100pt"},
 ]
 
@@ -36,6 +36,7 @@ export default () => {
         <Helmet>
             <title>Association des Cercles Étudiants - Folklore</title>
         </Helmet>
+        <Navbar/>
         <Banner img="folklore" title="Folklore ULBiste" svg="Penne" h="380pt"/>
         <ContentBar links={contentArrays}/>
         <Separator title={"Le monde associatif ULBiste"} />

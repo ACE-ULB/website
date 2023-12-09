@@ -42,6 +42,11 @@ html {
   background-color: $light;
 }
 
+a:link, a:visited, a:active {
+  color : $color-secondary;
+  text-decoration: none;
+}
+
 :export {
   palh: $banner-head;
   pal0: $palette-first;
