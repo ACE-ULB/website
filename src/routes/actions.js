@@ -166,7 +166,7 @@ export default () => {
                 </Center>
             </Col>
           </Row>
-        <Row>
+        <Row className="align-items-center m-0">
             <p style={{marginTop: "20px"}}></p>
             <Center>
                 <H3>Guildes Membres</H3>
@@ -189,7 +189,7 @@ export default () => {
         <div className="grid-container" id="guildes">
           {guildes.map((card) => (
             <div key={card.acronyme} className="grid-item">
-              <PreviewCercles {...card} />
+              <PreviewCercles {...card} source='guildes' />
             </div>
           ))}
         </div>

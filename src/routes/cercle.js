@@ -84,8 +84,8 @@ export default () => {
         <section className="section section-lg section-shaped pg-250">
         <div className="grid-container" id="cercles">
           {cercles.map((card) => (
-            <div key={card.acronyme} className="grid-item">
-              <PreviewCercles {...card} />
+            <div id={card.acronyme} className="grid-item">
+              <PreviewCercles {...card} source='cercles' />
             </div>
           ))}
         </div>

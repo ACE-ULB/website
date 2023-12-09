@@ -11,18 +11,15 @@ const NavLinkS = ({ to, children }) => (
   </NavHashLink>
 );
 
-const CERCLE_SOURCE = '/cercle';
-
 export default props => {
+  const source = props.source;
   return (
     <Card
       color="light"
       outline
     >
       <img
-        src={CERCLE_SOURCE === window.location.pathname ? 
-          require(`../assets/cercles/logos/${props.acronyme}.png`) : 
-          require(`../assets/guildes/logos/${props.acronyme}.png`)}
+        src={require(`../assets/${source}/logos/${props.acronyme}.png`)}
         alt={props.acronyme}
         style={{ 
           width: '200px',
@@ -45,25 +42,27 @@ export default props => {
         justifyContent: 'center'
       }}>
         <Row className="m-0">
-        {CERCLE_SOURCE === window.location.pathname ? (
+        {props.website ? (
           <Col lg="4">
             <NavLinkS to={props.href} target="_blank">
               <SVGs.Website color="#000" size="40" />
             </NavLinkS>
           </Col>
-        ) : ("")}
+        ) : null}
+        {props.facebook ? (
           <Col lg="4">
             <NavLinkS to={props.fb} target="_blank">
               <SVGs.Facebook color="#1877F2" size="40" />
             </NavLinkS>
           </Col>
-        {CERCLE_SOURCE === window.location.pathname ? (
+        ) : null}
+        {props.instagram ? (
           <Col lg="4">
             <NavLinkS to={props.ig} target="_blank">
               <SVGs.Instagram color="#833AB4" size="40" />
             </NavLinkS>
           </Col>
-        ) : ("")}
+        ) : null}
         </Row>
       </CardLink>
     </CardBody>

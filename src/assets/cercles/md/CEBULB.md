@@ -5,4 +5,5 @@ website: https://cebulb.be
 facebook: https://facebook.com/cercleborainulb/
 instagram: https://instagram.com/insta.cebulb/
 brief: Cercle Régionale des Étudiant•e•s originaire du Borinage (Hainaut)
+baptismal: False
 ---
