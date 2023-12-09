@@ -2,7 +2,7 @@
   "name": "ace",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://ace-ulb.github.io/website",
   "license": "mit",
   "babel": {
     "plugins": [
@@ -71,7 +71,7 @@
     "build:guildes": "processmd src/assets/guildes/**/*.md --outputDir src/assets/guildes/json --preview 110 --summaryOutput src/assets/guildes/summary.json",
     "build:guildes:watch": "processmd src/assets/guildes/**/*.md --outputDir src/assets/guildes/json --preview 110 --summaryOutput src/assets/guildes/summary.json --watch",
     "postbuild": "react-snap",
-    "predeploy": "npm run build:content && build:cercles && build:guildes && npm run build",
+    "predeploy": "npm run build:content && npm run build:cercles && npm run build:guildes && npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
