@@ -5,7 +5,7 @@ module.exports = {
     fallback:{
       "url": require.resolve("url/"),
       "path": require.resolve('path-browserify'),
-      "fs": false
+      "fs": require.resolve('fs'),
     }
   }
 };

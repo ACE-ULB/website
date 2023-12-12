@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import '../assets/css/display.scss';
 import style from "../assets/css/style.scss";
-import { Separator, Preview, PreviewCercles, Banner, ContentBar, Navbar } from "../components";
+import { Separator, Preview, PreviewCercles, Banner, ContentBar, Navbar, Comite } from "../components";
 import { H3, Text, Center, H1 } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
@@ -78,7 +78,7 @@ export default () => {
         <Separator title="Le Comité" />
         <section className="section section-lg section-shaped pg-250">
         <div className="h-100" id="comite">
-        
+        <Comite/>
         </div>
         </section>
         <Separator title="Les Cercles Membres" />

@@ -6,3 +6,4 @@ export { default as Preview } from "./Preview";
 export { default as PreviewCercles } from "./PreviewCercles";
 export { default as ContentBar } from "./ContentBar";
 export { default as Navbar } from "./Navbar";
+export { default as Comite } from "./Comite";
