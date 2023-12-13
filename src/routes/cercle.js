@@ -75,12 +75,8 @@ export default () => {
           </Row>
         </div>
         </section>
-        <Separator title="Le Comité" />
-        <section className="section section-lg section-shaped pg-250">
-        <div className="h-100" id="comite">
+        <span id="comite"></span>
         <Comite/>
-        </div>
-        </section>
         <Separator title="Les Cercles Membres" />
         <section className="section section-lg section-shaped pg-250">
         <div className="grid-container" id="cercles">

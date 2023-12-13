@@ -63,15 +63,14 @@
     "sass-extract-js": "^0.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "build-css": "sass --watch src/assets/css:src/assets/css",
     "build:content": "processmd src/assets/admin/**/*.md --outputDir src/assets/admin --preview 110 --summaryOutput src/assets/admin/summary.json",
     "build:cercles": "processmd src/assets/cercles/**/*.md --outputDir src/assets/cercles/json --preview 110 --summaryOutput src/assets/cercles/summary.json",
     "build:guildes": "processmd src/assets/guildes/**/*.md --outputDir src/assets/guildes/json --preview 110 --summaryOutput src/assets/guildes/summary.json",
-    "build:comite": "processmd src/assets/comite/**/*.md --outputDir src/assets/comite --preview 110",
+    "build:comite": "processmd src/assets/comite/**/*.md --outputDir src/assets/comite --preview 110 --summaryOutput src/assets/comite/summary.json",
     "predeploy": "npm run build:content && npm run build:cercles && npm run build:guildes && npm run build:comite && npm run build",
-    "postbuild": "react-snap",
     "deploy": "gh-pages -d build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"

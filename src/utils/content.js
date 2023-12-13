@@ -22,15 +22,17 @@ export function filterCards(summaryJson, POST_SOURCE) {
     .sort((a, b) => a.acronyme.localeCompare(b.acronyme));
 }
 
-export function filterYears(POST_SOURCE) {
-  const fs = require('fs');
-  const yearsDirectory = fs.readdirSync(POST_SOURCE, { withFileTypes: true })
-    .filter((dirent) => dirent.isDirectory())
-    .map((dirent) => dirent.name)
+export function filterYears(summaryJson, POST_SOURCE) {
+  return summaryJson && summaryJson.fileMap && Object.keys(summaryJson.fileMap)
+    .filter((file) => file.indexOf(POST_SOURCE) === 0)
+    .map(file => summaryJson.fileMap[file])
+    .map((comite) => {
+    const { dir, base, ext, sourceBase, sourceExt, ...filtered } = comite;
+    return filtered;
+    })
     .sort((a, b) => {
-      const aDate = Date.parse(a.date)
-      const bDate = Date.parse(b.date)
+      const aDate = Date.parse(a.year)
+      const bDate = Date.parse(b.year)
       return (bDate > aDate) ? 1 : (bDate < aDate) ? -1 : 0
     })
-  return yearsDirectory;
 }

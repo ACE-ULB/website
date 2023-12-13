@@ -16,12 +16,14 @@ export const Sep = styled.div`
   }
 `;
 
-export default ({ title }) => {
+export default ({ title, Object }) => {
   return (
     <section className="section section-lg section-shaped pg-250 color-secondary font-white">
       <Sep className="h-100">
         <Row className="align-items-center text-center w-100">
-          <H1 className="w-100">{title}</H1>
+          <H1 className="w-100 d-flex align-items-center justify-content-center">
+            {title} {Object}
+          </H1>
         </Row>
       </Sep>
     </section>
