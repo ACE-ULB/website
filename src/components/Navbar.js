@@ -19,7 +19,7 @@ export default () => {
   return (
     <Headroom>
       <Navbar
-        className="color-main headroom z-2"
+        className="color-main headroom z-3"
         expand="lg"
         id="navbar-main"
       >

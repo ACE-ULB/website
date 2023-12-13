@@ -4,7 +4,7 @@ presidence: {
     poste: Présidence,
     nom: Marie Gillotay,
     cercle: CdS,}
-tresorier: {
+tresorerie: {
     poste: Trésorerie,
     nom: Valentien Knaepen,
     cercle: CS,}

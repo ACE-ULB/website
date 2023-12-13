@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Separator } from './'
-import { filterYears } from "../utils/content";
-import { Card, DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown } from 'reactstrap';
+import { filterYears, getComitePostes } from "../utils/content";
+import { DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown } from 'reactstrap';
 import '../assets/css/style.scss'
 import '../assets/css/animation.scss'
 import { H1 } from './Titles';
@@ -41,6 +41,11 @@ const YearSelector = ({ years, onSelect, current }) => {
 export default () => {
   const yearsDirectory = filterYears(COMITE_SUMMARY_JSON, 'src/assets/comite');
   const [selectedYear, setSelectedYear] = useState(yearsDirectory[0]?.year.toString());
+  const postesContent = require('../assets/comite/postes.json');
+
+  const getContentPoste = (poste) => {
+    return postesContent[poste.replace(/\d+$/, '')] || "Aucune description disponible";
+  };
 
   const handleYearChange = (year) => {
     setSelectedYear(year);
@@ -68,7 +73,7 @@ export default () => {
                         <h1>{comite[title].nom}</h1>
                         <h2>{comite[title].poste}</h2>
                         <p class="desc">
-                            Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning.
+                            {getContentPoste(title)}
                         </p>
                         <div class="cast">
                             <ul>

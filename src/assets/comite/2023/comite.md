@@ -4,10 +4,6 @@ presidence: {
     poste: Présidence - Coopté Trésorerie, 
     nom: Pierre Brancart, 
     cercle: CS}
-tresorier: {
-    poste: ,
-    nom: ,
-    cercle: ,}
 vpi: {
     poste: Vice-Présidence Interne,
     nom: Barnabé Dardenne, 
