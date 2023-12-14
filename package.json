@@ -49,6 +49,7 @@
     "@babel/preset-react": "^7.23.3",
     "fs": "^0.0.1-security",
     "fs-monkey": "^1.0.5",
+    "gatsby-image": "^3.11.0",
     "gh-pages": "^6.1.0",
     "leaflet": "^1.9.4",
     "matchmedia-polyfill": "^0.3.2",

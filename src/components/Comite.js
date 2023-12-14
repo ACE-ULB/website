@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Separator } from './'
-import { filterYears, getComitePostes } from "../utils/content";
-import { DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown } from 'reactstrap';
+import { filterYears } from "../utils/content";
+import { DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown, UncontrolledTooltip } from 'reactstrap';
 import '../assets/css/style.scss'
 import '../assets/css/animation.scss'
 import { H1 } from './Titles';
+import { StaticImage } from 'gatsby-plugin-image';
 try {
     var COMITE_SUMMARY_JSON = require("../assets/comite/summary.json");
 } catch (e) {
@@ -19,6 +20,7 @@ const YearSelector = ({ years, onSelect, current }) => {
         caret="true"
         drop="down"
         className='d-flex align-items-center'
+        id='dropdowntooltip'
         style= {{
             backgroundColor: 'transparent',
             borderColor: 'transparent'
@@ -26,6 +28,7 @@ const YearSelector = ({ years, onSelect, current }) => {
     >
         <H1> : <u>{current}</u></H1>
     </DropdownToggle>
+    <UncontrolledTooltip delay={0} target="dropdowntooltip">Clique sur l'année de ton choix !</UncontrolledTooltip>
     <DropdownMenu>
         {years.map((year) => (
             <DropdownItem key={year} value={year} onClick={(e) => onSelect(e.target.value)}>
@@ -65,17 +68,26 @@ export default () => {
         .map((comite) => (
             <>
             {Object.keys(comite).map((title) => (
-                (title !== "year" && comite[title].poste ? (
-                <div class="wrapper card-item">
-                <div class="card">
-                    <div class="poster"><img src={require(`../assets/comite/${comite.year}/photos/${title}.png`)}/></div>
-                    <div class="details">
+                (title !== "year" && comite[title].nom ? (
+                <div className="wrapper card-item">
+                <div className="card">
+                    <div className="poster">
+                    <StaticImage
+                        src={`../assets/comite/${comite.year}/photos/${title}.png`}
+                        alt={title}
+                        placeholder="blurred"
+                        onError={(e) => {
+                            e.target.src = require(`../assets/comite/empty.png`);
+                        }}
+                    />
+                    </div>
+                    <div className="details">
                         <h1>{comite[title].nom}</h1>
                         <h2>{comite[title].poste}</h2>
-                        <p class="desc">
+                        <p className="desc">
                             {getContentPoste(title)}
                         </p>
-                        <div class="cast">
+                        <div className="cast">
                             <ul>
                                 <li><a href={`cercle/#${comite[title]?.cercle}`}><img src={require(`../assets/cercles/logos/${comite[title].cercle}.png`)}/></a></li>
                             </ul>
