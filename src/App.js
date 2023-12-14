@@ -9,12 +9,13 @@ import { ThemeProvider } from "styled-components";
 import {
   Home,
   Cercle,
-  Post,
+  Pv,
   Events,
   Actions,
   Folklore,
   Members,
-  NotFound
+  NotFound,
+  History
 } from "./routes";
 //import theme from "./utils/theme";
 
@@ -37,8 +38,10 @@ export default () => {
             element = {<Home />} />
           <Route path="/cercle"  
             element = {<Cercle />} />
-            <Route path="/cercle/admin/:article"
-              element = {<Post />} />
+            <Route path="/cercle/pv"
+              element = {<Pv />} />
+            <Route path="/cercle/history"
+              element = {<History />} />
           <Route path="/events"  
             element = {<Events />} />
           <Route path="/actions"  

@@ -1,11 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import '../assets/css/display.scss';
-import style from "../assets/css/style.scss";
-import { Separator, Preview, PreviewCercles, Banner, ContentBar, Navbar, Comite } from "../components";
+import { Separator, Preview, PreviewCercles, Banner, ContentBar, Navbar, Comite, Pdf } from "../components";
 import { H3, Text, Center, H1 } from "../components/Titles";
 import { Overlay } from "../components/Images";
-import { Col, Row } from "reactstrap";
+import { Col, Row, Button } from "reactstrap";
 import { Helmet } from "react-helmet";
 import * as SVGs from "../assets/svg";
 import { filterPosts, filterCards } from "../utils/content";
@@ -29,6 +28,7 @@ const contentArrays = [
 export default () => {
     const admin = filterPosts(ADMIN_SUMMARY_JSON, 'src/assets/admin');
     const cercles = filterCards(CERCLES_SUMMARY_JSON, 'src/assets/cercles');
+    const handleClickPv = () => {window.location.href = '/cercle/pv';}
 
     return (
         <span>
@@ -39,16 +39,35 @@ export default () => {
         <Banner img="cercle" title="Le Cercle" svg="ACE" h="300pt"/>
         <ContentBar links={contentArrays}/>
         <Separator title={"Administratif"} />
-        <div id="admin">
-        <Slider
-          infinite={true}
-          slidesToShow={admin.length > 3 ? 3 : admin.length}
-          dots={true}
-        >
-          {admin.map((post) => (
-            <Preview {...post} />
-          ))}
-        </Slider>
+        <div id="admin" className="grid-container">
+          <Preview 
+            title="R.O.I"
+            brief="Réglement d'Ordre Intérieur de l'ACE et ses Cercles membres"
+            href={React.createElement(Pdf, {
+              title:"Consulter le document",
+              file:(require('../assets/admin/roi.pdf'))
+            })}
+            className="grid-item"
+          />
+          <Preview 
+            title="Status"
+            brief="Status officiel de l'ACE et ses Cercles membres"
+            href={React.createElement(Pdf, {
+              title:"Consulter le document",
+              file:(require('../assets/admin/status.pdf'))
+            })}
+            className="grid-item"
+          />
+          <Preview 
+            title="PV"
+            brief="Procès Verbaux des Réunions et AG ACE + Réunions CA"
+            href={React.createElement(Button, {
+              children:"Parcourir les PVs",
+              block:"true",
+              onClick: (handleClickPv)
+            })}
+            className="grid-item"
+          />
         </div>
         <Separator title={"Le Cercle"} />
         <section className="section section-lg section-shaped pg-250">
@@ -70,6 +89,7 @@ export default () => {
                   L’ACE rassemble également les étudiants et étudiantes de ses cercles membres autour d’une direction commune concernant la vie étudiante de l’ULB en général. Nos cercles se réunissent une fois par semaine pour organiser la vie étudiante sur les différents campus, mais aussi pour discuter de projets inter-cercles qui pourraient voir le jour. En plus de ça, nos cercles membres se réunissent occasionnellement en commissions pour parler de sujets plus spécifiques : pour le moment, ont été mises en place les commissions Cantus, Culture, Écologie, Égalité & Inclusivité, Folklore, Librex, Réduction des Risques et Sociale.
                   </p>
                 </Text>
+                <H3>Parcours notre <a href="/cercle/history">histoire</a> !</H3>
               </Center>
             </Col>
           </Row>

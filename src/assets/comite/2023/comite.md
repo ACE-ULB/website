@@ -14,7 +14,7 @@ vpe: {
     cercle: CP}
 secretaire: {
     poste: Secrétariat,
-    nom: Abigaël Gaillard,
+    nom: Abigaël Gillard,
     cercle: CRom}
 folklore1: {
     poste: Folklore,

@@ -3,19 +3,17 @@ import { Button, Card, CardTitle, CardText, CardLink } from "reactstrap";
 import { Link } from "react-router-dom";
 import { H2, Text } from "./Titles.js";
 
-export default props => {
+export default ({ title, brief, href }) => {
   return (
-    <Card body>
+    <Card body className="grid-item">
       <CardTitle className="text-center">
-        <H2>{props.title}</H2>
+        <H2>{title}</H2>
       </CardTitle>
-      <CardText>
-        <Text>{props.brief}</Text>
+      <CardText className="text-center">
+        <Text>{brief}</Text>
       </CardText>
       <CardLink>
-        <Link to={props.href}>
-          <Button block>Lire la suite</Button>
-        </Link>
+        {href}
       </CardLink>
     </Card>
   );
