@@ -72,14 +72,7 @@ export default () => {
                 <div className="wrapper card-item">
                 <div className="card">
                     <div className="poster">
-                    <StaticImage
-                        src={`../assets/comite/${comite.year}/photos/${title}.png`}
-                        alt={title}
-                        placeholder="blurred"
-                        onError={(e) => {
-                            e.target.src = require(`../assets/comite/empty.png`);
-                        }}
-                    />
+                        <img src={require(`../assets/comite/${comite.year}/photos/${title}.png`)}/>
                     </div>
                     <div className="details">
                         <h1>{comite[title].nom}</h1>

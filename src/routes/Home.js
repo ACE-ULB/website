@@ -26,7 +26,7 @@ export default () => {
         <section className="section section-lg section-shaped pg-250">
         <div className="h-100" id="caroussel">
           <Row className="align-items-center m-0">
-            <Col lg="6" className="p-0">
+            <Col lg="6" className="p-0" style={{marginBottom:"-7px"}}>
             <Overlay>
               <Slider
                 infinite={true}
