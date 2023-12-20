@@ -1,6 +1,5 @@
 import React from "react";
-import { Button, Card, CardTitle, CardText, CardLink } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Card, CardTitle, CardText, CardLink } from "reactstrap";
 import { H2, Text } from "./Titles.js";
 
 export default ({ title, brief, href }) => {

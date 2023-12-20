@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { Button, Modal, ModalFooter } from "reactstrap";
 import Viewer, { Worker } from "@phuocng/react-pdf-viewer";
 import "@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css";
+import { pdfjs } from 'react-pdf';
+import { getDocument } from 'pdfjs-dist';
+
+pdfjs.GlobalWorkerOptions.workerSrc = "https://unpkg.com/pdfjs-dist/build/pdf.mjs";
 
 export default ({ file, title }) => {
   const [numPages, setNumPages] = useState();
@@ -19,11 +23,9 @@ export default ({ file, title }) => {
         {title}
       </Button>
       <Modal size="lg" isOpen={modal} toggle={toggle}>
-        <Worker workerUrl={`https://unpkg.com/pdfjs-dist@4.0.269/build/pdf.mjs`}>
           <div style={{ height: "750px" }}>
             <Viewer fileUrl={file} />
           </div>
-        </Worker>
         <ModalFooter>
           <Button color="secondary" onClick={toggle}>
             Fermer

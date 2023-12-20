@@ -7,7 +7,7 @@ import "../assets/css/display.scss";
 import style from "../assets/css/style.scss";
 
 export const NavLinkS = ({ to, children }) => (
-  <NavHashLink activeClassName="" className="font-white nav-link" to={to}>
+  <NavHashLink className="font-white nav-link" to={to}>
     {children}
   </NavHashLink>
 );

@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { Separator, Banner, ContentBar, PreviewCercles, Navbar } from "../components";
+import { Separator, Banner, ContentBar, LogoView, Navbar } from "../components";
 import { H3, Text, Center } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
@@ -190,7 +190,7 @@ export default () => {
         <div className="grid-container" id="guildes">
           {guildes.map((card) => (
             <div key={card.acronyme} className="grid-item">
-              <PreviewCercles {...card} source='guildes' />
+              <LogoView {...card} source='guildes' />
             </div>
           ))}
         </div>

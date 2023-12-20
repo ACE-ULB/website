@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { Separator, Banner, ContentBar, PreviewCercles, Navbar } from "../components";
+import { Separator, Banner, ContentBar, LogoView, Navbar } from "../components";
 import { H3, Text, Center } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
@@ -15,7 +15,7 @@ try {
 }
 
 const NavLinkS = ({ to, children }) => (
-    <NavHashLink activeClassName="" className="font-white nav-link" to={to}>
+    <NavHashLink className="font-white nav-link" to={to}>
       {children}
     </NavHashLink>
 );
@@ -273,7 +273,7 @@ export default () => {
             {cercles.map((card) => (
                 card.baptismal === true ? (
                     <div key={card.acronyme} className="grid-item">
-                    <PreviewCercles {...card} source='cercles' />
+                    <LogoView {...card} source='cercles' />
                     </div>
                 ) : null
             ))}

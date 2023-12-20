@@ -1,18 +1,15 @@
 import React from "react";
-import Slider from "react-slick";
 import '../assets/css/display.scss';
-import { Separator, Preview, PreviewCercles, Banner, ContentBar, Navbar, Comite, Pdf } from "../components";
+import { Separator, LogoView, AdminView, Banner, ContentBar, Navbar, Comite, Pdf } from "../components";
 import { H3, Text, Center, H1 } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row, Button } from "reactstrap";
 import { Helmet } from "react-helmet";
 import * as SVGs from "../assets/svg";
-import { filterPosts, filterCards } from "../utils/content";
+import { filterCards } from "../utils/content";
 try {
-  var ADMIN_SUMMARY_JSON = require("../assets/admin/summary.json");
   var CERCLES_SUMMARY_JSON = require("../assets/cercles/summary.json");
 } catch (e) {
-  var ADMIN_SUMMARY_JSON = { fileMap: [] };
   var CERCLES_SUMMARY_JSON = { fileMap: [] };
 }
 
@@ -26,7 +23,6 @@ const contentArrays = [
 ]
 
 export default () => {
-    const admin = filterPosts(ADMIN_SUMMARY_JSON, 'src/assets/admin');
     const cercles = filterCards(CERCLES_SUMMARY_JSON, 'src/assets/cercles');
     const handleClickPv = () => {window.location.href = '/cercle/pv';}
 
@@ -40,7 +36,7 @@ export default () => {
         <ContentBar links={contentArrays}/>
         <Separator title={"Administratif"} />
         <div id="admin" className="grid-container">
-          <Preview 
+          <AdminView 
             title="R.O.I"
             brief="Réglement d'Ordre Intérieur de l'ACE et ses Cercles membres"
             href={React.createElement(Pdf, {
@@ -49,7 +45,7 @@ export default () => {
             })}
             className="grid-item"
           />
-          <Preview 
+          <AdminView 
             title="Status"
             brief="Status officiel de l'ACE et ses Cercles membres"
             href={React.createElement(Pdf, {
@@ -58,12 +54,12 @@ export default () => {
             })}
             className="grid-item"
           />
-          <Preview 
+          <AdminView 
             title="PV"
             brief="Procès Verbaux des Réunions et AG ACE + Réunions CA"
             href={React.createElement(Button, {
               children:"Parcourir les PVs",
-              block:"true",
+              block:true,
               onClick: (handleClickPv)
             })}
             className="grid-item"
@@ -102,7 +98,7 @@ export default () => {
         <div className="grid-container" id="cercles">
           {cercles.map((card) => (
             <div id={card.acronyme} className="grid-item">
-              <PreviewCercles {...card} source='cercles' />
+              <LogoView {...card} source='cercles' />
             </div>
           ))}
         </div>

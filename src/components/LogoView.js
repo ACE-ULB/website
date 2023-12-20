@@ -6,7 +6,7 @@ import { NavHashLink } from "react-router-hash-link";
 import * as SVGs from "../assets/svg";
 
 const NavLinkS = ({ to, children }) => (
-  <NavHashLink activeClassName="" className="font-white nav-link" to={to}>
+  <NavHashLink className="font-white nav-link" to={to}>
     {children}
   </NavHashLink>
 );

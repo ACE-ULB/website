@@ -5,7 +5,6 @@ import { DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown, Uncon
 import '../assets/css/style.scss'
 import '../assets/css/animation.scss'
 import { H1 } from './Titles';
-import { StaticImage } from 'gatsby-plugin-image';
 try {
     var COMITE_SUMMARY_JSON = require("../assets/comite/summary.json");
 } catch (e) {
@@ -17,7 +16,7 @@ const YearSelector = ({ years, onSelect, current }) => {
     <span>
     <UncontrolledDropdown>
     <DropdownToggle
-        caret="true"
+        caret
         drop="down"
         className='d-flex align-items-center'
         id='dropdowntooltip'
@@ -31,7 +30,7 @@ const YearSelector = ({ years, onSelect, current }) => {
     <UncontrolledTooltip delay={0} target="dropdowntooltip">Clique sur l'année de ton choix !</UncontrolledTooltip>
     <DropdownMenu>
         {years.map((year) => (
-            <DropdownItem key={year} value={year} onClick={(e) => onSelect(e.target.value)}>
+            <DropdownItem value={year} onClick={(e) => onSelect(e.target.value)}>
                 {year}
             </DropdownItem>
         ))}
