@@ -3,11 +3,13 @@ year: 2020
 presidence: {
     poste: Présidence - Coopté E&I, 
     nom: Sarah Rousseau, 
-    cercle: CPS}
+    cercle: CPS,
+    img: true}
 tresorerie: {
     poste: Trésorerie, 
     nom: Yza Belkalem, 
-    cercle: CPS}
+    cercle: CPS,
+    img: true}
 vpi: {
     poste: Vice-Présidence Interne,
     nom: Steven Da Mota Duarte, 
@@ -15,7 +17,8 @@ vpi: {
 vpe: {
     poste: Vice-Présidence Externe, 
     nom: Manon de Vinck, 
-    cercle: CPS}
+    cercle: CPS,
+    img: true}
 secretaire: {
     poste: Secrétariat,
     nom: Louise Delwiche,
@@ -27,7 +30,8 @@ folklore-trez: {
 folklore1: {
     poste: Folklore,
     nom: Fanny Segers,
-    cercle: CPS}
+    cercle: CPS,
+    img: true}
 folklore2: {
     poste: Folklore,
     nom: Gillian Baker,
@@ -47,7 +51,7 @@ ecologie: {
 archives: {
     poste: Archives - Coopté Culture,
     nom: Sarah Guion,
-    cercle: CIG}
+    cercle: CIGa}
 rdr: {
     poste: Réduction des Risques, 
     nom: , 
@@ -59,7 +63,8 @@ librex: {
 cantus: {
     poste: Cantus - Balef,
     nom: Edwige Loems,
-    cercle: CM}
+    cercle: CM,
+    img: true}
 web-comm: {
     poste: Web-Communication,
     nom: Hélène Delwiche,

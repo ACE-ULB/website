@@ -2,5 +2,5 @@
 acronyme: GC
 cercle: Guilde Champêtre
 facebook: 404
-brief: 
+brief: Guilde des Bioingénieurs
 ---

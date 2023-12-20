@@ -3,11 +3,13 @@ year: 2022
 presidence: {
     poste: Présidence,
     nom: Marie Gillotay,
-    cercle: CdS,}
+    cercle: CdS,
+    img: true}
 tresorerie: {
     poste: Trésorerie,
     nom: Valentien Knaepen,
-    cercle: CS,}
+    cercle: CS,
+    img: true}
 vpi: {
     poste: Vice-Présidence Interne,
     nom: , 
@@ -47,7 +49,8 @@ balef2: {
 ecologie: {
     poste: Écologie,
     nom: Loïc Nanga,
-    cercle: CP,}
+    cercle: CP,
+    img: true}
 rdr: {
     poste: Réduction des Risques, 
     nom: Anissa Benbakoura, 

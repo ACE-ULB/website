@@ -15,7 +15,8 @@ vpi: {
 vpe: {
     poste: Vice-Présidence Externe, 
     nom: Sarah Rousseau, 
-    cercle: CPS}
+    cercle: CPS,
+    img: true}
 secretaire: {
     poste: Secrétariat,
     nom: Ruth Janet Maguena,
@@ -23,7 +24,8 @@ secretaire: {
 folklore-trez: {
     poste: Folklore-Trésorerie, 
     nom: Yza Belkalem, 
-    cercle: CPS}
+    cercle: CPS,
+    img: true}
 folklore1: {
     poste: Folklore,
     nom: Gaël Mayer,
@@ -47,7 +49,7 @@ ecologie: {
 archives: {
     poste: Archives - Coopté Culture,
     nom: Sarah Guion,
-    cercle: CIG}
+    cercle: CIGa}
 rdr: {
     poste: Réduction des Risques, 
     nom: , 
@@ -75,7 +77,8 @@ culture: {
 eco-resp1: {
     poste: Éco-Responsable, 
     nom: Manon de Vinck, 
-    cercle: CPS}
+    cercle: CPS,
+    img: true}
 eco-resp2: {
     poste: Éco-Responsable, 
     nom: Claudia Cubeta, 

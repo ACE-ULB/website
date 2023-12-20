@@ -49,6 +49,20 @@ export default () => {
     return postesContent[poste.replace(/\d+$/, '')] || "Aucune description disponible";
   };
 
+  const getPicture = (comite, title) => {
+    return (comite[title].img ? (
+        <img src={require(`../assets/comite/${comite.year}/photos/${title}.png`)}/>
+    ) : (
+        <img src={require(`../assets/comite/empty.png`)}/>))
+  };
+
+  const getCercle = (comite, title) => {
+    return (comite[title].cercle ? (
+        <a href={`cercle/#${comite[title]?.cercle}`}><img src={require(`../assets/cercles/logos/${comite[title].cercle}.png`)}/></a>
+    ) : (
+        <img src={require(`../assets/comite/unknow.png`)}/>))
+  };
+
   const handleYearChange = (year) => {
     setSelectedYear(year);
   };
@@ -71,7 +85,7 @@ export default () => {
                 <div className="wrapper card-item">
                 <div className="card">
                     <div className="poster">
-                        <img src={require(`../assets/comite/${comite.year}/photos/${title}.png`)}/>
+                        {getPicture(comite, title)}
                     </div>
                     <div className="details">
                         <h1>{comite[title].nom}</h1>
@@ -81,7 +95,7 @@ export default () => {
                         </p>
                         <div className="cast">
                             <ul>
-                                <li><a href={`cercle/#${comite[title]?.cercle}`}><img src={require(`../assets/cercles/logos/${comite[title].cercle}.png`)}/></a></li>
+                                <li>{getCercle(comite, title)}</li>
                             </ul>
                         </div>
                     </div>

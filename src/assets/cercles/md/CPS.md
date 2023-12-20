@@ -1,6 +1,6 @@
 ---
 acronyme: CPS
-cercle: Cercle de Philosophie et Sociales
+cercle: Cercle de Philosophie et Sciences Sociales
 website: https://cps.ulb.be
 facebook: https://facebook.com/CPSULB/
 instagram: https://instagram.com/insta_cps/

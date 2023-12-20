@@ -182,7 +182,7 @@ export default () => {
                     Depuis 2023, les guildes sont à présents fédérées par la FUG (Fédération Unie des Guildes), qui organise des Assemblées Générales avec les Senior•a et fait le relais avec le•la délégué•e Cantus de l'ACE, auprès de l'ULB et des cercles.
                     </p>
                     <p>
-                    La FUG compte 20 guildes membres, reprises ci-dessous :
+                    La FUG compte 19 guildes membres, reprises ci-dessous :
                     </p>
                 </Text>
             </Center>
