@@ -7,5 +7,4 @@ export { default as AdminView } from "./AdminView";
 export { default as ContentBar } from "./ContentBar";
 export { default as Navbar } from "./Navbar";
 export { default as Comite } from "./Comite";
-export { default as Pdf } from "./Pdf";
 export { default as Timeline } from "./Timeline";

@@ -47,7 +47,7 @@ export default () => {
                 .map(x => ({ ...x, ...{ date: moment(x.date) } }))
                 .map(x => (
                   <li>
-                    <a href={require("../assets/" + x.url)}>
+                    <a href={require("../assets/" + x.url)} target="_blank">
                       {x.date.format("dddd, DD/MM/YYYY")}
                     </a>
                   </li>

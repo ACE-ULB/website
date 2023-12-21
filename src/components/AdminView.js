@@ -1,8 +1,17 @@
 import React from "react";
-import { Card, CardTitle, CardText, CardLink } from "reactstrap";
+import { Card, CardTitle, CardText, CardLink, Button } from "reactstrap";
 import { H2, Text } from "./Titles.js";
+import { Link } from "react-router-dom";
 
 export default ({ title, brief, href }) => {
+  const handleClick = (props) => {
+    {props === 'pv' ? (
+      window.location.href = '/cercle/pv'
+    ) : (
+      window.open(require(`../assets/admin/${props}.pdf`), '_blank')
+    )}
+  };
+
   return (
     <Card body className="grid-item">
       <CardTitle className="text-center">
@@ -12,7 +21,9 @@ export default ({ title, brief, href }) => {
         <Text>{brief}</Text>
       </CardText>
       <CardLink>
-        {href}
+          <Button block onClick={() => handleClick(href)}>
+            Parcourir le contenu
+          </Button>
       </CardLink>
     </Card>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import '../assets/css/display.scss';
-import { Separator, LogoView, AdminView, Banner, ContentBar, Navbar, Comite, Pdf } from "../components";
+import { Separator, LogoView, AdminView, Banner, ContentBar, Navbar, Comite } from "../components";
 import { H3, Text, Center, H1 } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row, Button } from "reactstrap";
@@ -24,7 +24,6 @@ const contentArrays = [
 
 export default () => {
     const cercles = filterCards(CERCLES_SUMMARY_JSON, 'src/assets/cercles');
-    const handleClickPv = () => {window.location.href = '/cercle/pv';}
 
     return (
         <span>
@@ -39,29 +38,19 @@ export default () => {
           <AdminView 
             title="R.O.I"
             brief="Réglement d'Ordre Intérieur de l'ACE et ses Cercles membres"
-            href={React.createElement(Pdf, {
-              title:"Consulter le document",
-              file:(require('../assets/admin/roi.pdf'))
-            })}
+            href='roi'
             className="grid-item"
           />
           <AdminView 
             title="Status"
             brief="Status officiel de l'ACE et ses Cercles membres"
-            href={React.createElement(Pdf, {
-              title:"Consulter le document",
-              file:(require('../assets/admin/status.pdf'))
-            })}
+            href='status'
             className="grid-item"
           />
           <AdminView 
             title="PV"
             brief="Procès Verbaux des Réunions et AG ACE + Réunions CA"
-            href={React.createElement(Button, {
-              children:"Parcourir les PVs",
-              block:true,
-              onClick: (handleClickPv)
-            })}
+            href='pv'
             className="grid-item"
           />
         </div>

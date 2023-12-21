@@ -5,12 +5,6 @@ import { H3, Text, Center } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
-import { filterCards } from "../utils/content";
-try {
-  var GUILDES_SUMMARY_JSON = require("../assets/guildes/summary.json");
-} catch (e) {
-  var GUILDES_SUMMARY_JSON = { fileMap: [] };
-}
 
 const contentArrays = [
     {svg: "Donate", id: "actions/#fsab", title: "FSAB", width: "100pt", height: "100pt"},
@@ -26,7 +20,6 @@ const contentArrays = [
 ]
 
 export default () => {
-    const guildes = filterCards(GUILDES_SUMMARY_JSON, 'src/assets/guildes');
 
     return (
         <span>
@@ -123,7 +116,7 @@ export default () => {
         <section className="section section-lg section-shaped pg-250">
         <div className="h-100" id="cantus">
         <Row className="align-items-center m-0">
-            <Col lg="6" className="p-0">
+            <Col lg="6" className="p-0" style={{marginBottom:"-7px"}}>
                 <Overlay>
                 <Slider
                 infinite={true}
@@ -167,33 +160,6 @@ export default () => {
                 </Center>
             </Col>
           </Row>
-        <Row className="align-items-center m-0">
-            <p style={{marginTop: "20px"}}></p>
-            <Center>
-                <H3>Guildes Membres</H3>
-                <Text>
-                    <p>
-                    Les guildes sont des organisations folkloriques composées de plusieurs membres, se partageant entre elles·eux des postes bien définis. En général, une guilde a à sa tête un·e Senior·a, qui préside les cantus. La·le Senior·a est généralement accompagné·e d’un bureau. Les postes principaux qu’on retrouve dans une guilde sont variables, mais comprennent généralement un·e Cantor qui propose des chants, un·e Censor qui fait respecter le calme, un·e Quaestor qui est responsable des finances, un·e Scriba qui est responsable du secrétariat et un·e Fuchs Mayor qui gère les fûts et la distribution de boissons par les Fuchsen.
-                    </p>
-                    <p>
-                    Pendant quelques années, l’ACE fesait le relais entre les guildes et les autorités de l’ULB. En 2021, l’ACE a officialisé cette représentation en se dotant d’un Charte Cantus, instituant notamment la Commission Cantus.
-                    </p>
-                    <p>
-                    Depuis 2023, les guildes sont à présents fédérées par la FUG (Fédération Unie des Guildes), qui organise des Assemblées Générales avec les Senior•a et fait le relais avec le•la délégué•e Cantus de l'ACE, auprès de l'ULB et des cercles.
-                    </p>
-                    <p>
-                    La FUG compte 19 guildes membres, reprises ci-dessous :
-                    </p>
-                </Text>
-            </Center>
-        </Row>
-        <div className="grid-container" id="guildes">
-          {guildes.map((card) => (
-            <div key={card.acronyme} className="grid-item">
-              <LogoView {...card} source='guildes' />
-            </div>
-          ))}
-        </div>
         </div>
         </section>
         <Separator title={"Culture"} />
