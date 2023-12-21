@@ -15,6 +15,20 @@ import * as SVGs from "../assets/svg";
 import SETTINGS from "../settings";
 import "../assets/css/display.scss";
 
+export const NavItemSVG = ({ svg, href, tip, size }) => {
+  return (
+  <NavItem>
+    <NavLink
+    className="nav-link-icon"
+    href={`/${href}`}
+    id={href}
+    >
+    {React.createElement(SVGs[svg], {color:"#FFF", width: size, height: size})}
+    </NavLink>
+    <UncontrolledTooltip delay={0} target={href}>{tip}</UncontrolledTooltip>
+  </NavItem>
+)}
+
 export default () => {
   return (
     <Headroom>
@@ -37,57 +51,18 @@ export default () => {
         </button>
         <UncontrolledCollapse navbar toggler="#navbar_global">
           <Nav className="align-items-lg-center ml-lg-auto" navbar>
-            <NavItem>
-              <NavLink
-              className="nav-link-icon"
-              href="/cercle"
-              id="cercletooltip"
-              >
-              <SVGs.ACE color="#FFF" width="30pt" height="30pt"/>
-              </NavLink>
-              <UncontrolledTooltip delay={0} target="cercletooltip">Le Cercle</UncontrolledTooltip>
-            </NavItem>
-            <NavItem>
-              <NavLink
-              className="nav-link-icon"
-              href="/events"
-              id="eventstooltip"
-              >
-              <SVGs.Beers color="#FFF" width="30pt" height="30pt"/>
-              </NavLink>
-              <UncontrolledTooltip delay={0} target="eventstooltip"> Nos Événements</UncontrolledTooltip>
-            </NavItem>
-            <NavItem>
-              <NavLink
-              className="nav-link-icon"
-              href="/actions"
-              id="actionstooltip"
-              >
-              <SVGs.Solidarity color="#FFF" width="30pt" height="30pt"/>
-              </NavLink>
-              <UncontrolledTooltip delay={0} target="actionstooltip">Actions & Projets</UncontrolledTooltip>
-            </NavItem>
-            <NavItem>
-              <NavLink
-              className="nav-link-icon"
-              href="/folklore"
-              id="folkloretooltip"
-              >
-              <SVGs.Penne color="#FFF" width="30pt" height="30pt"/>
-              </NavLink>
-              <UncontrolledTooltip delay={0} target="folkloretooltip">Folklore ULbiste</UncontrolledTooltip>
-            </NavItem>
-            <NavItem>
-              <NavLink
-              className="nav-link-icon"
-              href="/members"
-              id="memberstooltip"
-              >
-              <SVGs.ULB color="#FFF" width="22pt" height="22pt"/>
-              </NavLink>
-              <UncontrolledTooltip delay={0} target="memberstooltip">Espace Membre</UncontrolledTooltip>
-            </NavItem>
-            <NavSocial color="white" />
+            <NavItemSVG svg="ACE" href="cercle" tip="Le Cercle" size="30pt"/>
+            <NavItemSVG svg="Beers" href="events" tip="Nos Événements" size="30pt"/>
+            <NavItemSVG svg="Solidarity" href="actions" tip="Actions & Projets" size="30pt"/>
+            <NavItemSVG svg="Penne" href="folklore" tip="Folklore ULbiste" size="30pt"/>
+            <NavItemSVG svg="ULB" href="members" tip="Espace Membre" size="22pt"/>
+            <NavSocial
+                color = "white"
+                facebook={{url: SETTINGS.contact.facebook, tip:"Suivez nous sur Facebook", id:"navbar"}}
+                instagram={{url: SETTINGS.contact.instagram, tip:"Suivez nous sur Instagram", id:"navbar"}}
+                discord={{url: SETTINGS.contact.discord, tip:"Rejoignez-nous sur Discord", id:"navbar"}}
+                email={{url: SETTINGS.contact.email, tip:"Envoyez nous un email", id:"navbar"}}
+              />
           </Nav>
         </UncontrolledCollapse>
       </Navbar>

@@ -6,5 +6,6 @@ export { default as LogoView } from "./LogoView";
 export { default as AdminView } from "./AdminView";
 export { default as ContentBar } from "./ContentBar";
 export { default as Navbar } from "./Navbar";
+export { default as NavSocial } from "./NavSocial"; 
 export { default as Comite } from "./Comite";
 export { default as Timeline } from "./Timeline";

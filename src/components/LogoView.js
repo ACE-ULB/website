@@ -1,9 +1,9 @@
 import React from "react";
-import { Button, Row, Col, Card, CardTitle, CardText, CardLink, CardBody } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Row, Col, Card, CardTitle, CardText, CardLink, CardBody, Nav } from "reactstrap";
 import { H3, Text } from "./Titles.js";
 import { NavHashLink } from "react-router-hash-link";
 import * as SVGs from "../assets/svg";
+import NavSocial from "./NavSocial.js";
 
 const NavLinkS = ({ to, children }) => (
   <NavHashLink className="font-white nav-link" to={to}>
@@ -35,35 +35,16 @@ export default props => {
       <CardText className="text-center">
         <Text>{props.brief}</Text>
       </CardText>
-      <CardLink
-      style={{
-        display: 'flex', 
-        alignItems: 'center', 
-        justifyContent: 'center'
-      }}>
-        <Row className="m-0">
-        {props.website ? (
-          <Col lg="4">
-            <NavLinkS to={props.href} target="_blank">
-              <SVGs.Website color="#000" size="40" />
-            </NavLinkS>
-          </Col>
-        ) : null}
-        {props.facebook ? (
-          <Col lg="4">
-            <NavLinkS to={props.fb} target="_blank">
-              <SVGs.Facebook color="#1877F2" size="40" />
-            </NavLinkS>
-          </Col>
-        ) : null}
-        {props.instagram ? (
-          <Col lg="4">
-            <NavLinkS to={props.ig} target="_blank">
-              <SVGs.Instagram color="#833AB4" size="40" />
-            </NavLinkS>
-          </Col>
-        ) : null}
-        </Row>
+      <CardLink>
+        <Nav className="justify-content-center">
+          <NavSocial
+            color = {props.color}
+            size = "2x"
+            website={{url: props.href, tip:`Consultez le site du ${props.acronyme}`, id:`${props.acronyme}`}}
+            facebook={{url: props.fb, tip:`Consultez le Facebook du ${props.acronyme}`, id:`${props.acronyme}`}}
+            instagram={{url: props.ig, tip:`Consultez l'Instagram du ${props.acronyme}`, id:`${props.acronyme}`}}
+          />
+        </Nav>
       </CardLink>
     </CardBody>
     </Card>

@@ -6,4 +6,5 @@ facebook: https://facebook.com/CECSULB/
 instagram: https://instagram.com/cecs_ulb/
 brief: Cercle Régionale des Étudiant•e•s originaire du Centre (Hainaut)
 baptismal: False
+color: '#9ACAF0'
 ---

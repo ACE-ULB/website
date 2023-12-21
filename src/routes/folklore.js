@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import { Separator, Banner, ContentBar, LogoView, Navbar } from "../components";
+import { Separator, Banner, ContentBar, LogoView, Navbar, NavSocial } from "../components";
 import { H3, Text, Center } from "../components/Titles";
 import { Overlay } from "../components/Images";
-import { Col, Row } from "reactstrap";
+import { Col, Nav, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
 import { NavHashLink } from "react-router-hash-link";
 import * as SVGs from "../assets/svg";
@@ -75,26 +75,19 @@ export default () => {
                   Reliés au BEA, on trouve les différents bureaux étudiants facultaires. N’hésite pas à te rendre sur le site de ta faculté si tu veux avoir plus d’info !
                   </p>
                   <p>
-                  Une question ? Consulte le site du BEA ou contacte-les à l’adresse <a href="mailto:bea@ulb.be">bea@ulb.be</a> !
+                  Une question ? Envie d'en savoir plus ? Suivez et contactez le BEA via leurs réseaux !
                   </p>
                 </Text>
-                <Row className="m-0">
-                <Col lg="4">
-                    <NavLinkS to="https://bea.ulb.ac.be/" target="_blank">
-                    <SVGs.Website color="#000" size="40" />
-                    </NavLinkS>
-                </Col>
-                <Col lg="4">
-                    <NavLinkS to="https://www.facebook.com/BEAULB/" target="_blank">
-                    <SVGs.Facebook color="#1877F2" size="40" />
-                    </NavLinkS>
-                </Col>
-                <Col lg="4">
-                    <NavLinkS to="https://www.instagram.com/bea.ulb/" target="_blank">
-                    <SVGs.Instagram color="#833AB4" size="40" />
-                    </NavLinkS>
-                </Col>
-                </Row>
+                <Nav className="justify-content-center">
+                  <NavSocial
+                    color = "black"
+                    size = "2x"
+                    website={{url: "https://bea.ulb.ac.be/", tip:`Consultez le site du BEA`, id:`BEA`}}
+                    facebook={{url: "https://www.facebook.com/BEAULB/", tip:`Consultez le Facebook du BEA`, id:`BEA`}}
+                    instagram={{url: "https://www.instagram.com/bea.ulb/", tip:`Consultez l'Instagram du BEA`, id:`BEA`}}
+                    email={{url: "bea@ulb.be", tip:`Contactez le BEA par email`, id:`BEA`}}
+                  />
+                </Nav>
               </Center>
             </Col>
             <Col lg="6" className="p-0">
@@ -105,26 +98,19 @@ export default () => {
                   L’Association Inter-Cercles a le même type de rôle que l’ACE, mais pour les cercles socio-culturels et politiques. Fondée en 2015, l’AIC est une association représentative et participative des cercles actifs sur les questions sociales, culturelles et/ou politiques, par et pour les cercles et à l’initiative des étudiant·es.
                   </p>
                   <p>
-                  Une question ? Consulte le site de l’AIC ou contacte-les à l’adresse <a href="mailto:aic@ulb.be">aic@ulb.be</a> !
+                  Une question ? Envie d'en savoir plus ? Suivez et contactez le l'AIC via leurs réseaux !
                   </p>
                 </Text>
-                <Row className="m-0">
-                <Col lg="4">
-                    <NavLinkS to="https://aic.ulb.be/" target="_blank">
-                    <SVGs.Website color="#000" size="40" />
-                    </NavLinkS>
-                </Col>
-                <Col lg="4">
-                    <NavLinkS to="https://www.facebook.com/AssociationInterCercles" target="_blank">
-                    <SVGs.Facebook color="#1877F2" size="40" />
-                    </NavLinkS>
-                </Col>
-                <Col lg="4">
-                    <NavLinkS to="https://www.instagram.com/aic_ulb/" target="_blank">
-                    <SVGs.Instagram color="#833AB4" size="40" />
-                    </NavLinkS>
-                </Col>
-                </Row>
+                <Nav className="justify-content-center">
+                  <NavSocial
+                    color = "black"
+                    size = "2x"
+                    website={{url: "https://aic.ulb.be/", tip:`Consultez le site de l'AIC`, id:`AIC`}}
+                    facebook={{url: "https://www.facebook.com/AssociationInterCercles", tip:`Consultez le Facebook de l'AIC`, id:`AIC`}}
+                    instagram={{url: "https://www.instagram.com/aic_ulb/", tip:`Consultez l'Instagram de l'AIC`, id:`AIC`}}
+                    email={{url: "aic@ulb.be", tip:`Contactez l'AIC par email`, id:`AIC`}}
+                  />
+                </Nav>
               </Center>
             </Col>
             <Col lg="6" className="p-0">

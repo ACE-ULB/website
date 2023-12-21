@@ -6,4 +6,5 @@ facebook: https://facebook.com/profile.php?id=100053635065871
 instagram: https://instagram.com/cko_ulb/
 brief: Cercle des Étudiant•e•s de la Faculté des Sciences de la Motricité
 baptismal: True
+color: '#A50000'
 ---

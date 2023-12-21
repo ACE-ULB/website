@@ -5,10 +5,8 @@ import {
   Nav,
   Container,
   Row,
-  Col,
-  UncontrolledTooltip
+  Col
 } from "reactstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NavSocial from './NavSocial';
 import SETTINGS from '../settings';
 
@@ -30,21 +28,13 @@ export default () => {
                   MIT License
                 </NavLink>
               </NavItem>
-              <NavSocial/>
-                <NavItem>
-                  <NavLink
-                    className="nav-link-icon"
-                    href={SETTINGS.contact.github}
-                    id="githubtooltip"
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon icon={["fab", "github"]} />
-                    <span className="nav-link-inner--text d-lg-none ml-2">Github</span>
-                  </NavLink>
-                  <UncontrolledTooltip delay={0} target="githubtooltip">
-                    Notre code sur Github
-                  </UncontrolledTooltip>
-                </NavItem>
+              <NavSocial
+                facebook={{url: SETTINGS.contact.facebook, tip:"Suivez nous sur Facebook", id:"footer"}}
+                instagram={{url: SETTINGS.contact.instagram, tip:"Suivez nous sur Instagram", id:"footer"}}
+                discord={{url: SETTINGS.contact.discord, tip:"Rejoignez-nous sur Discord", id:"footer"}}
+                email={{url: SETTINGS.contact.email, tip:"Envoyez nous un email", id:"footer"}}
+                github={{url: SETTINGS.contact.github, tip:"Notre code sur Github", id:"footer"}}
+              />
             </Nav>
           </Col>
         </Row>
