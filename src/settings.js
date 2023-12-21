@@ -32,7 +32,8 @@ export default {
       facebook: "https://www.facebook.com/AssociationDesCerclesEtudiants",
       instagram: "https://www.instagram.com/ace-ulb/",
       discord: "https://discord.gg/",
-      email: "bureau@ace-ulb.be"
+      email: "bureau@ace-ulb.be",
+      github: "https://github.com/ACE-ULB/"
     }
   };
   

@@ -1,7 +1,7 @@
 import React from "react";
-import { Separator } from "../components/";
+import { Navbar, Separator } from "../components/";
 import { H1 } from "../components/Titles";
-import { Overlay, Skew } from "../components/Images";
+import { Skew } from "../components/Images";
 import { Col, Row } from "reactstrap";
 import moment from "moment";
 import PV from "../assets/pv/pv.json";
@@ -13,17 +13,17 @@ export default () => {
       <Helmet>
         <title>Procès Verbaux</title>
       </Helmet>
-      <section className="section section-lg section-shaped pg-250 color-main">
-        <Row className="align-items-center h-100 color-main">
+      <Navbar/>
+      <section className="section section-lg section-shaped pg-250">
+        <Row className="align-items-center h-100 color-secondary-dark">
           <Col lg="6">
-            <H1 className="font-white">Procès Verbaux - Réunions/AG ACE & CA </H1>
+            <H1 className="font-white">Procès Verbaux - Réunions/AG ACE & OA </H1>
           </Col>
-          <Col lg="6" className="w-100 text-center">
-            <Overlay src={require("../assets/img/pv.png")} />
+          <Col lg="6" className="text-center">
+            <Skew src={require("../assets/img/pv.png")} />
           </Col>
         </Row>
       </section>
-      <Separator title={"Procès Verbaux"} />
       {PV.sort((a, b) => {
         if (a.year > b.year) return -1;
         if (a.year < b.year) return 1;
@@ -45,13 +45,20 @@ export default () => {
                   return 0;
                 })
                 .map(x => ({ ...x, ...{ date: moment(x.date) } }))
-                .map(x => (
+                .map(x => {
+                  let prefix = '';
+
+                  if (x.ag) prefix='Assemblée Générale - ';
+                  else if (x.ace) prefix='Réunion ACE - ';
+                  else if (x.oa) prefix="Réunion Comité - ";
+                  return (
                   <li>
                     <a href={require("../assets/" + x.url)} target="_blank">
-                      {x.date.format("dddd, DD/MM/YYYY")}
+                      {prefix + x.date.format("dddd, DD/MM/YYYY")}
                     </a>
                   </li>
-                ))}
+                  );
+                })}
             </ul>
           </section>
         </>

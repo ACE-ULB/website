@@ -50,13 +50,13 @@ export default () => {
         <title>Historique</title>
       </Helmet>
       <Navbar/>
-      <section className="section section-lg section-shaped pg-250 color-main">
-        <Row className="align-items-center h-100 color-main">
+      <section className="section section-lg section-shaped pg-250">
+        <Row className="align-items-center h-100 color-secondary-dark">
           <Col lg="6">
             <H1 className="font-white">L'ACE au fil du temps</H1>
           </Col>
-          <Col lg="6" className="w-100 text-center">
-            {/*<Skew src={require("../assets/img/history.jpg")} />*/}
+          <Col lg="6" className="text-center">
+            <Skew src={require("../assets/img/history.png")} />
           </Col>
         </Row>
       </section>
