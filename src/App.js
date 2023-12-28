@@ -28,7 +28,7 @@ library.add(fas);
 // eslint-disable-next-line
 export default () => {
   return (
-    <Router basename="/">
+    <Router>
         <Helmet></Helmet>
 
         <Routes>

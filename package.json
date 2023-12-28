@@ -2,7 +2,7 @@
   "name": "ace",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ace-ulb.github.io",
+  "homepage": "",
   "license": "mit",
   "babel": {
     "plugins": [
