@@ -26,7 +26,7 @@ export default () => {
         <section className="section section-lg section-shaped pg-250">
         <div className="h-100" id="caroussel">
           <Row className="align-items-center m-0">
-            <Col lg="6" className="p-0" style={{marginBottom:"0px", backgroundColor:"red"}}>
+            <Col lg="6" className="p-0" style={{display:"flex"}}>
             <Overlay>
               <Slider
                 infinite={true}
@@ -38,24 +38,24 @@ export default () => {
                 autoplay={true}
                 arrows={false}
               >
-              <img src={require("../assets/img/home/1.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/2.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/3.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/4.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/5.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/6.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/7.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/8.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/9.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/10.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/11.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/12.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/13.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/14.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/15.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/16.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/17.JPG")} alt="" className="slider"/>
-              <img src={require("../assets/img/home/18.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/1.JPG")} alt=""/>
+              <img src={require("../assets/img/home/2.JPG")} alt=""/>
+              <img src={require("../assets/img/home/3.JPG")} alt=""/>
+              <img src={require("../assets/img/home/4.JPG")} alt=""/>
+              <img src={require("../assets/img/home/5.JPG")} alt=""/>
+              <img src={require("../assets/img/home/6.JPG")} alt=""/>
+              <img src={require("../assets/img/home/7.JPG")} alt=""/>
+              <img src={require("../assets/img/home/8.JPG")} alt=""/>
+              <img src={require("../assets/img/home/9.JPG")} alt=""/>
+              <img src={require("../assets/img/home/10.JPG")} alt=""/>
+              <img src={require("../assets/img/home/11.JPG")} alt=""/>
+              <img src={require("../assets/img/home/12.JPG")} alt=""/>
+              <img src={require("../assets/img/home/13.JPG")} alt=""/>
+              <img src={require("../assets/img/home/14.JPG")} alt=""/>
+              <img src={require("../assets/img/home/15.JPG")} alt=""/>
+              <img src={require("../assets/img/home/16.JPG")} alt=""/>
+              <img src={require("../assets/img/home/17.JPG")} alt=""/>
+              <img src={require("../assets/img/home/18.JPG")} alt=""/>
               </Slider>
             </Overlay>
             </Col>

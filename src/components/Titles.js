@@ -47,7 +47,7 @@ export const H3 = styled.h3`
 `;
 
 export const Center = styled.div`
-  padding: 0px 0px;
+  padding: 50px 0px;
   margin: auto;
 
   @media (max-width: 1280px) {

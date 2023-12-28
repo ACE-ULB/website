@@ -66,10 +66,6 @@ export const Overlay = styled.span`
   position: relative;
   display: inline-block;
   width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
 
   &:after {
     content: "";
