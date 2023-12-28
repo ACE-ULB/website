@@ -2,7 +2,7 @@
   "name": "ace",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ace-ulb.github.io/website",
+  "homepage": "https://ace-ulb.github.io",
   "license": "mit",
   "babel": {
     "plugins": [
@@ -60,7 +60,7 @@
     "build:poste": "processmd src/assets/comite/postes.md --outputDir src/assets/comite --preview 110",
     "build:pv": "node utils/listpdf.mjs src/assets/pv/ > ./src/assets/pv/pv.json",
     "compile": "npm run build:pv && npm run build:cercles && npm run build:guildes && npm run build:comite && npm run build:poste",
-    "predeploy": "compile && npm run build",
+    "predeploy": "npm run compile && npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"

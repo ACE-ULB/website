@@ -1,6 +1,7 @@
 /**
  * contain some general infos that can be used in other files
  */
+// eslint-disable-next-line
 export default {
     title: process.env.REACT_APP_WEBSITE_TITLE,
     short_title: process.env.REACT_APP_WEBSITE_SHORT_TITLE,
