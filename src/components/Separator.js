@@ -15,7 +15,7 @@ export const Sep = styled.div`
     padding: 80px 15px;
   }
 `;
-
+// eslint-disable-next-line
 export default ({ title, Object }) => {
   return (
     <section className="section section-lg section-shaped pg-250 color-secondary font-white">

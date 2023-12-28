@@ -9,7 +9,7 @@ import {
 } from "reactstrap";
 import NavSocial from './NavSocial';
 import SETTINGS from '../settings';
-
+// eslint-disable-next-line
 export default () => {
   return (
     <footer className="footer">

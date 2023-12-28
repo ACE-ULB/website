@@ -1,17 +1,17 @@
 import React from "react";
 import { Card, CardTitle, CardText, CardLink, Button } from "reactstrap";
 import { H2, Text } from "./Titles.js";
-import { Link } from "react-router-dom";
 
+const handleClick = (props) => {
+  props === 'pv' ? (
+    window.location.href = '/cercle/pv'
+  ) : (
+    window.open(require(`../assets/admin/${props}.pdf`), '_blank')
+  )
+};
+
+// eslint-disable-next-line
 export default ({ title, brief, href }) => {
-  const handleClick = (props) => {
-    {props === 'pv' ? (
-      window.location.href = '/cercle/pv'
-    ) : (
-      window.open(require(`../assets/admin/${props}.pdf`), '_blank')
-    )}
-  };
-
   return (
     <Card body className="grid-item">
       <CardTitle className="text-center">

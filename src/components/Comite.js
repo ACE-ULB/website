@@ -8,6 +8,7 @@ import { H1 } from './Titles';
 try {
     var COMITE_SUMMARY_JSON = require("../assets/comite/summary.json");
 } catch (e) {
+    // eslint-disable-next-line
     var COMITE_SUMMARY_JSON = { fileMap: [] };
 }
 
@@ -39,7 +40,7 @@ const YearSelector = ({ years, onSelect, current }) => {
     </span>
   );
 };
-
+// eslint-disable-next-line
 export default () => {
   const yearsDirectory = filterYears(COMITE_SUMMARY_JSON, 'src/assets/comite');
   const [selectedYear, setSelectedYear] = useState(yearsDirectory[0]?.year.toString());
@@ -51,16 +52,16 @@ export default () => {
 
   const getPicture = (comite, title) => {
     return (comite[title].img ? (
-        <img src={require(`../assets/comite/${comite.year}/photos/${title}.png`)}/>
+        <img src={require(`../assets/comite/${comite.year}/photos/${title}.png`)} alt={title}/>
     ) : (
-        <img src={require(`../assets/comite/empty.png`)}/>))
+        <img src={require(`../assets/comite/empty.png`)} alt={title}/>))
   };
 
   const getCercle = (comite, title) => {
     return (comite[title].cercle ? (
-        <a href={`cercle/#${comite[title]?.cercle}`}><img src={require(`../assets/cercles/logos/${comite[title].cercle}.png`)}/></a>
+        <a href={`cercle/#${comite[title]?.cercle}`}><img src={require(`../assets/cercles/logos/${comite[title].cercle}.png`)} alt=""/></a>
     ) : (
-        <img src={require(`../assets/comite/unknow.png`)}/>))
+        <img src={require(`../assets/comite/unknow.png`)} alt=""/>))
   };
 
   const handleYearChange = (year) => {

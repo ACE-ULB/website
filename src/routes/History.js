@@ -1,9 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { Separator, Timeline, Navbar } from "../components/";
-import { H1 } from "../components/Titles";
+import { Center, H1, H3, Text } from "../components/Titles";
 import { Skew } from "../components/Images";
-import { Row, Col } from "reactstrap";
+import { Row, Col, Alert } from "reactstrap";
 import { Helmet } from "react-helmet";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+export const Popup = () => {
+  const [visible, setVisible] = useState(true);
+  const onDismiss = () => setVisible(false);
+
+  return (
+    <Center>
+    <Alert color="warning" isOpen={visible} toggle={onDismiss}>
+        <H3>
+          <FontAwesomeIcon icon="fa-solid fa-triangle-exclamation" /> Sujet à modification
+        </H3>
+        <Text>
+          Nous vous présentons toutes nos plus sincères excuses, cette page n'est absolument pas complète.
+          Nous avons bien l'intention de faire prochainement un gros travail d'archive, afin d'étaler avec fierté sur cette page,
+          la tumulteuse et passionnante histoire de l'ACE et ses origines.
+        </Text>
+        <hr/>
+        <Text>
+          <FontAwesomeIcon icon="fa-solid fa-envelope" /> Nous sommes très demandeur de toutes informations, documents et photos pouvant enrichir cette ligne du temps.
+          Veuillez les envoyer à l'email : <a href="mailto:web@ace-ulb.be">web@ace-ulb.be</a>. Merci !
+        </Text>
+    </Alert>
+    </Center>
+)}
 
 const history = [
   {
@@ -61,6 +86,7 @@ export default () => {
         </Row>
       </section>
       <Separator title={"Historique de l'Association des Cercles Étudiants"} />
+      <Popup/>
       <section className="section section-lg section-shaped pg-250">
         <div style={{ padding: "50px 50px" }}>
           <Timeline timeline={history} />

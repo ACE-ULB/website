@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Center, H3, Text } from './Titles.js';
 import {
   Card,
@@ -29,7 +29,7 @@ const MarkerIcon =L.icon({
     shadowSize: null,
     shadowAnchor: null
 });
-
+// eslint-disable-next-line
 export default () => {
   return (
     <section className="section section-lg section-shaped pg-250" id="#map">

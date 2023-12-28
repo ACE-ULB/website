@@ -20,10 +20,10 @@ const Enhance = ({ src }) => {
 
   return (
     <div>
-      <img className="w-100" onClick={toggle} src={src} />
+      <img className="w-100" onClick={toggle} src={src} alt=""/>
       <Modal isOpen={modal} toggle={toggle}>
         <ModalBody>
-          <img className="w-100" onClick={toggle} src={src} />
+          <img className="w-100" onClick={toggle} src={src} alt=""/>
         </ModalBody>
         <ModalFooter>
           <Button onClick={toggle}>Fermer</Button>
@@ -32,7 +32,7 @@ const Enhance = ({ src }) => {
     </div>
   );
 };
-
+// eslint-disable-next-line
 export default ({ timeline }) => {
   return (
     <ul className="timeline">
@@ -70,7 +70,7 @@ export default ({ timeline }) => {
                             speed={1000}
                           >
                             {e.image.map((x) => (
-                              <img className="w-100" src={x} />
+                              <img className="w-100" src={x} alt=""/>
                             ))}
                           </Slider>
                         ) : (

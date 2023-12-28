@@ -1,7 +1,7 @@
 import React from "react";
 import { NavItem, NavLink, UncontrolledTooltip } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+// eslint-disable-next-line
 export default ({
    color,
    size,

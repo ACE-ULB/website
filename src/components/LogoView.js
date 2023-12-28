@@ -1,16 +1,8 @@
 import React from "react";
-import { Row, Col, Card, CardTitle, CardText, CardLink, CardBody, Nav } from "reactstrap";
+import { Card, CardTitle, CardText, CardLink, CardBody, Nav } from "reactstrap";
 import { H3, Text } from "./Titles.js";
-import { NavHashLink } from "react-router-hash-link";
-import * as SVGs from "../assets/svg";
 import NavSocial from "./NavSocial.js";
-
-const NavLinkS = ({ to, children }) => (
-  <NavHashLink className="font-white nav-link" to={to}>
-    {children}
-  </NavHashLink>
-);
-
+// eslint-disable-next-line
 export default props => {
   const source = props.source;
   return (
