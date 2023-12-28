@@ -24,9 +24,9 @@ export default props => {
         style={{ 
           width: '200px',
           position: "relative",
-          left: "32%",
           marginTop: "5px"
         }}
+        className="container-fluid justify-content-center"
       />
     <CardBody>
       <CardTitle className="text-center">

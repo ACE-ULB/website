@@ -61,7 +61,8 @@ export default () => {
           <Row className="align-items-center m-0">
             <Col lg="6" className="p-0">
             <Overlay>
-              <img src={require("../assets/img/cercle_objectif.png")} alt=""/>
+              <img src={require("../assets/img/cercle_objectif.png")} alt=""
+              style={{width:"100%"}}/>
             </Overlay>
             </Col>
             <Col lg="6" className="p-0">
