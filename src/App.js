@@ -5,7 +5,6 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Helmet from "react-helmet";
-import { ThemeProvider } from "styled-components";
 import {
   Home,
   Cercle,
@@ -26,8 +25,7 @@ import "slick-carousel/slick/slick-theme.css";
 library.add(fab);
 library.add(fas);
 
-//eslint-disable-next-line
-
+// eslint-disable-next-line
 export default () => {
   return (
     <Router basename="/">

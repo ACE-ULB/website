@@ -13,7 +13,7 @@ const contentArrays = [
   {svg: "Penne", id: "folklore", title: "Folklore", width: "160pt", height: "120pt"},
   {svg: "ULB", id: "members", title: "Espace Membres", width: "120pt", height: "120pt"},
 ]
-
+// eslint-disable-next-line
 export default () => {
 
   return (
@@ -26,7 +26,7 @@ export default () => {
         <section className="section section-lg section-shaped pg-250">
         <div className="h-100" id="caroussel">
           <Row className="align-items-center m-0">
-            <Col lg="6" className="p-0" style={{marginBottom:"-7px"}}>
+            <Col lg="6" className="p-0" style={{marginBottom:"0px", backgroundColor:"red"}}>
             <Overlay>
               <Slider
                 infinite={true}
@@ -38,24 +38,24 @@ export default () => {
                 autoplay={true}
                 arrows={false}
               >
-              <img src={require("../assets/img/home/1.JPG")}/>
-              <img src={require("../assets/img/home/2.JPG")}/>
-              <img src={require("../assets/img/home/3.JPG")}/>
-              <img src={require("../assets/img/home/4.JPG")}/>
-              <img src={require("../assets/img/home/5.JPG")}/>
-              <img src={require("../assets/img/home/6.JPG")}/>
-              <img src={require("../assets/img/home/7.JPG")}/>
-              <img src={require("../assets/img/home/8.JPG")}/>
-              <img src={require("../assets/img/home/9.JPG")}/>
-              <img src={require("../assets/img/home/10.JPG")}/>
-              <img src={require("../assets/img/home/11.JPG")}/>
-              <img src={require("../assets/img/home/12.JPG")}/>
-              <img src={require("../assets/img/home/13.JPG")}/>
-              <img src={require("../assets/img/home/14.JPG")}/>
-              <img src={require("../assets/img/home/15.JPG")}/>
-              <img src={require("../assets/img/home/16.JPG")}/>
-              <img src={require("../assets/img/home/17.JPG")}/>
-              <img src={require("../assets/img/home/18.JPG")}/>
+              <img src={require("../assets/img/home/1.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/2.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/3.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/4.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/5.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/6.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/7.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/8.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/9.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/10.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/11.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/12.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/13.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/14.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/15.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/16.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/17.JPG")} alt="" className="slider"/>
+              <img src={require("../assets/img/home/18.JPG")} alt="" className="slider"/>
               </Slider>
             </Overlay>
             </Col>
@@ -81,4 +81,4 @@ export default () => {
         <Map id="location" />
         </span>
     );
-}
+};

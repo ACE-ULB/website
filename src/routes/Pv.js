@@ -6,7 +6,7 @@ import { Col, Row } from "reactstrap";
 import moment from "moment";
 import PV from "../assets/pv/pv.json";
 import { Helmet } from "react-helmet";
-
+// eslint-disable-next-line
 export default () => {
   return (
     <>
@@ -53,7 +53,7 @@ export default () => {
                   else if (x.oa) prefix="Réunion Comité - ";
                   return (
                   <li>
-                    <a href={require("../assets/" + x.url)} target="_blank">
+                    <a href={require("../assets/" + x.url)} target="_blank" rel="noreferrer">
                       {prefix + x.date.format("dddd, DD/MM/YYYY")}
                     </a>
                   </li>

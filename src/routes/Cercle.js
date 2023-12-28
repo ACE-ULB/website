@@ -3,13 +3,14 @@ import '../assets/css/display.scss';
 import { Separator, LogoView, AdminView, Banner, ContentBar, Navbar, Comite } from "../components";
 import { H3, Text, Center, H1 } from "../components/Titles";
 import { Overlay } from "../components/Images";
-import { Col, Row, Button } from "reactstrap";
+import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
 import * as SVGs from "../assets/svg";
 import { filterCards } from "../utils/content";
 try {
   var CERCLES_SUMMARY_JSON = require("../assets/cercles/summary.json");
 } catch (e) {
+  // eslint-disable-next-line
   var CERCLES_SUMMARY_JSON = { fileMap: [] };
 }
 
@@ -21,7 +22,7 @@ const contentArrays = [
   {svg: "Medal", id: "cercle/#OdP", title: "Ordre du Prisme", width: "100pt", height: "100pt"},
   {svg: "Hands", id: "cercle/#join-us", title: "Rejoins-nous", width: "100pt", height: "100pt"},
 ]
-
+// eslint-disable-next-line
 export default () => {
     const cercles = filterCards(CERCLES_SUMMARY_JSON, 'src/assets/cercles');
 
@@ -60,7 +61,7 @@ export default () => {
           <Row className="align-items-center m-0">
             <Col lg="6" className="p-0">
             <Overlay>
-              <img src={require("../assets/img/cercle_objectif.png")}/>
+              <img src={require("../assets/img/cercle_objectif.png")} alt=""/>
             </Overlay>
             </Col>
             <Col lg="6" className="p-0">
@@ -124,6 +125,7 @@ export default () => {
             <Col lg="6" className="p-0">
               <img 
                 src={require("../assets/img/prisme.png")}
+                alt=""
                 style={{
                   width: "70%",
                   position: "relative",

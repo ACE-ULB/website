@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { Separator, Banner, ContentBar, LogoView, Navbar } from "../components";
+import { Separator, Banner, ContentBar, Navbar } from "../components";
 import { H3, Text, Center } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
@@ -18,7 +18,7 @@ const contentArrays = [
     {svg: "Health", id: "actions/#rdr", title: "RdR", width: "100pt", height: "100pt"},
     {svg: "Hands", id: "actions/#social", title: "Social", width: "100pt", height: "100pt"},
 ]
-
+// eslint-disable-next-line
 export default () => {
 
     return (
@@ -35,7 +35,7 @@ export default () => {
           <Row className="align-items-center m-0">
             <Col lg="6" className="p-0">
             <Overlay>
-              <img src={require("../assets/img/fsab.png")}
+              <img src={require("../assets/img/fsab.png")} alt=""
               style={{width:"100%"}}/>
             </Overlay>
             </Col>
@@ -76,7 +76,7 @@ export default () => {
                         Les acteurs et actrices du projet sont la·le délégué·e Réduction des Risques de l’ACE, ainsi que les délégué·es chargé·es de la réduction des risques dans les comités des cercles membres de l’ACE. Le projet est soutenu par de nombreux partenaires, comme Modus Vivendi, O’Yes et Aimer à l’ULB. Ensemble iels tiennent des stands “Ça m’saoule” aux différents événements des cercles et organisent des événements spécifiques au cours de l’année, comme par exemple le parcours “Ça m’saoule, j’ai plus de capotes”.
                         </p>
                         <p>
-                        Pour plus d’information, consulte la page facebook <a href="https://www.facebook.com/ca.msaoule/" target="_blank">“Ça m’saoule.”</a> ou la page instagram <a href="https://instagram.com/ca.msaoule" target="_blank">@ca.msaoule</a> ! 
+                        Pour plus d’information, consulte la page facebook <a href="https://www.facebook.com/ca.msaoule/" target="_blank" rel="noreferrer">“Ça m’saoule.”</a> ou la page instagram <a href="https://instagram.com/ca.msaoule" target="_blank" rel="noreferrer">@ca.msaoule</a> ! 
                         </p>
                         <p>
                         Une question ? Contacte la·le délégué·e Réduction des Risques de l’ACE à l’adresse <a href="mailto:rdr@ace-ulb.be">rdr@ace-ulb.be</a> !
@@ -96,15 +96,15 @@ export default () => {
                 autoplay={true}
                 arrows={false}
                 >
-                    <img src={require("../assets/img/camsaoul1.png")}
+                    <img src={require("../assets/img/camsaoul1.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/camsaoul2.png")}
+                    <img src={require("../assets/img/camsaoul2.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/camsaoul3.png")}
+                    <img src={require("../assets/img/camsaoul3.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/camsaoul4.png")}
+                    <img src={require("../assets/img/camsaoul4.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/camsaoul5.png")}
+                    <img src={require("../assets/img/camsaoul5.png")} alt=""
                     style={{width:"100%"}}/>
                 </Slider>
                 </Overlay>
@@ -128,11 +128,11 @@ export default () => {
                 autoplay={true}
                 arrows={false}
                 >
-                    <img src={require("../assets/img/cantus1.png")}
+                    <img src={require("../assets/img/cantus1.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/cantus2.png")}
+                    <img src={require("../assets/img/cantus2.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/cantus3.png")}
+                    <img src={require("../assets/img/cantus3.png")} alt=""
                     style={{width:"100%"}}/>
                 </Slider>
                 </Overlay>
@@ -209,13 +209,13 @@ export default () => {
                 autoplay={true}
                 arrows={false}
                 >
-                    <img src={require("../assets/img/culture1.png")}
+                    <img src={require("../assets/img/culture1.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/culture2.png")}
+                    <img src={require("../assets/img/culture2.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/culture3.png")}
+                    <img src={require("../assets/img/culture3.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/culture4.png")}
+                    <img src={require("../assets/img/culture4.png")} alt=""
                     style={{width:"100%"}}/>
                 </Slider>
                 </Overlay>
@@ -229,7 +229,7 @@ export default () => {
         <Row className="align-items-center m-0">
             <Col lg="6" className="p-0">
                 <Overlay>
-                    <img src={require("../assets/img/ecologie1.png")}
+                    <img src={require("../assets/img/ecologie1.png")} alt=""
                         style={{width:"100%"}}/>
                 </Overlay>
             </Col>
@@ -244,9 +244,9 @@ export default () => {
                         Notre délégué·e Écologie travaille donc avec nos cercles pour mettre en place des projets divers (comme par exemple le projet des gobelets réutilisables il y a quelques années) et pour sensibilisation à une transition écologique et durable même en guindaille.
                         </p>
                         <p>
-                        L’ACE participe depuis plusieurs années à certains projets de grande ampleur, comme <a href="https://laplaine.jimdofree.com/" target="_blank">Sauver la Plaine</a>.</p>
+                        L’ACE participe depuis plusieurs années à certains projets de grande ampleur, comme <a href="https://laplaine.jimdofree.com/" target="_blank" rel="noreferrer">Sauver la Plaine</a>.</p>
                         <p>
-                        Depuis la création de l’organe en 2022, l’ACE siège également au <a href="https://www.facebook.com/SITO-Students-in-Transition-Office-107593058526986/" target="_blank">Students in Transition Office</a> (SiTO), l’assemblée étudiante pour la transition socio-écologie de l’ULB.
+                        Depuis la création de l’organe en 2022, l’ACE siège également au <a href="https://www.facebook.com/SITO-Students-in-Transition-Office-107593058526986/" target="_blank" rel="noreferrer">Students in Transition Office</a> (SiTO), l’assemblée étudiante pour la transition socio-écologie de l’ULB.
                         </p>
                         <p>
                         Une question ? Contacte notre délégué·e Écologie à l’adresse <a href="mailto:ecologie@ace-ulb.be">ecologie@ace-ulb.be</a> !
@@ -292,13 +292,13 @@ export default () => {
                 autoplay={true}
                 arrows={false}
                 >
-                    <img src={require("../assets/img/e&i1.png")}
+                    <img src={require("../assets/img/e&i1.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/e&i2.png")}
+                    <img src={require("../assets/img/e&i2.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/e&i3.png")}
+                    <img src={require("../assets/img/e&i3.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/e&i4.png")}
+                    <img src={require("../assets/img/e&i4.png")} alt=""
                     style={{width:"100%"}}/>
                 </Slider>
                 </Overlay>
@@ -312,7 +312,7 @@ export default () => {
         <Row className="align-items-center m-0">
             <Col lg="6" className="p-0">
                 <Overlay>
-                    <img src={require("../assets/img/eng-librex.png")}
+                    <img src={require("../assets/img/eng-librex.png")} alt=""
                         style={{width:"100%"}}/>
                 </Overlay>
             </Col>
@@ -360,7 +360,7 @@ export default () => {
             </Col>
             <Col lg="6" className="p-0">
                 <Overlay>
-                    <img src={require("../assets/img/folklore1.png")}
+                    <img src={require("../assets/img/folklore1.png")} alt=""
                         style={{width:"100%"}}/>
                 </Overlay>
             </Col>
@@ -373,7 +373,7 @@ export default () => {
         <Row className="align-items-center m-0">
             <Col lg="6" className="p-0">
                 <Overlay>
-                    <img src={require("../assets/img/rdr.png")}
+                    <img src={require("../assets/img/rdr.png")} alt=""
                         style={{width:"100%"}}/>
                 </Overlay>
             </Col>
@@ -427,7 +427,7 @@ export default () => {
             </Col>
             <Col lg="6" className="p-0">
                 <Overlay>
-                    <img src={require("../assets/img/social.png")}
+                    <img src={require("../assets/img/social.png")} alt=""
                         style={{width:"100%"}}/>
                 </Overlay>
             </Col>

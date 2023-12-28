@@ -11,7 +11,7 @@ const contentArrays = [
     {svg: "Party", id: "events/#ntv", title: "Nuit Théodore Verhaegen", width: "100pt", height: "100pt"},
     {svg: "Candle", id: "events/#cab", title: "Cantus Auguste Baron", width: "100pt", height: "100pt"},
 ]
-
+// eslint-disable-next-line
 export default () => {
 
     return (
@@ -28,7 +28,7 @@ export default () => {
           <Row className="align-items-center m-0">
             <Col lg="6" className="p-0">
             <Overlay>
-              <img src={require("../assets/img/st-v1.png")}
+              <img src={require("../assets/img/st-v1.png")} alt=""
               style={{width:"100%"}}/>
             </Overlay>
             </Col>
@@ -63,7 +63,7 @@ export default () => {
                     </Text>
                 </Center>
             </Col>
-            <Col lg="6" className="p-0" style={{marginBottom:"-7px"}}>
+            <Col lg="6" className="p-0" style={{marginBottom:"0px"}}>
                 <Overlay>
                 <Slider
                 infinite={true}
@@ -75,9 +75,9 @@ export default () => {
                 autoplay={true}
                 arrows={false}
                 >
-                    <img src={require("../assets/img/st-v2.png")}
+                    <img src={require("../assets/img/st-v2.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/st-v3.png")}
+                    <img src={require("../assets/img/st-v3.png")} alt=""
                     style={{width:"100%"}}/>
                 </Slider>
                 </Overlay>
@@ -96,9 +96,9 @@ export default () => {
                 autoplay={true}
                 arrows={false}
                 >
-                    <img src={require("../assets/img/st-v4.png")}
+                    <img src={require("../assets/img/st-v4.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/st-v5.png")}
+                    <img src={require("../assets/img/st-v5.png")} alt=""
                     style={{width:"100%"}}/>
                 </Slider>
                 </Overlay>
@@ -145,7 +145,7 @@ export default () => {
             </Col>
             <Col lg="6" className="p-0">
                 <Overlay>
-                    <img src={require("../assets/img/st-v6.png")}
+                    <img src={require("../assets/img/st-v6.png")} alt=""
                     style={{width:"100%"}}/>
                 </Overlay>
             </Col>
@@ -168,9 +168,9 @@ export default () => {
                 autoplay={true}
                 arrows={false}
                 >
-                    <img src={require("../assets/img/ntv1.png")}
+                    <img src={require("../assets/img/ntv1.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/ntv2.png")}
+                    <img src={require("../assets/img/ntv2.png")} alt=""
                     style={{width:"100%"}}/>
                 </Slider>
                 </Overlay>
@@ -222,7 +222,7 @@ export default () => {
             </Col>
             <Col lg="6" className="p-0">
             <Overlay>
-              <img src={require("../assets/img/cab1.png")}
+              <img src={require("../assets/img/cab1.png")} alt=""
               style={{width:"100%"}}/>
             </Overlay>
             </Col>

@@ -1,8 +1,8 @@
 import React from "react";
-import { Separator, Timeline, Pdf, Navbar } from "../components/";
+import { Separator, Timeline, Navbar } from "../components/";
 import { H1 } from "../components/Titles";
 import { Skew } from "../components/Images";
-import { Button, Row, Col } from "reactstrap";
+import { Row, Col } from "reactstrap";
 import { Helmet } from "react-helmet";
 
 const history = [
@@ -15,7 +15,7 @@ const history = [
           Après plus de 2ans sans siteweb, l'ACE s'offre enfin un nouveau site web !
         </p>
         <p>
-          Elle sera codée en React App par notre cher Webmaster Julien et rempli par les textes de Sarah Rousseau réalisé 2ans auparavant mais restants en standbye.
+          Il sera codé en React App par notre cher Webmaster Julien et rempli par les textes de Sarah Rousseau.
         </p>
       </>
     ),
@@ -42,7 +42,7 @@ const history = [
     image: require("../assets/img/ACE.png"),
   },
 ];
-
+// eslint-disable-next-line
 export default () => {
   return (
     <>

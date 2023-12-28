@@ -5,21 +5,16 @@ import { H3, Text, Center } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Nav, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
-import { NavHashLink } from "react-router-hash-link";
-import * as SVGs from "../assets/svg";
 import { filterCards } from "../utils/content";
 try {
   var GUILDES_SUMMARY_JSON = require("../assets/guildes/summary.json");
   var CERCLES_SUMMARY_JSON = require("../assets/cercles/summary.json");
 } catch (e) {
+  // eslint-disable-next-line
   var GUILDES_SUMMARY_JSON = { fileMap: [] };
+  // eslint-disable-next-line
   var CERCLES_SUMMARY_JSON = { fileMap: [] };
 }
-const NavLinkS = ({ to, children }) => (
-    <NavHashLink className="font-white nav-link" to={to}>
-      {children}
-    </NavHashLink>
-);
 
 const contentArrays = [
     {svg: "ULB", id: "folklore/#asbls", title: "ASBLs", width: "100pt", height: "100pt"},
@@ -28,7 +23,7 @@ const contentArrays = [
     {svg: "Toge", id: "folklore/#bapteme", title: "Baptême", width: "100pt", height: "100pt"},
     {svg: "Candle", id: "folklore/#chantant", title: "Chantant", width: "100pt", height: "100pt"},
 ]
-
+// eslint-disable-next-line
 export default () => {
     const guildes = filterCards(GUILDES_SUMMARY_JSON, 'src/assets/guildes');
     const cercles = filterCards(CERCLES_SUMMARY_JSON, 'src/assets/cercles');
@@ -56,6 +51,7 @@ export default () => {
             <Col lg="6" className="p-0">
             <img 
                 src={require("../assets/img/bea.png")}
+                alt=""
                 style={{
                   width: "50%",
                   position: "relative",
@@ -116,6 +112,7 @@ export default () => {
             <Col lg="6" className="p-0">
             <img 
                 src={require("../assets/img/aic.png")}
+                alt=""
                 style={{
                   width: "50%",
                   position: "relative",
@@ -143,11 +140,11 @@ export default () => {
                 autoplay={true}
                 arrows={false}
                 >
-                    <img src={require("../assets/img/librex1.png")}
+                    <img src={require("../assets/img/librex1.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/librex2.png")}
+                    <img src={require("../assets/img/librex2.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/librex3.png")}
+                    <img src={require("../assets/img/librex3.png")} alt=""
                     style={{width:"100%"}}/>
                 </Slider>
                 </Overlay>
@@ -203,11 +200,11 @@ export default () => {
                 autoplay={true}
                 arrows={false}
                 >
-                    <img src={require("../assets/img/st-v1.png")}
+                    <img src={require("../assets/img/st-v1.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/cantus2.png")}
+                    <img src={require("../assets/img/cantus2.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/cab1.png")}
+                    <img src={require("../assets/img/cab1.png")} alt=""
                     style={{width:"100%"}}/>
                 </Slider>
                 </Overlay>
@@ -231,11 +228,11 @@ export default () => {
                 autoplay={true}
                 arrows={false}
                 >
-                    <img src={require("../assets/img/bapteme1.png")}
+                    <img src={require("../assets/img/bapteme1.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/bapteme2.png")}
+                    <img src={require("../assets/img/bapteme2.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/bapteme3.png")}
+                    <img src={require("../assets/img/bapteme3.png")} alt=""
                     style={{width:"100%"}}/>
                 </Slider>
                 </Overlay>
@@ -306,9 +303,9 @@ export default () => {
                 autoplay={true}
                 arrows={false}
                 >
-                    <img src={require("../assets/img/cantus1.png")}
+                    <img src={require("../assets/img/cantus1.png")} alt=""
                     style={{width:"100%"}}/>
-                    <img src={require("../assets/img/cantus3.png")}
+                    <img src={require("../assets/img/cantus3.png")} alt=""
                     style={{width:"100%"}}/>
                 </Slider>
                 </Overlay>
