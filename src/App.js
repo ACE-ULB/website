@@ -48,7 +48,8 @@ export default () => {
             element = {<Folklore />} />
           <Route path="/members"  
             element = {<Members />} />
-          <Route element = {<NotFound />} />
+          <Route path="*"
+            element = {<NotFound />} />
         </Routes>
 
         <Footer />

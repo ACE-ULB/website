@@ -1,5 +1,5 @@
 import React from "react";
-import { H3, Text } from "../components/Titles.js";
+import { H3 } from "../components/Titles.js";
 import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar.js";
@@ -20,7 +20,6 @@ export default () => {
           <Row className="align-items-center">
             <Col className="text-center">
               <H3>404: Not Found</H3>
-              <Text></Text>
             </Col>
           </Row>
         </div>

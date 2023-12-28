@@ -10,12 +10,13 @@ import '../assets/css/animation.scss';
 import style from "../assets/css/style.scss";
 
 const HOME_SOURCE = '/';
-
+// eslint-disable-next-line
 export default ({ img, title, svg, h }) => {
   return (
     <section>
       <Banner
         className="img-fluid w-100"
+        alt=""
         src={HOME_SOURCE === window.location.pathname ? 
           require("../assets/img/banner.jpg") : 
           require(`../assets/img/${img}.png`)}
@@ -43,6 +44,7 @@ export default ({ img, title, svg, h }) => {
             <img
               className="img-fluid"
               style={{ maxWidth: "90%" }}
+              alt=""
               src={require("../assets/img/ACE.png")}
             />
           </Col>
@@ -63,7 +65,9 @@ export default ({ img, title, svg, h }) => {
             </div>
           </Col>
           <Col lg="6" className="position-relative text-center logo">
+            <span style={{display:"flex"}}>
             {React.createElement(SVGs[svg], { color: style.palh, width: "500pt", height: h })}
+            </span>
           </Col>
         </Row>
       )}

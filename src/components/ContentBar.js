@@ -23,11 +23,11 @@ export const NavStyle = styled.div`
     padding: 20px 15px;
   }
 `;
-
+// eslint-disable-next-line
 export default ({ links }) => {
     return (
     <>
-    <section className="section section-lg section-shaped pg-250 color-main font-white">
+    <section className="section section-lg section-shaped pg-250 color-main font-white" style={{position:"relative"}}>
       <NavStyle className="h-100 grid-container text-center align-items-center">
       {links.map((link, index) => (
         <NavLinkS key={index} to={`/${link.id}`} className="content-item">

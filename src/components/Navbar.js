@@ -17,18 +17,19 @@ import "../assets/css/display.scss";
 
 export const NavItemSVG = ({ svg, href, tip, size }) => {
   return (
-  <NavItem>
+  <NavItem className="">
     <NavLink
     className="nav-link-icon"
     href={`/${href}`}
     id={href}
     >
     {React.createElement(SVGs[svg], {color:"#FFF", width: size, height: size})}
+    <span className="d-lg-none d-sm-block" style={{marginLeft:"20px"}}>{tip}</span>
     </NavLink>
     <UncontrolledTooltip delay={0} target={href}>{tip}</UncontrolledTooltip>
   </NavItem>
 )}
-
+// eslint-disable-next-line
 export default () => {
   return (
     <Headroom>
@@ -42,7 +43,7 @@ export default () => {
             <img 
               alt={SETTINGS.title} 
               src={require("../assets/img/ACE.png")}
-              style={{width:"4%"}}
+              style={{width:"7vh"}}
             />
           </Link>
         </NavbarBrand>
@@ -50,19 +51,20 @@ export default () => {
           <span className="navbar-toggler-icon" />
         </button>
         <UncontrolledCollapse navbar toggler="#navbar_global">
-          <Nav className="align-items-lg-center ml-lg-auto" navbar>
+          <Nav className="align-items-lg-center ml-lg-auto container-fluid justify-content-end" navbar>
             <NavItemSVG svg="ACE" href="cercle" tip="Le Cercle" size="30pt"/>
             <NavItemSVG svg="Beers" href="events" tip="Nos Événements" size="30pt"/>
             <NavItemSVG svg="Solidarity" href="actions" tip="Actions & Projets" size="30pt"/>
             <NavItemSVG svg="Penne" href="folklore" tip="Folklore ULbiste" size="30pt"/>
             <NavItemSVG svg="ULB" href="members" tip="Espace Membre" size="22pt"/>
+            <span className="d-lg-flex d-none">
             <NavSocial
                 color = "white"
                 facebook={{url: SETTINGS.contact.facebook, tip:"Suivez nous sur Facebook", id:"navbar"}}
                 instagram={{url: SETTINGS.contact.instagram, tip:"Suivez nous sur Instagram", id:"navbar"}}
                 discord={{url: SETTINGS.contact.discord, tip:"Rejoignez-nous sur Discord", id:"navbar"}}
                 email={{url: SETTINGS.contact.email, tip:"Envoyez nous un email", id:"navbar"}}
-              />
+              /></span>
           </Nav>
         </UncontrolledCollapse>
       </Navbar>
