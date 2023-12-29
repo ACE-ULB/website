@@ -7,10 +7,10 @@ import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
 
 const contentArrays = [
-  {svg: "ACE", id: "cercle", title: "Le Cercle", width: "150pt", height: "120pt"},
-  {svg: "Beers", id: "events", title: "Événements", width: "150pt", height: "120pt"},
-  {svg: "Solidarity", id: "actions", title: "Actions", width: "150pt", height: "120pt"},
-  {svg: "Penne", id: "folklore", title: "Folklore", width: "160pt", height: "120pt"},
+  {svg: "ACE", id: "cercle", title: "Le Cercle", width: "120pt", height: "120pt"},
+  {svg: "Beers", id: "events", title: "Événements", width: "120pt", height: "120pt"},
+  {svg: "Solidarity", id: "actions", title: "Actions", width: "120pt", height: "120pt"},
+  {svg: "Penne", id: "folklore", title: "Folklore", width: "120pt", height: "120pt"},
   {svg: "ULB", id: "members", title: "Espace Membres", width: "120pt", height: "120pt"},
 ]
 // eslint-disable-next-line
@@ -19,7 +19,7 @@ export default () => {
   return (
         <span>
         <Helmet>
-            <title>Association des Cercles Étudiants - Acceuil</title>
+            <title>Accueil - Association des Cercles Étudiants</title>
         </Helmet>
         <Banner/>
         <ContentBar links={contentArrays}/>
@@ -38,24 +38,23 @@ export default () => {
                 autoplay={true}
                 arrows={false}
               >
-              <img src={require("../assets/img/home/1.JPG")} alt=""/>
-              <img src={require("../assets/img/home/2.JPG")} alt=""/>
-              <img src={require("../assets/img/home/3.JPG")} alt=""/>
-              <img src={require("../assets/img/home/4.JPG")} alt=""/>
-              <img src={require("../assets/img/home/5.JPG")} alt=""/>
-              <img src={require("../assets/img/home/6.JPG")} alt=""/>
-              <img src={require("../assets/img/home/7.JPG")} alt=""/>
-              <img src={require("../assets/img/home/8.JPG")} alt=""/>
-              <img src={require("../assets/img/home/9.JPG")} alt=""/>
-              <img src={require("../assets/img/home/10.JPG")} alt=""/>
-              <img src={require("../assets/img/home/11.JPG")} alt=""/>
-              <img src={require("../assets/img/home/12.JPG")} alt=""/>
-              <img src={require("../assets/img/home/13.JPG")} alt=""/>
-              <img src={require("../assets/img/home/14.JPG")} alt=""/>
-              <img src={require("../assets/img/home/15.JPG")} alt=""/>
-              <img src={require("../assets/img/home/16.JPG")} alt=""/>
-              <img src={require("../assets/img/home/17.JPG")} alt=""/>
-              <img src={require("../assets/img/home/18.JPG")} alt=""/>
+              <img src={require("../assets/img/home/1.png")} alt=""/>
+              <img src={require("../assets/img/home/2.png")} alt=""/>
+              <img src={require("../assets/img/home/3.png")} alt=""/>
+              <img src={require("../assets/img/home/4.png")} alt=""/>
+              <img src={require("../assets/img/home/6.png")} alt=""/>
+              <img src={require("../assets/img/home/7.png")} alt=""/>
+              <img src={require("../assets/img/home/8.png")} alt=""/>
+              <img src={require("../assets/img/home/9.png")} alt=""/>
+              <img src={require("../assets/img/home/10.png")} alt=""/>
+              <img src={require("../assets/img/home/11.png")} alt=""/>
+              <img src={require("../assets/img/home/12.png")} alt=""/>
+              <img src={require("../assets/img/home/13.png")} alt=""/>
+              <img src={require("../assets/img/home/14.png")} alt=""/>
+              <img src={require("../assets/img/home/15.png")} alt=""/>
+              <img src={require("../assets/img/home/16.png")} alt=""/>
+              <img src={require("../assets/img/home/17.png")} alt=""/>
+              <img src={require("../assets/img/home/18.png")} alt=""/>
               </Slider>
             </Overlay>
             </Col>

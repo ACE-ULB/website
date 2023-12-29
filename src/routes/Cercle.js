@@ -29,7 +29,7 @@ export default () => {
     return (
         <span>
         <Helmet>
-            <title>Association des Cercles Étudiants - Le Cercle</title>
+            <title>Le Cercle - Association des Cercles Étudiants</title>
         </Helmet>
         <Navbar/>
         <Banner img="cercle" title="Le Cercle" svg="ACE" h="300pt"/>

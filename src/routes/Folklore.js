@@ -31,7 +31,7 @@ export default () => {
     return (
         <span>
         <Helmet>
-            <title>Association des Cercles Étudiants - Folklore</title>
+            <title>Folklore - Association des Cercles Étudiants</title>
         </Helmet>
         <Navbar/>
         <Banner img="folklore" title="Folklore ULBiste" svg="Penne" h="380pt"/>

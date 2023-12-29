@@ -17,7 +17,7 @@ export default () => {
     return (
         <span>
         <Helmet>
-            <title>Association des Cercles Étudiants - Événements</title>
+            <title>Événements - Association des Cercles Étudiants</title>
         </Helmet>
         <Navbar/>
         <Banner img="events" title="Nos Événements" svg="Beers" h="380pt"/>
