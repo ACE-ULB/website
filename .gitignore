@@ -15,6 +15,7 @@ _site# See https://help.github.com/articles/ignoring-files/ for more about ignor
 # production
 /build
 /src/assets/**/*.json
+/log
 
 # misc
 .DS_Store
