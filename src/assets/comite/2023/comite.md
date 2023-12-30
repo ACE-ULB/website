@@ -32,7 +32,7 @@ folklore2: {
     img: true}
 balef1: {
     poste: Bal & Fêtes,
-    nom: Romanes Frères,
+    nom: Romanes Freres,
     cercle: CJC,
     img: true}
 balef2: {

@@ -1,7 +1,8 @@
 import React from "react";
 import '../assets/css/display.scss';
+import style from "../assets/css/style.scss";
 import { Separator, LogoView, AdminView, Banner, ContentBar, Navbar, Comite } from "../components";
-import { H3, Text, Center, H1 } from "../components/Titles";
+import { H3, Text, Center, H1, C } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
@@ -70,7 +71,7 @@ export default () => {
                 <H3>Quels sont nos objectifs ?</H3>
                 <Text>
                   <p>
-                  L’ACE a pour objectif principal de représenter ses cercles membres auprès des autorités de l’ULB, et de défendre leurs intérêts communs. Nous servons surtout de relais et de porte-parole avec le Vice-rectorat aux affaires étudiantes, mais également avec d’autres corps de l’université, comme ULB Santé, ULB Culture, la Commission Culturelle, la Commission aux Affaires Sociales Étudiantes, … En plus des instances de l’université, nous faisons également le lien avec les autres associations étudiantes du campus (Bureau des Étudiant·e·s Administateurs·trices, Association Inter-Cercles) et avec l’Union des Anciens Étudiants, l’association des anciens et anciennes de l’université.
+                  L’ACE a pour objectif principal de <C color={style.pal0}>représenter ses cercles membres</C> auprès des autorités de l’ULB, et de défendre leurs intérêts communs. Nous servons surtout de relais et de porte-parole avec le Vice-rectorat aux affaires étudiantes, mais également avec d’autres corps de l’université, comme ULB Santé, ULB Culture, la Commission Culturelle, la Commission aux Affaires Sociales Étudiantes, … En plus des instances de l’université, nous faisons également le lien avec les autres associations étudiantes du campus (Bureau des Étudiant·e·s Administateurs·trices, Association Inter-Cercles) et avec l’Union des Anciens Étudiants, l’association des anciens et anciennes de l’université.
                   </p>
                   <p>
                   L’ACE rassemble également les étudiants et étudiantes de ses cercles membres autour d’une direction commune concernant la vie étudiante de l’ULB en général. Nos cercles se réunissent une fois par semaine pour organiser la vie étudiante sur les différents campus, mais aussi pour discuter de projets inter-cercles qui pourraient voir le jour. En plus de ça, nos cercles membres se réunissent occasionnellement en commissions pour parler de sujets plus spécifiques : pour le moment, ont été mises en place les commissions Cantus, Culture, Écologie, Égalité & Inclusivité, Folklore, Librex, Réduction des Risques et Sociale.

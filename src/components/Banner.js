@@ -9,7 +9,7 @@ import * as SVGs from "../assets/svg";
 import '../assets/css/animation.scss';
 import style from "../assets/css/style.scss";
 
-const HOME_SOURCE = '/';
+const HOME_SOURCE = '/home';
 // eslint-disable-next-line
 export default ({ img, title, svg, h }) => {
   return (

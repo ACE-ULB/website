@@ -83,3 +83,7 @@ export const Cite = styled.p`
   font-style: normal;
   color: ${props => props.theme.white};
 `;
+
+export const C = styled.span`
+  color : ${props => props.color};
+`;

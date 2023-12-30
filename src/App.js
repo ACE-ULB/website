@@ -14,7 +14,8 @@ import {
   Folklore,
   Members,
   NotFound,
-  History
+  History,
+  Counter
 } from "./routes";
 //import theme from "./utils/theme";
 
@@ -28,11 +29,13 @@ library.add(fas);
 // eslint-disable-next-line
 export default () => {
   return (
-    <Router>
+    <Router basename="/">
         <Helmet></Helmet>
 
         <Routes>
           <Route path="/"
+            element = {<Counter />} />
+          <Route path="/home"
             element = {<Home />} />
           <Route path="/cercle"  
             element = {<Cercle />} />
