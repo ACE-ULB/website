@@ -51,8 +51,6 @@ export default () => {
             element = {<Folklore />} />
           <Route path="/members"  
             element = {<Members />} />
-          <Route path="/notion"  
-            element = {<Members />} />
           <Route path="*"
             element = {<NotFound />} />
         </Routes>

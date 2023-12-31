@@ -38,10 +38,8 @@ visible for the website) you should also run these commands once.
 
 ## Uploading new PV
 
-Run this command in the root folder.
-
 ```txt
-node utils/listpdf.mjs src/assets/pv/ > ./src/assets/pv/pv.json
+npm run pv
 ```
 
 ## Compress Images

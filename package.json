@@ -66,7 +66,7 @@
     "deploy": "gh-pages -d build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
-    "compressor": "node Compressor.js && rm -rf log/"
+    "compressor": "node utils/compressor.js && rm -rf log/"
   },
   "reactSnap": {
     "source": "build",
