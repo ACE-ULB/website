@@ -50,7 +50,6 @@
     "processmd": "^4.7.0",
     "react-app-rewired": "^2.2.1",
     "react-leaflet": "^4.2.1",
-    "react-snap": "^1.23.0",
     "sass": "^1.69.5"
   },
   "scripts": {

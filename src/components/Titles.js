@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import style from "../assets/css/style.scss"
 
 export const H1 = styled.h1`
   text-align: center;
@@ -86,4 +87,24 @@ export const Cite = styled.p`
 
 export const C = styled.span`
   color : ${props => props.color};
+`;
+
+export const C1 = styled.span`
+  color : ${style.pal0};
+`;
+
+export const C2 = styled.span`
+  color : ${style.pal1};
+`;
+
+export const C3 = styled.span`
+  color : ${style.pal2};
+`;
+
+export const C4 = styled.span`
+  color : ${style.pal3};
+`;
+
+export const C5 = styled.span`
+  color : ${style.pal4};
 `;

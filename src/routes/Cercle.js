@@ -1,8 +1,7 @@
 import React from "react";
 import '../assets/css/display.scss';
-import style from "../assets/css/style.scss";
 import { Separator, LogoView, AdminView, Banner, ContentBar, Navbar, Comite } from "../components";
-import { H3, Text, Center, H1, C } from "../components/Titles";
+import { H3, Text, Center, H1, C5, C1, C } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
@@ -71,10 +70,10 @@ export default () => {
                 <H3>Quels sont nos objectifs ?</H3>
                 <Text>
                   <p>
-                  L’ACE a pour objectif principal de <C color={style.pal0}>représenter ses cercles membres</C> auprès des autorités de l’ULB, et de défendre leurs intérêts communs. Nous servons surtout de relais et de porte-parole avec le Vice-rectorat aux affaires étudiantes, mais également avec d’autres corps de l’université, comme ULB Santé, ULB Culture, la Commission Culturelle, la Commission aux Affaires Sociales Étudiantes, … En plus des instances de l’université, nous faisons également le lien avec les autres associations étudiantes du campus (Bureau des Étudiant·e·s Administateurs·trices, Association Inter-Cercles) et avec l’Union des Anciens Étudiants, l’association des anciens et anciennes de l’université.
+                  L’ACE a pour objectif principal de <C5>représenter ses cercles membres</C5> auprès des autorités de l’ULB, et de <u>défendre leurs intérêts communs.</u> Nous servons surtout de relais et de porte-parole avec le Vice-rectorat aux affaires étudiantes, mais également avec d’autres corps de l’université, comme ULB Santé, ULB Culture, la Commission Culturelle, la Commission aux Affaires Sociales Étudiantes, … En plus des instances de l’université, nous faisons également le <u>lien avec les autres associations étudiantes</u> du campus (Bureau des Étudiant·e·s Administateurs·trices, Association Inter-Cercles) et avec l’Union des Anciens Étudiants, l’association des anciens et anciennes de l’université.
                   </p>
                   <p>
-                  L’ACE rassemble également les étudiants et étudiantes de ses cercles membres autour d’une direction commune concernant la vie étudiante de l’ULB en général. Nos cercles se réunissent une fois par semaine pour organiser la vie étudiante sur les différents campus, mais aussi pour discuter de projets inter-cercles qui pourraient voir le jour. En plus de ça, nos cercles membres se réunissent occasionnellement en commissions pour parler de sujets plus spécifiques : pour le moment, ont été mises en place les commissions Cantus, Culture, Écologie, Égalité & Inclusivité, Folklore, Librex, Réduction des Risques et Sociale.
+                  L’<C5>ACE rassemble</C5> également les étudiants et étudiantes de ses cercles membres autour d’une <u>direction commune</u> concernant la <C5>vie étudiante de l’ULB en général</C5>. Nos cercles se réunissent <u>une fois par semaine</u> pour organiser la vie étudiante sur les différents campus, mais aussi pour <u>discuter de projets inter-cercles</u> qui pourraient voir le jour. En plus de ça, nos cercles membres se <C5>réunissent occasionnellement en commissions</C5> pour parler de sujets plus spécifiques : pour le moment, ont été mises en place les commissions Cantus, Culture, Écologie, Égalité & Inclusivité, Folklore, Librex, Réduction des Risques et Sociale.
                   </p>
                 </Text>
                 <H3>Parcours notre <a href="/cercle/history">histoire</a> !</H3>
@@ -116,10 +115,10 @@ export default () => {
                   Voici l’actuelle composition du bureau de l’Ordre du Prisme :
                   </p>
                   <p>
-                    <font color="#FF5656">Grande Chromatique</font> : Lucile Neyrinck<br/>
-                    <font color="#FF5656">Petit Chromatique</font> : Thibaut Kemajou<br/>
-                    <font color="#FF5656">Dodécagone</font> : Juliette Renard<br/>
-                    <font color="#FF5656">Losange</font> : Ruth Janet Maguéna
+                    <C1>Grande Chromatique</C1> : Lucile Neyrinck<br/>
+                    <C1>Petit Chromatique</C1> : Thibaut Kemajou<br/>
+                    <C1>Dodécagone</C1> : Juliette Renard<br/>
+                    <C1>Losange</C1> : Ruth Janet Maguéna
                   </p>
                 </Text>
               </Center>
@@ -160,7 +159,7 @@ export default () => {
                 <p>2. Être étudiant•e en BA3 minimum.</p>
                 <p>3. Avoir effectué au moins un mandat d’investissement dans le comité d’un cercle membre</p>
                 <p>4. Ne plus occuper de mandat dans le comité d’un cercle membre lors de son arrivée à l’ACE</p>
-                <p><font color="b3b6bb">Une dérogation est néanmoins possible pour un des critères 2 à 4 (sauf pour les postes de bureau).</font></p>
+                <p><C color="#b3b6bb">Une dérogation est néanmoins possible pour un des critères 2 à 4 (sauf pour les postes de bureau).</C></p>
                 <p>
                 Tu es intéressé·e par nous rejoindre ? Suis attentivement les informations publiées sur nos réseaux sociaux !<br/>
                 En cas de question, n’hésite pas à contacter <a href="mailto:info@ace-ulb.be">info@ace-ulb.be</a> !
