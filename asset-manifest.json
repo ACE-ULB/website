@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0b0f2ac0.css",
-    "main.js": "/static/js/main.981a0395.js",
+    "main.js": "/static/js/main.688cc1a5.js",
     "static/media/2021-06-23_AG.pdf": "/static/media/2021-06-23_AG.82a6da601453c1fa8998.pdf",
     "static/media/secretaire.png": "/static/media/secretaire.a35565d880dc483fed96.png",
     "static/media/vpi.png": "/static/media/vpi.3cac8493bc54edf23372.png",
@@ -303,10 +303,10 @@
     "static/media/GN.md": "/static/media/GN.6b4731c00bfcfe62e18f.md",
     "static/media/GC.md": "/static/media/GC.d39ee67e302cb8ec5650.md",
     "main.0b0f2ac0.css.map": "/static/css/main.0b0f2ac0.css.map",
-    "main.981a0395.js.map": "/static/js/main.981a0395.js.map"
+    "main.688cc1a5.js.map": "/static/js/main.688cc1a5.js.map"
   },
   "entrypoints": [
     "static/css/main.0b0f2ac0.css",
-    "static/js/main.981a0395.js"
+    "static/js/main.688cc1a5.js"
   ]
 }
