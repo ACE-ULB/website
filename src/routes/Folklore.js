@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { Separator, Banner, ContentBar, LogoView, Navbar, NavSocial } from "../components";
-import { H3, Text, Center } from "../components/Titles";
+import { H3, Text, Center, C1, C2, C3, C4, C, C5 } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Nav, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
@@ -40,14 +40,12 @@ export default () => {
         <section className="section section-lg section-shaped pg-250">
         <div className="h-100" id="asbls">
           <Row className="align-items-center m-0">
-          <p style={{marginTop: "20px"}}></p>
             <Center>
                 <H3>Comment ça marche</H3>
                 <Text>
-                <p>Les étudiantes et étudiants de l’ULB ont la possibilité de s’engager et de rejoindre une multitude d’associations étudiantes. Une soixantaine de cercles étudiants sont reconnus chaque année par le conseil d'administration de l'ULB. Qu'ils soient folkloriques, socio-culturels, politiques, sportifs ou autres, ils tiennent une part essentielle dans l'animation et la vie de l'université et de ses campus.</p>
+                <p>Les <C1>étudiantes et étudiants de l’ULB</C1> ont la possibilité de <u>s’engager</u> et de <u>rejoindre</u> une <C1>multitude d’associations étudiantes</C1>. Une <u>soixantaine</u> d'association d'étudiants sont reconnus <C1>chaque année</C1> par le conseil d'administration de l'ULB. Qu'ils soient folkloriques, socio-culturels, politiques, sportifs ou autres, ils tiennent <u>une part essentielle</u> dans <C1>l'animation</C1> et la <C1>vie de l'université</C1> et de ses <C1>campus</C1>.</p>
                 </Text>
             </Center>
-            <p style={{marginTop: "20px"}}></p>
             <Col lg="6" className="p-0">
             <img 
                 src={require("../assets/img/bea.png")}
@@ -65,10 +63,10 @@ export default () => {
                 <H3>Le BEA</H3>
                 <Text>
                   <p>
-                  Le Bureau des Étudiant·e·s Administrateurs·trices est le conseil étudiant de l’ULB. Il a pour missions de représenter les étudiante∙s auprès des autorités de l’ULB, de défendre et promouvoir leurs intérêts en siégeant dans les différents Conseils et Commissions, ainsi que d’informer les étudiant∙es de leurs droits et devoirs et de tout ce qui se passe à l’ULB. Le BEA peut également apporter un soutien administratif et logistique aux étudiant·es, notamment lors des recours.
+                  Le Bureau des Étudiant·e·s Administrateurs·trices est le <C2>conseil étudiant de l’ULB</C2>. Il a pour missions de <C2>représenter les étudiante∙s</C2> <u>auprès des autorités de l’ULB</u>, de <C2>défendre et promouvoir leurs intérêts</C2> en siégeant dans les différents <u>Conseils</u> et <u>Commissions</u>, ainsi que <C2>d’informer</C2> les étudiant∙es de leurs <C2>droits</C2> et <C2>devoirs</C2> et de tout ce qui se passe à l’ULB. Le BEA peut également apporter un <u>soutien administratif et logistique</u> aux étudiant·es, notamment lors des <u>recours</u>.
                   </p>
                   <p>
-                  Reliés au BEA, on trouve les différents bureaux étudiants facultaires. N’hésite pas à te rendre sur le site de ta faculté si tu veux avoir plus d’info !
+                  Reliés au BEA, on trouve les différents <C2>bureaux étudiants facultaires</C2>. N’hésite pas à te rendre sur <u>le site de ta faculté</u> si tu veux avoir plus d’info !
                   </p>
                   <p>
                   Une question ? Envie d'en savoir plus ? Suivez et contactez le BEA via leurs réseaux !
@@ -91,7 +89,7 @@ export default () => {
                 <H3>L'AIC</H3>
                 <Text>
                   <p>
-                  L’Association Inter-Cercles a le même type de rôle que l’ACE, mais pour les cercles socio-culturels et politiques. Fondée en 2015, l’AIC est une association représentative et participative des cercles actifs sur les questions sociales, culturelles et/ou politiques, par et pour les cercles et à l’initiative des étudiant·es.
+                  L’Association Inter-Cercles a le <u>même type de rôle que l’ACE</u>, mais pour les <C3>cercles socio-culturels et politiques</C3>. Fondée en <u>2015</u>, l’AIC est une <C3>association représentative et participative</C3> des cercles actifs sur les questions <u>sociales</u>, <u>culturelles</u> et/ou <u>politiques</u>, par et pour les cercles et à l’initiative des étudiant·es.
                   </p>
                   <p>
                   Une question ? Envie d'en savoir plus ? Suivez et contactez le l'AIC via leurs réseaux !
@@ -154,16 +152,16 @@ export default () => {
                 <H3>La pensée ne doit jamais se soumettre</H3>
                 <Text>
                   <p>
-                  L'article premier des statuts de l’ULB proclame que son enseignement a pour principe le libre examen. Celui-ci postule, en toute matière, le rejet de l'argument d'autorité et l'indépendance de jugement. C’est en 1909 que l’ULB a adopté le libre examen comme principe fondamental, dans un discours donné par Henri Poincaré à l’occasion des 75 ans de la création de l’université : « La pensée ne doit jamais se soumettre, ni à un dogme, ni à un parti, ni à une passion, ni à un intérêt, ni à une idée préconçue, ni à quoi que ce soit, si ce n'est aux faits eux-mêmes, parce que, pour elle, se soumettre, ce serait cesser d'être. »
+                  L'<C4>article premier des statuts de l’ULB</C4> proclame que son <u>enseignement</u> a pour principe le <C4>libre examen</C4>. Celui-ci postule, en toute matière, le <C4>rejet de l'argument d'autorité</C4> et l'<C4>indépendance de jugement</C4>. C’est en <u>1909</u> que l’ULB a adopté le libre examen comme <C4>principe fondamental</C4>, dans un discours donné par <u>Henri Poincaré</u> à l’occasion des <u>75 ans</u> de la création de l’université : « <C color="#FC4E00">La pensée ne doit jamais se soumettre, ni à un dogme, ni à un parti, ni à une passion, ni à un intérêt, ni à une idée préconçue, ni à quoi que ce soit, si ce n'est aux faits eux-mêmes, parce que, pour elle, se soumettre, ce serait cesser d'être.</C> »
                   </p>
                   <p>
-                  Le libre examen est à la base de la méthode scientifique, et c’est aussi un principe auquel on souscrit par engagement. Toute personne s’affirmant libre exaministe s'engage donc à mettre ses paroles et ses actes en accord avec ce qu'elle tient pour vrai.
+                  Le libre examen est à la base de la <C4>méthode scientifique</C4>, et c’est aussi un principe auquel on <C4>souscrit par engagement</C4>. Toute personne <u>s’affirmant libre exaministe</u> s'engage donc à mettre <C4>ses paroles</C4> et <C4>ses actes</C4> en <u>accord</u> avec ce qu'elle <u>tient pour vrai</u>.
                   </p>
                   <p>
-                  L’histoire du principe du libre examen à l’ULB depuis 1834 a été déterminée par des considérations religieuses, philosophiques, administratives et politiques, dont notamment l’opposition à l’enseignement soumis à des dogmes religieux et la lutte pour la sécularisation de la société belge. Après la première Guerre mondiale, le principe du libre examen entre dans une phase plus politique, et la lutte libre exaministe devient synonyme d’engagement face au nazisme, au communisme, puis plus tard pour la décolonisation du Congo, pour le syndicalisme étudiant et pour la démocratisation de l’enseignement universitaire. Après les luttes étudiantes de mai 68, l’ULB adopte une nouvelle définition du libre examen dans ses statuts, et il y est depuis écrit comme Article 1 : « L'Université Libre de Bruxelles fonde l'enseignement et la recherche sur le principe du libre examen. Celui-ci postule, en toute matière, le rejet de l'argument d'autorité et l'indépendance de jugement. »
+                  L’histoire du principe du libre examen à l’ULB depuis <C4>1834</C4> a été déterminée par des considérations <u>religieuses</u>, <u>philosophiques</u>, <u>administratives</u> et <u>politiques</u>, dont notamment <C4>l’opposition à l’enseignement soumis à des dogmes religieux</C4> et la <C4>lutte pour la sécularisation de la société belge</C4>. Après la <u>première Guerre mondiale</u>, le principe du libre examen entre dans une <u>phase plus politique</u>, et la lutte libre exaministe devient <C4>synonyme d’engagement</C4> face au <u>nazisme</u>, au <u>communisme</u>, puis plus tard pour la <u>décolonisation du Congo</u>, pour le <u>syndicalisme étudiant</u> et pour la <C4>démocratisation de l’enseignement universitaire</C4>. Après les luttes étudiantes de <C4>mai 68</C4>, l’ULB adopte une <u>nouvelle définition du libre examen</u> dans ses statuts, et il y est depuis écrit comme <C4>Article 1</C4> : « <C color="#FC4E00">L'Université Libre de Bruxelles fonde l'enseignement et la recherche sur le principe du libre examen. Celui-ci postule, en toute matière, le rejet de l'argument d'autorité et l'indépendance de jugement.</C> »
                   </p>
                   <p>
-                  Fondé en 1928, le <a href="cercle/#Librex">Cercle du Libre Examen</a> est un cercle étudiant de l’ULB qui a pour mission de promouvoir les valeurs du libre examen et sa diffusion parmi la communauté étudiante, et aussi encourager le débat et la prise de conscience chez ses membres. Une question ? Consulte leur site internet ou contacte-le par mail à l’adresse <a href="mailto:cercle@librexulb.be">cercle@librexulb.be</a>.
+                  Fondé en 1928, le <a href="cercle/#Librex"><u>Cercle du Libre Examen</u></a> est un cercle étudiant de l’ULB qui a pour mission de <C4>promouvoir les valeurs du libre examen</C4> et sa <C4>diffusion parmi la communauté étudiante</C4>, et aussi <C4>encourager le débat et la prise de conscience</C4> chez ses membres. Une question ? Consulte leur site internet ou contacte-le par mail à l’adresse <a href="mailto:cercle@librexulb.be"><u>cercle@librexulb.be</u></a>.
                   </p>
                 </Text>
               </Center>
@@ -180,10 +178,13 @@ export default () => {
                 <H3>Folklore ≠ Baptême !</H3>
                 <Text>
                   <p>
-                  Depuis la création de notre université en 1834, les traditions étudiantes et folkloriques de l’ULB ne cessent de se transmettre, tout en évoluant et en s’enrichissant avec le temps.
+                  Depuis la <u>création de notre université</u> en 1834, les <C5>traditions étudiantes et folkloriques</C5> de l’ULB ne cessent de se <u>transmettre</u>, tout en <u>évoluant</u> et en s’<u>enrichissant</u> avec le temps.
                   </p>
                   <p>
-                  Mais le folklore ULB, c’est quoi ? C’est avant tout la culture de la camaraderie, de la dérision, de l’humour et de la fête. Vivre le folklore, c’est célébrer la joie étudiante, l’insouciance et la liberté. C’est la culture du vivre ensemble !
+                  Mais le <C5>folklore ULB</C5>, c’est quoi ? C’est avant tout la culture de la <u>camaraderie</u>, de la <u>dérision</u>, de l’<u>humour</u> et de la <u>fête</u>. Vivre le folklore, c’est <C5>célébrer la joie étudiante</C5>, <C5>l’insouciance</C5> et <C5>la liberté</C5>. C’est la culture du <C5>vivre ensemble</C5> !
+                  </p>
+                  <p>
+                  L'ACE est l'association <u>fédératrice</u> des <C5>cercles folklorique</C5> qui peuvent être <u>facultaires</u>, <u>interfacultaires</u>, ou <u>régionaux</u>. Ils organisent et perpétuent chaque année le <C5>folklore traditionnel de l'ULB</C5>: baptêmes estudiantins, soirée étudiantes (les TD), participation à la Saint-V, soutien aux guildes dans leur organisation de cantus. En dehors du folklore, nos cercles organisent également des événements et des <C5>activités ouvertes à tous</C5>: débat, conférence, sport ou culture.
                   </p>
                 </Text>
               </Center>
@@ -242,13 +243,16 @@ export default () => {
                 <H3>Tout a un sens</H3>
                 <Text>
                   <p>
-                  Si tu es nouveau ou nouvelle à l’ULB, certains cercles folkloriques te proposent la possibilité de vivre une bleusaille et de passer ton baptême. Mais un baptême étudiant, c’est quoi ? C’est un rite initiatique, un rite de passage et d’intégration dans un cercle, qui a pour objectif de te faire vivre une expérience unique et étonnante.
+                  Si tu es nouveau ou nouvelle à l’ULB, <u>certains cercles folkloriques</u> te proposent la possibilité de <C1>vivre une bleusaille</C1> et de passer <C1>ton baptême</C1>. Mais un baptême étudiant, c’est quoi ? C’est un <C1>rite initiatique</C1>, un <u>rite de passage</u> et <u>d’intégration dans un cercle</u>, qui a pour objectif de te faire vivre une <C1>expérience unique et étonnante</C1>.
                   </p>
                   <p>
-                  Dans les cercles membres de l’ACE, <u>16 cercles sont considérés comme baptismaux</u> (listés ci-dessous), donc organisent un baptême en début d’année. N’hésite pas à les contacter si tu veux plus d’informations !
+                  Dans les cercles membres de l’ACE, <C1><u>16 cercles sont considérés comme baptismaux</u></C1> (listés ci-dessous), donc organisent un baptême en <u>début d’année</u>. N’hésite pas à les contacter si tu veux plus d’informations !
                   </p>
                   <p>
-                  Ta curiosité est piquée ? N’hésite pas à aller te faire ton propre avis et à essayer ! Sache que tu as bien sûr le droit d’arrêter n’important quand.
+                  Tous no cercles membres ont pour objectif premier la <C1>solidarité et la convivialité</C1>, et te permettent donc de les rejoindre pour <u>t'investir dans le cercle</u> ou simplement <u>faire la fête</u> <C1>sans faire ta bleusaille</C1>. Elle te sera cependant <C1>vivement conseillée</C1> et n'est évidemment <u>jamais</u> mit en cause dans les <u>cercles n'organisant pas de baptême</u>.
+                  </p>
+                  <p>
+                  Ta curiosité est piquée ? N’hésite pas à aller te <C1>faire ton propre avis et à essayer</C1> ! Sache que tu as bien sûr le droit d’arrêter n’important quand.
                   </p>
                 </Text>
               </Center>
@@ -274,19 +278,16 @@ export default () => {
                 <H3>Semeur vaillant du rêve ...</H3>
                 <Text>
                   <p>
-                  Les cantus sont des activités organisées autour du chant. La chanson estudiantine et paillarde est une des plus vieilles expressions du folklore de l’Université libre de Bruxelles, et du folklore estudiantin belge en général.
+                  Les guildes sont des <C3>organisations folkloriques</C3> composées de <u>plusieurs membres</u>, se partageant entre elles·eux des <u>postes bien définis</u>. En général, une guilde a à sa tête <C3>un·e Senior·a</C3>, qui <u>préside les cantus</u>. La·le Senior·a est généralement accompagné·e <u>d’un bureau</u>. Les postes principaux qu’on retrouve dans une guilde <u>sont variables</u>, mais comprennent généralement <C3>un·e Cantor</C3> qui <u>propose des chants</u>, <C3>un·e Censor</C3> qui <u>fait respecter le calme</u>, <C3>un·e Quaestor</C3> qui est <u>responsable des finances</u>, <C3>un·e Scriba</C3> qui est <u>responsable du secrétariat</u> et <C3>un·e Fuchs Mayor</C3> qui <u>gère les fûts</u> et la <u>distribution de boissons</u> par <C3>les Fuchsen</C3>.
                   </p>
                   <p>
-                  Ouverts à toute personne intéressée ou concernée de près ou de loin par le folklore estudiantin de l’ULB, les cantus rassemblent les participant·es en corona (tablées disposées en U et éclairées à la bougie) et leur permettent de chanter moult chansons paillardes arrosées de quelques affonds.
+                  Pendant plusieurs années, l’ACE fesait le <C3>relais entre les guildes et les autorités de l’ULB</C3>. En 2021, l’ACE a <u>officialisé</u> cette représentation en se dotant d’une <C3>Charte Cantus</C3>, instituant notamment la <C3>Commission Cantus</C3>.
                   </p>
                   <p>
-                  Ce sont les différentes guildes qui organisent les cantus. La·le Senior·a de chacune d’entre elles est chargé·e de rythmer ces derniers avec l’aide de son bureau et de ses membres actif·ves.
+                  <u>Depuis 2023</u>, les guildes sont à présents <C3>fédérées par la FUG</C3> (Fédération Unie des Guildes), qui organise des <u>Assemblées Générales</u> avec les Senior•a et fait le <C3>relais avec le•la délégué•e Cantus</C3> de <u>l'ACE</u>, auprès de <u>l'ULB</u> et des <u>cercles</u>.
                   </p>
                   <p>
-                  Les cantus ont lieu presque tous les jours sur les différents campus de l’ULB, en particulier à la salle Éric Schelstraete (souvent abrégée SES), sur le campus du Solbosch, où se déroule la plupart des cantus.
-                  </p>
-                  <p>
-                  Une question sur le folklore chantant à l’ULB ? Contacte notre délégué·e Cantus à l’adresse <a href="mailto:cantus@ace-ulb.be">cantus@ace-ulb.be</a> !
+                  La FUG compte <C3><u>19 guildes membres</u></C3>, reprises ci-dessous :
                   </p>
                 </Text>
               </Center>
@@ -311,26 +312,7 @@ export default () => {
                 </Overlay>
             </Col>
           </Row>
-          <Row className="align-items-center m-0">
-            <p style={{marginTop: "20px"}}></p>
-            <Center>
-                <H3>Guildes Membres</H3>
-                <Text>
-                    <p>
-                    Les guildes sont des organisations folkloriques composées de plusieurs membres, se partageant entre elles·eux des postes bien définis. En général, une guilde a à sa tête un·e Senior·a, qui préside les cantus. La·le Senior·a est généralement accompagné·e d’un bureau. Les postes principaux qu’on retrouve dans une guilde sont variables, mais comprennent généralement un·e Cantor qui propose des chants, un·e Censor qui fait respecter le calme, un·e Quaestor qui est responsable des finances, un·e Scriba qui est responsable du secrétariat et un·e Fuchs Mayor qui gère les fûts et la distribution de boissons par les Fuchsen.
-                    </p>
-                    <p>
-                    Pendant quelques années, l’ACE fesait le relais entre les guildes et les autorités de l’ULB. En 2021, l’ACE a officialisé cette représentation en se dotant d’un Charte Cantus, instituant notamment la Commission Cantus.
-                    </p>
-                    <p>
-                    Depuis 2023, les guildes sont à présents fédérées par la FUG (Fédération Unie des Guildes), qui organise des Assemblées Générales avec les Senior•a et fait le relais avec le•la délégué•e Cantus de l'ACE, auprès de l'ULB et des cercles.
-                    </p>
-                    <p>
-                    La FUG compte 19 guildes membres, reprises ci-dessous :
-                    </p>
-                </Text>
-            </Center>
-        </Row>
+          <p style={{marginTop: "20px"}}></p>
         <div className="grid-container" id="guildes">
           {guildes.map((card) => (
             <div key={card.acronyme} className="grid-item">

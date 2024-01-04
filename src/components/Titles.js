@@ -12,13 +12,6 @@ export const H1 = styled.h1`
   }
 `;
 
-export const H1_2 = styled.h1`
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 900;
-  font-size: 20pt;
-  
-`;
-
 export const Subtitle = styled.h6`
   font-family: "Fjalla One", sans-serif;
   font-weight: 200;
