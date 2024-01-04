@@ -14,7 +14,7 @@ export default () => {
   const countdownRef = useRef(null);
 
   useEffect(() => {
-    const targetDate = new Date('2024-01-03T18:00:00');
+    const targetDate = new Date('2024-01-06T18:00:00');
 
     const updateCountdown = () => {
       const currentDate = new Date().getTime();
