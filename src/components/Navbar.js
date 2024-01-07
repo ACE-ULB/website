@@ -55,7 +55,7 @@ export default () => {
             <NavItemSVG svg="ACE" href="cercle" tip="Le Cercle" size="30pt"/>
             <NavItemSVG svg="Beers" href="events" tip="Nos Événements" size="30pt"/>
             <NavItemSVG svg="Solidarity" href="actions" tip="Actions & Projets" size="30pt"/>
-            <NavItemSVG svg="Penne" href="folklore" tip="Folklore ULbiste" size="30pt"/>
+            <NavItemSVG svg="Penne" href="folklore" tip="Folklore ULBiste" size="30pt"/>
             <NavItemSVG svg="ULB" href="members" tip="Espace Membre" size="22pt"/>
             <span className="d-lg-flex d-none">
             <NavSocial

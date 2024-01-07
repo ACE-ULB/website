@@ -5,6 +5,7 @@ import { H3, Text, Center, C1, C2, C3, C4, C5 } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const contentArrays = [
     {svg: "Teddy", id: "events/#st-v", title: "Saint-Verhaegen", width: "100pt", height: "100pt"},
@@ -135,7 +136,7 @@ export default () => {
                         <C4>En 2015</C4>, elle fut également annulée en dernière minute à la suite des menaces terroristes pesant sur Bruxelles après les attentats du 13 novembre à Paris.
                         </p>
                         <p>
-                        Enfin, <C4>l’édition 2020</C4> de la Saint-V a eu lieu <u><a href="https://auvio.rtbf.be/media/journal-televise-sujet-par-sujet-saint-v-une-fete-virtuelle-pour-les-etudiants-2706235" target="_blank" rel="noreferrer">en ligne</a></u> suite à la crise du Covid-19.
+                        Enfin, <C4>l’édition 2020</C4> de la Saint-V a eu lieu <a href="https://auvio.rtbf.be/media/journal-televise-sujet-par-sujet-saint-v-une-fete-virtuelle-pour-les-etudiants-2706235" target="_blank" rel="noreferrer"><FontAwesomeIcon icon="fa-brands fa-youtube" /> <u>en ligne</u></a> suite à la crise du Covid-19.
                         </p>
                         <p>
                         <C4>L’édition 2021</C4>, bien qu’initialement prévue dans le centre-ville, a dû être <u>annulée quelques jours avant</u>, suite à la quatrième vague de propagation de l’épidémie.

@@ -54,7 +54,6 @@ export default () => {
               <img src={require("../assets/img/home/15.png")} alt=""/>
               <img src={require("../assets/img/home/16.png")} alt=""/>
               <img src={require("../assets/img/home/17.png")} alt=""/>
-              <img src={require("../assets/img/home/18.png")} alt=""/>
               </Slider>
             </Overlay>
             </Col>
@@ -63,13 +62,16 @@ export default () => {
                 <H3>Qui sommes-nous ?</H3>
                 <Text>
                   <p>
-                  L’Association des Cercles Étudiants (en abrégé, ACE) est une <u>association étudiante représentative</u>, qui fédère et rassemble les cercles folkloriques de l’<u>Université libre de Bruxelles</u>. Pour le moment, nos cercles membres sont au nombre de <C1>31</C1>, et parmi eux on peut trouver des cercles liés à des facultés, des sections d’études ou encore des régions de Belgique. Malgré leur diversité et leurs particularités, nos cercles ont tous pour but cette envie de <u>rassembler des étudiantes et des étudiants</u> autour de projets et de moments communs.
+                  L’Association des Cercles Etudiants (<C1>ACE</C1>) a pour mission de fédérer et représenter les <C1>31 Cercles folkloriques</C1> actifs sur les campus de l’Université libre de Bruxelles. Parmi ceux-ci se trouvent les Cercles liés à une faculté ou à une ou plusieurs sections, les régionales au nombre de huit, ainsi que des membres conseillers tels le Cercle du Libre Examen ou la Fédération Unie des Guildes, qui coordonne le <C1>folklore chantant</C1>. Avec une grande diversité d'activités et des identités propres, ces Cercles s’attachent tous à promouvoir le <C1>principe du libre examen</C1>, l’<C1>esprit d’initiative</C1> et la <C1>camaraderie étudiante</C1>. Ensemble, ils rassemblent près d'un millier d’étudiant.e.s engagé.e.s.
                   </p>
                   <p>
-                  Les cercles folkloriques ont pour objectif de <u>perpétuer le folklore</u> et les <u>traditions de l’ULB</u>, ainsi que l’esprit de liberté, de solidarité, d’humour et de dérision qui est caractéristique de la vie étudiante en général. Depuis la création de notre université en <C1>1834</C1>, les traditions étudiantes et folkloriques de l’ULB ne cessent de se transmettre, tout en <u>évoluant</u> et en <u>s’enrichissant</u> avec le temps.
+                  Les Cercles ont pour objet la perpétuation du <C1>folklore ULBiste</C1> et la transmission de ses <C1>traditions</C1> : un héritage empreint de liberté, de revendications, de solidarité, et de dérision, valeurs essentielles de notre <C1>Alma Mater</C1>.
                   </p>
                   <p>
-                  À travers nos cercles et nos guildes membres, les étudiantes et étudiants font <u>vivre ce folklore et ces traditions</u> en organisant des événements folkloriques, des soirées sur les campus, des TD à la <C1>Jefke</C1>, des cantus, des activités socioculturelles et sportives, des conférences, des projets sociaux, des bals, des voyages, ainsi que d’autres <u>moments de partage</u> et de <u>rencontre en général</u>. Certains de nos cercles organisent également des <u>baptêmes</u>, à chaque début d’année académique.
+                  Les Cercles et les Guildes <C1>rythment l’année académique</C1> de leurs membres et sympathisant.e.s en proposant d’innombrables services étudiants et activités, qu’elles soient <C1>sociales</C1>, <C1>festives</C1>, <C1>culturelles</C1>, <C1>sociétales</C1> ou <C1>sportives</C1>. Certains Cercles folkloriques sont également <C1>baptismaux</C1>; ce dernier a lieu lors du premier quadrimestre et est une opportunité proposée à chaque étudiant.e de l'Université.
+                  </p>
+                  <p>
+                  L'ACE est animée par une <C1>vingtaine de délégué.e.s</C1>. Elle <C1>représente</C1> ses membres devant les autorités, la communauté universitaire et le monde extérieur; et <C1>coordonne</C1> les efforts des Cercles à travers plusieurs commissions. Elle est également en charge de l’encadrement des activités folkloriques et baptismales et organise des évènements rassembleurs pour la communauté universitaire.
                   </p>
                 </Text>
               </Center>
