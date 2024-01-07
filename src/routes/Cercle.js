@@ -49,12 +49,6 @@ export default () => {
             href='status'
             className="grid-item"
           />
-          <AdminView 
-            title="PV"
-            brief="Procès Verbaux des Réunions et AG ACE + Réunions CA"
-            href='pv'
-            className="grid-item"
-          />
         </div>
         <Separator title={"Le Cercle"} />
         <section className="section section-lg section-shaped pg-250">

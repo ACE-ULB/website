@@ -8,7 +8,6 @@ import Helmet from "react-helmet";
 import {
   Home,
   Cercle,
-  Pv,
   Events,
   Actions,
   Folklore,
@@ -39,8 +38,6 @@ export default () => {
             element = {<Home />} />
           <Route path="/cercle"  
             element = {<Cercle />} />
-            <Route path="/cercle/pv"
-              element = {<Pv />} />
             <Route path="/cercle/history"
               element = {<History />} />
           <Route path="/events"  

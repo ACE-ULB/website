@@ -5,6 +5,5 @@ export { default as Actions } from "./Actions";
 export { default as Folklore } from "./Folklore";
 export { default as Members } from "./Members";
 export { default as NotFound } from "./404";
-export { default as Pv } from "./Pv";
 export { default as History } from "./History";
 export { default as Counter } from "./Counter";
