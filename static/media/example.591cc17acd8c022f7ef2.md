@@ -1,9 +1,0 @@
----
-acronyme: 
-cercle:
-website:
-facebook:
-instagram:
-brief:
-baptismal:
----
