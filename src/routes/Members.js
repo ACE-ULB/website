@@ -1,5 +1,5 @@
 import React from "react";
-import { H1, H2, H3 } from "../components/Titles.js";
+import { H1, H2 } from "../components/Titles.js";
 import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar.js";
