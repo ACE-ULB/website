@@ -15,32 +15,29 @@ export default ({ img, title, svg, h }) => {
   return (
     <section>
       <Banner
-        className="img-fluid w-100"
+        className="img-fluid w-100 h-100"
         alt=""
         src={HOME_SOURCE === window.location.pathname ? 
           require("../assets/img/banner.jpg") : 
           require(`../assets/img/${img}.png`)}
       />
       {HOME_SOURCE === window.location.pathname ? (
-        <Row className="position-relative align-items-center m-0">
-          <Col lg="6" sm="0" className="position-relative anim_title d-none d-sm-block"
-            style={{
-              marginLeft: "6vw",
-              marginRight: "-6vw",
-              paddingTop: "30vh",
-            }}>
-            <div className="anim_box">
-              <div className="anim_title">
-                <span className="anim_block"></span>
-                  <h1>{SETTINGS.title}<span></span></h1>
-              </div>
-              <div className="anim_role">
-                <div className="anim_block"></div>
-                <p>{SETTINGS.subtitle}</p>
+        <Row className="align-items-center w-100 m-0" style={{height:"100vh"}}>
+          <Col lg="6" sm="0" className="anim_title container-fluid justify-content-center">
+            <div style={{margin:"10% 0 0 0"}}>
+              <div className="anim_box">
+                <div className="anim_title">
+                  <span className="anim_block"></span>
+                    <h1>{SETTINGS.title}<span className="d-none d-sm-block"></span></h1>
+                </div>
+                <div className="anim_role">
+                  <div className="anim_block"></div>
+                  <p>{SETTINGS.subtitle}</p>
+                </div>
               </div>
             </div>
           </Col>
-          <Col lg="6" className="position-relative text-center logo">
+          <Col lg="6" className="text-center logo">
             <img
               className="img-fluid"
               style={{ maxWidth: "90%" }}
@@ -50,21 +47,18 @@ export default ({ img, title, svg, h }) => {
           </Col>
         </Row>
       ) : (
-        <Row className="position-relative align-items-center m-0">
-          <Col lg="6" sm="0" className="position-relative anim_title d-none d-sm-block"
-            style={{
-              marginLeft: "25vw",
-              marginRight: "-25vw",
-              paddingTop: "30vh",
-            }}>
-            <div className="anim_box">
-              <div className="anim_title">
-                <span className="anim_block" style={{margin:"0 0 0 -300px"}}></span>
-                  <h1>{title}<span></span></h1>
+        <Row className="align-items-center w-100 m-0" style={{height:"100vh"}}>
+          <Col lg="6" sm="0" className="anim_title container-fluid justify-content-center">
+            <div style={{margin:"10% 0 0 0"}}>
+              <div className="anim_box">
+                <div className="anim_title">
+                  <span className="anim_block"></span>
+                    <h1>{title}<span className="d-none d-sm-block"></span></h1>
+                </div>
               </div>
             </div>
           </Col>
-          <Col lg="6" className="position-relative text-center logo">
+          <Col lg="6" className="text-center logo">
             <span style={{display:"flex"}}>
             {React.createElement(SVGs[svg], { color: style.palh, width: "500pt", height: h })}
             </span>
