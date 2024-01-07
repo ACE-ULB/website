@@ -12,6 +12,7 @@ import {
   Actions,
   Folklore,
   Members,
+  Notion,
   NotFound,
   History,
   Counter
@@ -49,7 +50,7 @@ export default () => {
           <Route path="/members"  
             element = {<Members />} />
           <Route path="/notion"  
-            element = {<Members />} />
+            element = {<Notion />} />
           <Route path="*"
             element = {<NotFound />} />
         </Routes>
