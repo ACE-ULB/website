@@ -35,7 +35,7 @@ const Enhance = ({ src }) => {
 // eslint-disable-next-line
 export default ({ timeline }) => {
   return (
-    <ul className="timeline">
+    <ul style={{'z-index':0}} className="timeline">
       {timeline.map((e, i) => (
         <li className={i % 2 ? "timeline-inverted" : null}>
           <div className="timeline-image">
