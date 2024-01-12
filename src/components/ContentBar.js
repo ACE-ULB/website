@@ -5,6 +5,10 @@ import * as SVGs from "../assets/svg";
 import { NavHashLink } from "react-router-hash-link";
 import "../assets/css/display.scss";
 import style from "../assets/css/style.scss";
+import { getRandomColor } from "../utils/randomcolor";
+
+//has nothing to do with the content bar but still need to set it here since we need to set it once per page/refresh
+export const randColor=getRandomColor() ;
 
 export const NavLinkS = ({ to, children }) => (
   <NavHashLink className="font-white nav-link" to={to}>
