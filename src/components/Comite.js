@@ -88,7 +88,7 @@ export default () => {
                     <div className="poster">
                         {getPicture(comite, title)}
                     </div>
-                    <div className="details">
+                    <div style={{'z-index':0}} className="details">
                         <h1>{comite[title].nom}</h1>
                         <h2>{comite[title].poste}</h2>
                         <p className="desc">
