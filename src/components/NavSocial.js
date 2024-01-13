@@ -79,9 +79,8 @@ export default ({
             href={discord.url}
             id={`discord${discord.id}`}
             target="_blank"
-            disabled
          size={size} >
-            <FontAwesomeIcon icon={["fab", "discord"]} />
+            <FontAwesomeIcon icon={["fab", "discord"]} size={size}/>
             <span className="nav-link-inner--text d-lg-none ml-2"></span>
           </NavLink>
           <UncontrolledTooltip delay={0} target={`discord${discord.id}`}>

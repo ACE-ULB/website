@@ -35,6 +35,8 @@ export default props => {
             website={{url: props.href, tip:`Consultez le site du ${props.acronyme}`, id:`${props.acronyme}`}}
             facebook={{url: props.fb, tip:`Consultez le Facebook du ${props.acronyme}`, id:`${props.acronyme}`}}
             instagram={{url: props.ig, tip:`Consultez l'Instagram du ${props.acronyme}`, id:`${props.acronyme}`}}
+            discord={{url: props.dc, tip:`Rejoignez le serveur du ${props.acronyme}`, id:`${props.acronyme}`}}
+            email={{url: props.mail, tip:`Envoyez un mail au ${props.acronyme}`, id:`${props.acronyme}`}}
           />
         </Nav>
       </CardLink>

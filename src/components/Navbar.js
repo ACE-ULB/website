@@ -62,7 +62,7 @@ export default () => {
                 color = "white"
                 facebook={{url: SETTINGS.contact.facebook, tip:"Suivez nous sur Facebook", id:"navbar"}}
                 instagram={{url: SETTINGS.contact.instagram, tip:"Suivez nous sur Instagram", id:"navbar"}}
-                discord={{url: SETTINGS.contact.discord, tip:"Rejoignez-nous sur Discord", id:"navbar"}}
+                discord={{url: '#', tip:"Coming soon", id:"navbar"}}
                 email={{url: SETTINGS.contact.email, tip:"Envoyez nous un email", id:"navbar"}}
               /></span>
           </Nav>
