@@ -62,7 +62,7 @@ export default () => {
                   L’<C5>ACE rassemble</C5> également les étudiants et étudiantes de ses cercles membres autour d’une <u>direction commune</u> concernant la <C5>vie étudiante de l’ULB en général</C5>. Nos cercles se réunissent <u>une fois par semaine</u> pour organiser la vie étudiante sur les différents campus, mais aussi pour <u>discuter de projets inter-cercles</u> qui pourraient voir le jour. En plus de ça, nos cercles membres se <C5>réunissent occasionnellement en commissions</C5> pour parler de sujets plus spécifiques : pour le moment, ont été mises en place les commissions Cantus, Culture, Écologie, Égalité & Inclusivité, Folklore, Librex, Réduction des Risques et Sociale.
                   </p>
                 </Text>
-                <H3><FontAwesomeIcon icon="fa-solid fa-book"/> Parcours notre <a href="/cercle/history"><u>histoire</u></a> !</H3>
+                <H3><FontAwesomeIcon icon="fa-solid fa-timeline"/> Parcours notre <a href="/cercle/history"><u>histoire</u></a> !</H3>
               </Center>
             </Col>
           </Row>
