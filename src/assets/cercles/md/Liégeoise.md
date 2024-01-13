@@ -7,4 +7,6 @@ instagram: https://instagram.com/liegeoise_ulb/
 brief: Cercle Régionale des Étudiant•e•s originaire de Liège (Province)
 baptismal: False
 color: '#B30A10'
+date: 1950
+others_names: [Le Torai]
 ---

@@ -8,4 +8,5 @@ discord: https://discord.gg/BW3mpTA
 brief: Cercle des Étudiant•e•s de la Faculté des Sciences du Département Informatique
 baptismal: True
 color: '#5217A2'
+date: 1976
 ---

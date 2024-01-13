@@ -7,4 +7,6 @@ instagram: https://instagram.com/insta_cps/
 brief: Cercle des Étudiant•e•s de la Faculté de Philosophie et Sciences sociales
 baptismal: True
 color: '#E8DE02'
+date: 1937
+others_names: [CEPS]
 ---

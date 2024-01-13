@@ -32,7 +32,7 @@ export const Popup = () => {
 
 const history = [
   {
-    date: "2023",
+    date: "2024",
     title: "Nouveau site web",
     content: (
       <>
@@ -40,7 +40,7 @@ const history = [
           Après plus de 2ans sans siteweb, l'ACE s'offre enfin un nouveau site web !
         </p>
         <p>
-          Il sera codé en React App par notre cher Webmaster Julien et rempli par les textes de Sarah Rousseau.
+          Il sera codé en React App par notre Webmaster Julien, fourni des recherche d'archive de notre Président Pierre et rempli par les textes de Sarah Rousseau.
         </p>
       </>
     ),
@@ -51,20 +51,57 @@ const history = [
     content: (
       <>
         <p>
-          Après le dépôt de bilan de l'AG(E), l'ACE est crée pour répondre au besoin d'une association inter-cercles
-        </p>
-        <p>
-          Les activités de l'époque étaient les suivantes:
-          <ul>
-            <li>Des thé-dansants.</li>
-            <li>
-              Des bals.
-            </li>
-          </ul>  
+          Après le dépôt de bilan de l'ACF, l'ACE reprend le rôle d'association inter-cercles
         </p>
       </>
     ),
     image: require("../assets/img/ACE.png"),
+  },
+  {
+    date: "1983",
+    title: "l'ACF souhaite amener du changement",
+    content: (
+      <>
+        <p>
+          Un document d'archive envoyé aux bureaux des cercles qui parle d'une ACF souhaitant être plus utile que simplement organiser la St-Vé.
+          Certainement les prémices de la dissolution de l'ACF et de la création de l'ACE pour céler ce nouvel ère.
+        </p>
+      </>
+    ),
+    image: require("../assets/history/ACF veut s_imposer.png"),
+  },
+  {
+    date: "1973",
+    title: "Création de l'Association des Cercles Facultaires",
+    content: (
+      <>
+        <p>
+          Après le dépôt de bilan de l'AGE, l'ACF sera créé pour faire perdurer le rôle de sa prédécesseuse
+        </p>
+      </>
+    ),
+  },
+  {
+    date: "1970",
+    title: "Dissolution de l'Association Générale des Étudiants",
+    content: (
+      <>
+        <p>
+          Nous ne savons pas vous en détailler la raison pour le moment.
+        </p>
+      </>
+    ),
+  },
+  {
+    date: "1887",
+    title: "Création de l'Association Générale des Étudiants",
+    content: (
+      <>
+        <p>
+          Après une association précédente dessinant les prémissent d'une association fédératrice pour les cercles (à l'époque très peu nombreux) afin de faciliter la communication avec l'ULB, la presse et l'organisation de la St-V. C'était d'ailleurs l'une de ses rares réelle occupation.
+        </p>
+      </>
+    ),
   },
 ];
 // eslint-disable-next-line

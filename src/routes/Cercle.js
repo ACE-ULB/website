@@ -1,19 +1,12 @@
 import React from "react";
 import '../assets/css/display.scss';
-import { Separator, LogoView, AdminView, Banner, ContentBar, Navbar, Comite } from "../components";
+import { Separator, AdminView, Banner, ContentBar, Navbar, Comite, Cercles } from "../components";
 import { H3, Text, Center, H1, C5, C1, C } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
 import * as SVGs from "../assets/svg";
-import { filterCards } from "../utils/content";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-try {
-  var CERCLES_SUMMARY_JSON = require("../assets/cercles/summary.json");
-} catch (e) {
-  // eslint-disable-next-line
-  var CERCLES_SUMMARY_JSON = { fileMap: [] };
-}
 
 const contentArrays = [
   {svg: "Contract", id: "cercle/#admin", title: "Administratif", width: "100pt", height: "100pt"},
@@ -25,8 +18,6 @@ const contentArrays = [
 ]
 // eslint-disable-next-line
 export default () => {
-    const cercles = filterCards(CERCLES_SUMMARY_JSON, 'src/assets/cercles');
-
     return (
         <span>
         <Helmet>
@@ -79,16 +70,8 @@ export default () => {
         </section>
         <span id="comite"></span>
         <Comite/>
-        <Separator title="Les Cercles Membres" />
-        <section className="section section-lg section-shaped pg-250">
-        <div className="grid-container" id="cercles">
-          {cercles.map((card) => (
-            <div id={card.acronyme} className="grid-item">
-              <LogoView {...card} source='cercles' />
-            </div>
-          ))}
-        </div>
-        </section>
+        <span id="cercles"></span>
+        <Cercles/>
         <Separator title="L'Ordre du Prisme" />
         <section className="section section-lg section-shaped pg-250">
         <div className="h-100" id="OdP">

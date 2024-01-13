@@ -7,4 +7,6 @@ instagram: https://instagram.com/lafrontaliere/
 brief: Cercle Régionale des Étudiant•e•s originaire de la zone Frontalière (Hainaut)
 baptismal: False
 color: '#D40000'
+date: 1977
+others_names: [CEPAth]
 ---

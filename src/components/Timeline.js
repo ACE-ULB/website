@@ -54,7 +54,7 @@ export default ({ timeline }) => {
                     ) : (
                       e.content
                     )}
-                    <div style={{ padding: "0px 20px", paddingTop: "10px" }}>
+                    <div style={{ padding: "0px 20px", paddingTop: "10px", margin:"auto", maxWidth:`${e.imgWidth}` }}>
                       {e.image ? (
                         Array.isArray(e.image) ? (
                           <Slider
@@ -69,12 +69,12 @@ export default ({ timeline }) => {
                             touchMove={false}
                             speed={1000}
                           >
-                            {e.image.map((x) => (
-                              <img className="w-100" src={x} alt=""/>
+                            {e.image.map((x, i) => (
+                              <img key={i} src={x} alt=""/>
                             ))}
                           </Slider>
                         ) : (
-                          <Enhance src={e.image} />
+                          <Enhance src={e.image}/>
                         )
                       ) : null}
                     </div>

@@ -9,3 +9,4 @@ export { default as Navbar } from "./Navbar";
 export { default as NavSocial } from "./NavSocial"; 
 export { default as Comite } from "./Comite";
 export { default as Timeline } from "./Timeline";
+export { default as Cercles } from "./Cercles";

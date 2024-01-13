@@ -7,4 +7,5 @@ instagram: https://instagram.com/cercledelisti/
 brief: Cercle des Étudiant•e•s de l'École de Traduction et Interprétation Isti-Cooremans
 baptismal: True
 color: '#2C3283'
+date: 1966
 ---
