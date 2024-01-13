@@ -1,4 +1,4 @@
-const Members = () => {
+const Notion = () => {
   const externalLink = 'https://ag-ace.notion.site/ag-ace/Association-des-Cercles-Etudiants-ULB-25585d934609447e959b9cc6d6d6f8b0';
 
   window.location.href = externalLink;
@@ -6,4 +6,4 @@ const Members = () => {
   return null;
 };
 
-export default Members;
+export default Notion;

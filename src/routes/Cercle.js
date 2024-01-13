@@ -44,8 +44,8 @@ export default () => {
             className="grid-item"
           />
           <AdminView 
-            title="Status"
-            brief="Status officiel de l'ACE et ses Cercles membres"
+            title="Statuts"
+            brief="Statuts officiel de l'ACE et ses Cercles membres"
             href='status'
             className="grid-item"
           />
