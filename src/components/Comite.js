@@ -95,9 +95,9 @@ export default () => {
                     <div style={{'z-index':0}} className="details">
                         <h1>{comite[title].nom}</h1>
                         {comite[title].dem ? (
-                        <h2>Démissionnaire - {comite[title].poste}</h2>) : (
+                        <h2>Démissionnaire - {comite[title].poste}</h2>
+                        ) : (
                         <h2>{comite[title].poste}</h2>)}
-                        <h2>{comite[title].poste}</h2>
                         <p className="desc">
                             {getContentPoste(title)}
                         </p>
