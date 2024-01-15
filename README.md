@@ -36,12 +36,6 @@ visible for the website) you should also run these commands once.
 > npm run compile
 ```
 
-## Uploading new PV
-
-```txt
-npm run pv
-```
-
 ## Compress Images
 
 ```txt
