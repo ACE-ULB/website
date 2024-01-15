@@ -249,7 +249,7 @@ export default () => {
                   Dans les cercles membres de l’ACE, <C1><u>16 cercles sont considérés comme baptismaux</u></C1> (listés ci-dessous), donc organisent un baptême en <u>début d’année</u>. N’hésite pas à les contacter si tu veux plus d’informations !
                   </p>
                   <p>
-                  Tous no cercles membres ont pour objectif premier la <C1>solidarité et la convivialité</C1>, et te permettent donc de les rejoindre pour <u>t'investir dans le cercle</u> ou simplement <u>faire la fête</u> <C1>sans faire ta bleusaille</C1>. Elle te sera cependant <C1>vivement conseillée</C1> et n'est évidemment <u>jamais</u> mit en cause dans les <u>cercles n'organisant pas de baptême</u>.
+                  Tous nos cercles membres ont pour objectif premier la <C1>solidarité et la convivialité</C1>, et te permettent donc de les rejoindre pour <u>t'investir dans le cercle</u> ou simplement <u>faire la fête</u> <C1>sans faire ta bleusaille</C1>. Elle te sera cependant <C1>vivement conseillée</C1> et n'est évidemment <u>jamais</u> mit en cause dans les <u>cercles n'organisant pas de baptême</u>.
                   </p>
                   <p>
                   Ta curiosité est piquée ? N’hésite pas à aller te <C1>faire ton propre avis et à essayer</C1> ! Sache que tu as bien sûr le droit d’arrêter n’important quand.
