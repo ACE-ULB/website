@@ -37,10 +37,55 @@ const history = [
     content: (
       <>
         <p>
-          Après plus de 2ans sans siteweb, l'ACE s'offre enfin un nouveau site web !
+          Après plus de 3ans sans siteweb, l'ACE s'offre enfin un nouveau site web !
         </p>
         <p>
           Il sera codé en React App par notre Webmaster Julien, fourni des recherche d'archive de notre Président Pierre et rempli par les textes de Sarah Rousseau.
+        </p>
+      </>
+    ),
+  },
+  {
+    date: "2006",
+    title: "Avantages",
+    content: (
+      <>
+        <p>
+         Apparaition de l'avantage 1€ = 10 tickets pour les Présidents de Cercle (et de Baptême en période de bleusaille) à la Jefke.
+        </p>
+      </>
+    ),
+  },
+  {
+    date: "2005",
+    title: "Comité Folklore",
+    content: (
+      <>
+        <p>
+         Mise en place du Comité Folklore, qui se renouvel chaque année, toujours actif aujourd'hui.
+        </p>
+      </>
+    ),
+  },
+  {
+    date: "2005",
+    title: "Nouveau logo",
+    content: (
+      <>
+        <p>
+          Le logo est changé pour celui encore utilisé aujourd'hui.
+        </p>
+      </>
+    ),
+    image: require("../assets/img/ACE.png"),
+  },
+  {
+    date: "2002",
+    title: "Déménagement",
+    content: (
+      <>
+        <p>
+          Déménagement dans le local actuel au le bâtiment F.
         </p>
       </>
     ),
@@ -55,7 +100,6 @@ const history = [
         </p>
       </>
     ),
-    image: require("../assets/img/ACE.png"),
   },
   {
     date: "1983",
