@@ -69,5 +69,6 @@ e&i: {
     poste: Égalité & Inclusivité,
     nom: Agathe Bouchat,
     cercle: CdH,
+    dem: true,
     img: true}
 ---

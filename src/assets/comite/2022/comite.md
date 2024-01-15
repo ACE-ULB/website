@@ -17,11 +17,13 @@ vpi: {
 vpe1: {
     poste: Vice-Présidence Externe, 
     nom: Basile Tomé, 
-    cercle: CGéo}
+    cercle: CGéo,
+    dem: true}
 vpe2: {
     poste: Vice-Présidence Externe, 
     nom: Clara Michel, 
-    cercle: CKO}
+    cercle: CKO,
+    img: true}
 secretaire: {
     poste: Secrétariat,
     nom: ,
@@ -33,7 +35,8 @@ folklore-trez: {
 folklore1: {
     poste: Folklore,
     nom: Diego Di Giannantonio,
-    cercle: CPL}
+    cercle: CPL,
+    dem: true}
 folklore2: {
     poste: Folklore,
     nom: ,
@@ -41,7 +44,8 @@ folklore2: {
 balef1: {
     poste: Bal & Fêtes,
     nom: Carla Tournay,
-    cercle: CS}
+    cercle: CS,
+    dem: true}
 balef2: {
     poste: Bal & Fêtes,
     nom: ,
@@ -54,19 +58,23 @@ ecologie: {
 rdr: {
     poste: Réduction des Risques, 
     nom: Anissa Benbakoura, 
-    cercle: }
+    cercle: ,
+    dem: true}
 librex: {
     poste: Engagement-Librex, 
     nom: Mathieu Zuinen, 
-    cercle: }
+    cercle: ,
+    dem: true}
 cantus: {
     poste: Cantus,
     nom: Sarah Paul,
-    cercle: }
+    cercle: ,
+    dem: true}
 web-comm: {
     poste: Web-Communication,
     nom: Chloé Bridoux,
-    cercle: }
+    cercle: ,
+    dem: true}
 social: {
     poste: Social,
     nom: ,
@@ -78,9 +86,11 @@ culture: {
 e&i1: {
     poste: Égalité & Inclusivité,
     nom: Margaux Dagorne,
-    cercle: CKO}
+    cercle: CKO,
+    dem: true}
 e&i2: {
     poste: Égalité & Inclusivité,
     nom: Inès Vivier,
-    cercle: CdS}
+    cercle: CdS,
+    dem: true}
 ---

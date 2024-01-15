@@ -85,11 +85,18 @@ export default () => {
                 (title !== "year" && comite[title].nom ? (
                 <div className="wrapper card-item">
                 <div className="card">
+                    {comite[title].dem ? (
+                    <div className="poster demission">
+                    {getPicture(comite, title)}
+                    </div>) : (
                     <div className="poster">
                         {getPicture(comite, title)}
-                    </div>
+                    </div>)}
                     <div style={{'z-index':0}} className="details">
                         <h1>{comite[title].nom}</h1>
+                        {comite[title].dem ? (
+                        <h2>Démissionnaire - {comite[title].poste}</h2>) : (
+                        <h2>{comite[title].poste}</h2>)}
                         <h2>{comite[title].poste}</h2>
                         <p className="desc">
                             {getContentPoste(title)}
