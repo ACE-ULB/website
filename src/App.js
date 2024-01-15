@@ -15,7 +15,6 @@ import {
   Notion,
   NotFound,
   History,
-  Counter
 } from "./routes";
 //import theme from "./utils/theme";
 
@@ -34,8 +33,6 @@ export default () => {
 
         <Routes>
           <Route path="/"
-            element = {<Counter />} />
-          <Route path="/home"
             element = {<Home />} />
           <Route path="/cercle"  
             element = {<Cercle />} />

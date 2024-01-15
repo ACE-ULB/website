@@ -10,7 +10,7 @@ export default () => {
       <Helmet>
         <title>404: Not Found</title>
       </Helmet>
-      {/*<Navbar/>"*/}
+      <Navbar/>
 
       <section
         className="section section-lg section-shaped pg-250"

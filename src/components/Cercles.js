@@ -37,7 +37,7 @@ const ViewSelector = ({ onSelect, current }) => {
       </span>
     );
   };  
-
+// eslint-disable-next-line
 export default () => {
   const cercles = filterCards(CERCLES_SUMMARY_JSON, 'src/assets/cercles');
 
