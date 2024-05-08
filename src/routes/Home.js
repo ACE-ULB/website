@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { Banner, Map, ContentBar } from "../components/";
+import { Banner, Map, ContentBar, Footer } from "../components/";
 import { H3, Text, Center, C1 } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
@@ -80,6 +80,7 @@ export default () => {
         </div>
         </section>
         <Map id="location" />
+        <Footer/>
         </span>
     );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { Separator, Banner, ContentBar, LogoView, Navbar, NavSocial } from "../components";
+import { Separator, Banner, ContentBar, LogoView, Navbar, NavSocial, Footer } from "../components";
 import { H3, Text, Center, C1, C2, C3, C4, C, C5 } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Nav, Row } from "reactstrap";
@@ -322,6 +322,7 @@ export default () => {
         </div>
         </div>
         </section>
+        <Footer/>
         </span>
     );
 };

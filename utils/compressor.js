@@ -2,7 +2,7 @@ const compress_images = require("compress-images");
 
 function Compressor() {
   compress_images(
-    "src/assets/**/*.{jpg,JPG,jpeg,JPEG,png,svg,gif}",
+    "../new_img/*.{jpg,JPG,jpeg,JPEG,png,PNG,svg,gif}",
     "../compressed_images/",
     { compress_force: false, statistic: true, autoupdate: true },
     false,

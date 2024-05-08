@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar.js";
 import "../assets/css/construction.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Footer from "../components/Footer.js";
 // eslint-disable-next-line
 export default () => {
   return (
@@ -33,6 +34,7 @@ export default () => {
           </Row>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

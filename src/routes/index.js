@@ -7,3 +7,4 @@ export { default as Members } from "./Members";
 export { default as Notion } from "./Notion";
 export { default as NotFound } from "./404";
 export { default as History } from "./History";
+export { default as Journal } from "./Journal";

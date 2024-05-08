@@ -2,9 +2,14 @@ import React from "react";
 import { Card, CardTitle, CardText, CardLink, Button } from "reactstrap";
 import { H2, Text } from "./Titles.js";
 
+
 const handleClick = (props) => {
-  window.open(require(`../assets/admin/${props}.pdf`), '_blank')
-};
+  props === 'journal' ? (
+    window.location.href = '/cercle/journal'
+  ) : (
+    window.open(require(`../assets/admin/${props}.pdf`), '_blank')
+  )
+}
 
 // eslint-disable-next-line
 export default ({ title, brief, href }) => {

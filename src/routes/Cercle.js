@@ -1,6 +1,6 @@
 import React from "react";
 import '../assets/css/display.scss';
-import { Separator, AdminView, Banner, ContentBar, Navbar, Comite, Cercles } from "../components";
+import { Separator, AdminView, Banner, ContentBar, Navbar, Comite, Cercles, Footer } from "../components";
 import { H3, Text, Center, H1, C5, C1, C } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
@@ -37,7 +37,13 @@ export default () => {
           <AdminView 
             title="Statuts"
             brief="Statuts officiel de l'ACE et ses Cercles membres"
-            href='status'
+            href='statuts'
+            className="grid-item"
+          />
+          <AdminView 
+            title="La Bulle"
+            brief="Journal de l'ACE en collaboration avec ses cercles membres"
+            href='journal'
             className="grid-item"
           />
         </div>
@@ -140,7 +146,7 @@ export default () => {
                 <p><C color="#b3b6bb">Une dérogation est néanmoins possible pour un des critères 2 à 4 (sauf pour les postes de bureau).</C></p>
                 <p>
                 Tu es intéressé·e par nous rejoindre ? Suis attentivement les informations publiées sur nos réseaux sociaux !<br/>
-                En cas de question, n’hésite pas à contacter <a href="mailto:info@ace-ulb.be">info@ace-ulb.be</a> !
+                En cas de question, n’hésite pas à contacter <a href="mailto:bureau@ace-ulb.be">bureau@ace-ulb.be</a> !
                 </p>
               </Center>
           </Col>
@@ -179,6 +185,7 @@ export default () => {
         </Row>
         </div>
         </section>
+        <Footer/>
         </span>
     );
 };

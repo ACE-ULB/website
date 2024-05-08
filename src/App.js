@@ -15,6 +15,7 @@ import {
   Notion,
   NotFound,
   History,
+  Journal,
 } from "./routes";
 //import theme from "./utils/theme";
 
@@ -36,6 +37,8 @@ export default () => {
             element = {<Home />} />
           <Route path="/cercle"  
             element = {<Cercle />} />
+            <Route path="/cercle/journal"
+              element = {<Journal />} />
             <Route path="/cercle/history"
               element = {<History />} />
           <Route path="/events"  

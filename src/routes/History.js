@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Separator, Timeline, Navbar } from "../components/";
+import { Separator, Timeline, Navbar, Footer } from "../components/";
 import { Center, H1, H3, Text } from "../components/Titles";
 import { Skew } from "../components/Images";
 import { Row, Col, Alert } from "reactstrap";
@@ -173,6 +173,7 @@ export default () => {
           <Timeline timeline={history} />
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

@@ -1,10 +1,5 @@
 ---
 year: 2023
-presidence: {
-    poste: Présidence - Coopté Trésorerie, 
-    nom: Pierre Brancart, 
-    cercle: CS,
-    img: true}
 vpi: {
     poste: Vice-Présidence Interne,
     nom: Barnabé Dardenne, 
@@ -18,7 +13,12 @@ vpe: {
 secretaire: {
     poste: Secrétariat,
     nom: Abigaël Gillard,
-    cercle: CRom,
+    cercle: CdH,
+    img: true}
+web-comm1: {
+    poste: Web-Comm - Coopté Folklore Trez - Trésorier Remplaçant,
+    nom: Julien Leclercq,
+    cercle: CI,
     img: true}
 folklore1: {
     poste: Folklore,
@@ -50,25 +50,32 @@ cantus: {
     nom: Ysaline Dupont,
     cercle: CdH,
     img: true}
-web-comm1: {
-    poste: Web-Comm - Coopté Folklore Trez,
-    nom: Julien Leclercq,
-    cercle: CI,
-    img: true}
 web-comm2: {
     poste: Coopté Web-Communication,
     nom: Laura Renard,
     cercle: CARé,
     img: true}
-social: {
+social2: {
+    poste: Coopté Social,
+    nom: Mark Dimitrov,
+    cercle: CI,
+    img: true}
+social1: {
     poste: Social - Coopté Culture,
     nom: Nao Vermylen,
     cercle: CdS,
+    dem: true,
     img: true}
 e&i: {
     poste: Égalité & Inclusivité,
     nom: Agathe Bouchat,
     cercle: CdH,
+    dem: true,
+    img: true}
+presidence: {
+    poste: Présidence - Coopté Trésorerie, 
+    nom: Pierre Brancart, 
+    cercle: CS,
     dem: true,
     img: true}
 ---

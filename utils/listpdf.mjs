@@ -16,11 +16,10 @@ const result = dirs.map(x => {
     year: x,
     content: fs.readdirSync(process.argv[2] + x).map(file => {
       return {
-        ag: file.includes("AG"),
-        ace: file.includes("ACE"),
-        oa: file.includes("OA"),
+        stv: file.includes("st-v"),
+        sf: file.includes("sf"),
         date: file.split(".")[0].split("_")[0],
-        url: "pv/" + x + "/" + file
+        url: "journal/" + x + "/" + file
       };
     })
   };
