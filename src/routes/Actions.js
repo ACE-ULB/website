@@ -458,7 +458,6 @@ export default () => {
           </Row>
         </div>
         </section>
-        <Footer/>
         </span>
     );
 };

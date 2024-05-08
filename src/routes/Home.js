@@ -80,7 +80,6 @@ export default () => {
         </div>
         </section>
         <Map id="location" />
-        <Footer/>
         </span>
     );
 };

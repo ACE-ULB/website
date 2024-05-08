@@ -173,7 +173,6 @@ export default () => {
           <Timeline timeline={history} />
         </div>
       </section>
-      <Footer/>
     </>
   );
 };
