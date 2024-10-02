@@ -19,6 +19,7 @@ export default {
       CP: "1050",
       town: "Ixelles",
       position: [50.8134387, 4.3818590],
+      local: "S.F1.E229",
       phone: "02 650 25 14",
       bank: {
         general : {name: "Général", iban: "BE52 3631 1343 8409"},
