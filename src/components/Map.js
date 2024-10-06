@@ -53,6 +53,12 @@ export default () => {
                   }
                   <li><FontAwesomeIcon icon={['fas', 'road']} />{` ${SETTINGS.location.street} ${SETTINGS.location.number}`}</li>
                   <li><FontAwesomeIcon icon={['fas', 'street-view']} />{` ${SETTINGS.location.CP} ${SETTINGS.location.town}`}</li>
+                  <li>
+                    <FontAwesomeIcon icon={['fas', 'envelope']} />
+                    <a href={`mailto:${SETTINGS.location.email}`}>
+                      {` ${SETTINGS.location.email}`}
+                    </a>
+                  </li>
                 </ul>
               </Text>
             </Center>
