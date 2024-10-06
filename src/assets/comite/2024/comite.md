@@ -30,7 +30,7 @@ RdR: {
     poste: Réduction des Risques,
     nom: Charlotte Deltour,
     cercle: CPS,
-    img: false}
+    img: true}
 e&i1: {
   poste: Égalité & Inclusivité,
   nom: Youssef Arrouf,
