@@ -55,7 +55,7 @@ e&i2: {
   poste: Cooptée Égalité & Inclusivité,
   nom: Konstantina Viale,
   cercle: CD,
-  img: false}
+  img: true}
 web-comm: {
   poste: Coopté Web-Communication,
   nom: Barnabé Dardenne,

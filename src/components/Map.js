@@ -41,37 +41,40 @@ export default () => {
             <Center>
               <H3 className="text-center"><FontAwesomeIcon icon={['fas', 'map-marker-alt']} /> Où nous trouver </H3>
               <Text>
-                <ul style={{listStyleType: "none"}}>
-                  {SETTINGS.location.entreprise ?
-                    <li>
-                      <FontAwesomeIcon icon={['fas', 'address-book']} />
-                      {SETTINGS.location.entreprise.url
-                        ? <a href={SETTINGS.location.entreprise.url}> {SETTINGS.location.entreprise.name}</a>
-                        : SETTINGS.location.entreprise}
-                    </li>
-                    : null
-                  }
-                  <li><FontAwesomeIcon icon={['fas', 'road']} />{` ${SETTINGS.location.street} ${SETTINGS.location.number}`}</li>
-                  <li><FontAwesomeIcon icon={['fas', 'street-view']} />{` ${SETTINGS.location.CP} ${SETTINGS.location.town}`}</li>
-                  {SETTINGS.location.phone ? (
-                    <li><FontAwesomeIcon icon={['fas', 'phone']} />{` ${SETTINGS.location.phone}`}</li>
-                    ) : SETTINGS.location.local ? (
-                      <li><FontAwesomeIcon icon={['fas', 'handshake']} />{` ${SETTINGS.location.local}`}</li>
+                  <ul style={{listStyleType: "none"}}>
+                      {SETTINGS.location.entreprise ?
+                          <li>
+                              <FontAwesomeIcon icon={['fas', 'address-book']}/>
+                              {SETTINGS.location.entreprise.url
+                                  ? <a href={SETTINGS.location.entreprise.url}> {SETTINGS.location.entreprise.name}</a>
+                                  : SETTINGS.location.entreprise}
+                          </li>
+                          : null
+                      }
+                      <li><FontAwesomeIcon
+                          icon={['fas', 'road']}/>{` ${SETTINGS.location.street} ${SETTINGS.location.number}`}</li>
+                      <li><FontAwesomeIcon
+                          icon={['fas', 'street-view']}/>{` ${SETTINGS.location.CP} ${SETTINGS.location.town}`}</li>
+                      {SETTINGS.location.phone ? (
+                          <li><FontAwesomeIcon icon={['fas', 'phone']}/>{` ${SETTINGS.location.phone}`}</li>
+                      ) : SETTINGS.location.local ? (
+                          <li><FontAwesomeIcon icon={['fas', 'handshake']}/>{` ${SETTINGS.location.local}`}</li>
                       ) : null
-                  }
-                    <li>
-                        <FontAwesomeIcon icon={['fas', 'envelope']} />
-                        <a href={`mailto:${SETTINGS.location.email}`}>
-                            {` ${SETTINGS.location.email}`}
-                        </a>
-                    </li>
-                </ul>
+                      }
+                      <li>
+                          <FontAwesomeIcon icon={['fas', 'envelope']}/>
+                          <a href={`mailto:${SETTINGS.location.email}`}>
+                              {` ${SETTINGS.location.email}`}
+                          </a>
+                      </li>
+                  </ul>
               </Text>
             </Center>
             </Col>
-            <Col lg="6" className='p-0'>
-            <Center>
-              <H3 className="text-center" style={{marginLeft:"-35px"}}><FontAwesomeIcon icon={['fas', 'hand-holding-heart']} /> Donate </H3>
+                <Col lg="6" className='p-0'>
+                    <Center>
+                        <H3 className="text-center" style={{marginLeft: "-35px"}}><FontAwesomeIcon
+                            icon={['fas', 'hand-holding-heart']} /> Donate </H3>
               <Text>
                 <ul style={{listStyleType: "none"}}>
                   <li><FontAwesomeIcon icon={['fas', 'building']} />{` ${SETTINGS.location.bank.general.name} : ${SETTINGS.location.bank.general.iban}`}</li>
