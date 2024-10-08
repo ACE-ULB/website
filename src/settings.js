@@ -19,7 +19,9 @@ export default {
       CP: "1050",
       town: "Ixelles",
       position: [50.8134387, 4.3818590],
-      email: "bureau@ace-ulb.be",
+      local: "S.F1.E229",
+      phone: "",
+        email: "bureau@ace-ulb.be",
       bank: {
         general : {name: "Général", iban: "BE52 3631 1343 8409"},
         folklore: {name: "Folklore", iban: "BE08 3631 1343 8813"},

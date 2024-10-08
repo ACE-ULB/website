@@ -39,9 +39,6 @@ const history = [
         <p>
           Après plus de 3ans sans siteweb, l'ACE s'offre enfin un nouveau site web !
         </p>
-        <p>
-          Il sera codé en React App par notre Webmaster Julien, fourni des recherche d'archive de notre Président Pierre et rempli par les textes de Sarah Rousseau.
-        </p>
       </>
     ),
   },
@@ -73,7 +70,7 @@ const history = [
     content: (
       <>
         <p>
-          Le logo est changé pour celui encore utilisé aujourd'hui.
+          Le logo est changé pour celui qui est encore utilisé aujourd'hui.
         </p>
       </>
     ),
@@ -85,7 +82,7 @@ const history = [
     content: (
       <>
         <p>
-          Déménagement dans le local actuel au le bâtiment F.
+          Déménagement dans le local actuel au bâtiment F.
         </p>
       </>
     ),
