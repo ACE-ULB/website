@@ -20,12 +20,12 @@ folklore1: {
     poste: Folklore,
     nom: Emelyne Vincicot,
     cercle: ISTI,
-    img: false}
+    img: true}
 folklore2: {
     poste: Folklore,
     nom: Sarah Rousseau,
     cercle: CD,
-    img: false}
+    img: true}
 RdR: {
     poste: Réduction des Risques,
     nom: Charlotte Deltour,
@@ -35,7 +35,7 @@ e&i1: {
   poste: Égalité & Inclusivité,
   nom: Youssef Arrouf,
   cercle: Liégeoise,
-  img: false}
+  img: true}
 social: {
     poste: Social,
     nom: Mark Dimitrov,
@@ -45,7 +45,7 @@ culture: {
   poste: Culture,
   nom: Romain Destrée,
   cercle: CdH,
-  img: false}
+  img: true}
 librex: {
   poste: Engagement-Librex,
   nom: Aleyna Pulat,
@@ -65,5 +65,5 @@ folklore3: {
   poste: Cooptée Folklore,
   nom: Audrey Hebbelynck,
   cercle: ISTI,
-  img: false}
+  img: true}
 ---
