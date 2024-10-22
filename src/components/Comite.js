@@ -45,10 +45,15 @@ export default () => {
   const yearsDirectory = filterYears(COMITE_SUMMARY_JSON, 'src/assets/comite');
   const [selectedYear, setSelectedYear] = useState(yearsDirectory[0]?.year.toString());
   const postesContent = require('../assets/comite/postes.json');
+  const postesMail = require('../assets/comite/mails.json');
 
   const getContentPoste = (poste) => {
     return postesContent[poste.replace(/\d+$/, '')] || "Aucune description disponible";
   };
+
+   const getMailPoste = (poste) => {
+     return postesMail[poste.replace(/\d+$/, '')] || "Aucune mail disponible";
+  }
 
   const getPicture = (comite, title) => {
     return (comite[title].img ? (
@@ -62,6 +67,12 @@ export default () => {
         <a href={`cercle/#${comite[title]?.cercle}`}><img src={require(`../assets/cercles/logos/${comite[title].cercle}.png`)} alt=""/></a>
     ) : (
         <img src={require(`../assets/comite/unknow.png`)} alt=""/>))
+  };
+
+  const [openCard, setOpenCard] = useState(null); // Track which card is open
+
+  const handleCardClick = (title) => {
+    setOpenCard(openCard === title ? null : title);// Toggle open card
   };
 
   const handleYearChange = (year) => {
@@ -83,7 +94,7 @@ export default () => {
             <>
             {Object.keys(comite).map((title) => (
                 (title !== "year" && comite[title].nom ? (
-                <div className="wrapper card-item">
+                <div className="wrapper card-item" onClick={() => handleCardClick(title)}>
                 <div className="card">
                     {comite[title].dem ? (
                     <div className="poster demission">
@@ -92,21 +103,36 @@ export default () => {
                     <div className="poster">
                         {getPicture(comite, title)}
                     </div>)}
-                    <div style={{'z-index':0}} className="details">
-                        <h1>{comite[title].nom}</h1>
-                        {comite[title].dem ? (
+                  <div className={`contact ${openCard === title ? 'hidden' : 'visible'}`}>
+                    <h1>{comite[title].nom}</h1>
+                    <h2>{comite[title].poste}</h2>
+                    <h3>
+                      <a href={`mailto:${getMailPoste(title)}`} className="email-link">
+                        {` ${getMailPoste(title)}`}
+                      </a>
+                    </h3>
+                  </div>
+                  <div className={`details ${openCard === title ? 'visible' : 'hidden'}`}>
+                    <h1>{comite[title].nom}</h1>
+                    {comite[title].dem ? (
                         <h2>Démissionnaire - {comite[title].poste}</h2>
-                        ) : (
-                        <h2>{comite[title].poste}</h2>)}
-                        <p className="desc">
-                            {getContentPoste(title)}
-                        </p>
-                        <div className="cast">
-                            <ul>
-                                <li>{getCercle(comite, title)}</li>
-                            </ul>
-                        </div>
+                    ) : (
+                        <h2>{comite[title].poste}</h2>
+                    )}
+                    <h3>
+                      <a href={`mailto:${getMailPoste(title)}`} className="email-link">
+                        {` ${getMailPoste(title)}`}
+                      </a>
+                    </h3>
+                    <p className="desc">
+                      {getContentPoste(title)}
+                    </p>
+                    <div className="cast">
+                      <ul>
+                        <li>{getCercle(comite, title)}</li>
+                      </ul>
                     </div>
+                  </div>
                 </div>
                 </div>
                 ) : null)

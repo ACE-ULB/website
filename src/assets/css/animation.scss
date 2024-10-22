@@ -280,7 +280,7 @@
   .card:hover .poster img {
       transform: scale(1.1);
   }
-  
+
   .details {
       position: absolute;
       bottom: -100%;
@@ -294,39 +294,79 @@
       color: #fff;
       z-index: 2;
   }
-  
-  .card:hover .details {
-      bottom: 0;
+
+  .contact {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1.5em 1.5em 2em;
+    background: #000a;
+    backdrop-filter: blur(16px) saturate(120%);
+    transition: .3s ease-in-out;
+    color: #fff;
+    z-index: 2;
   }
-  
+
+  .card:hover .details {
+    bottom: 0;
+  }
+
+  .card:hover .contact {
+    bottom: -100;
+  }
+
+  .contact h1,
   .details h1,
+  .contact h2,
   .details h2 {
       font-weight: 700;
   }
-  
+
+  .contact h1,
   .details h1 {
       font-size: 1.5em;
       margin-bottom: 5px;
   }
-  
+
+  .contact h2,
   .details h2 {
       font-weight: 400;
       font-size: 1em;
       margin-bottom: 10px;
       opacity: .6;
   }
-  
+
+  .contact .desc,
   .details .desc {
       color: #fff;
       opacity: .8;
       line-height: 1.5;
       margin-bottom: 1em;
   }
-  
+
+  .contact h3,
+  .details h3 {
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 10px;
+    opacity: .6;
+  }
+
+  .contact h3 a,
+  .details h3 a {
+    color: #fff; /* Keep the text color white */
+    text-decoration: underline; /* Add underline */
+    font-weight: 400; /* Optional: Match the font weight */
+    font-size: 1em; /* Optional: Match the font size */
+  }
+
   .details .cast h3 {
       margin-bottom: .5em;
   }
-  
+
+  .contact .cast ul,
   .details .cast ul {
       position: relative;
       display: flex;
@@ -334,14 +374,16 @@
       gap: 0.625rem;
       width: 100%;
   }
-  
+
+  .contact .cast ul li,
   .details .cast ul li {
       list-style: none;
       width: 55px;
       border-radius: 50%;
       overflow: hidden;
   }
-  
+
+  .contact .cast ul li img,
   .details .cast ul li img {
       width: 100%;
       height: 100%;

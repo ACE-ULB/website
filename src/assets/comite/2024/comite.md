@@ -24,7 +24,7 @@ folklore1: {
 folklore2: {
     poste: Folklore,
     nom: Sarah Rousseau,
-    cercle: CD,
+    cercle: Fronta,
     img: true}
 RdR: {
     poste: Réduction des Risques,
