@@ -5,6 +5,7 @@ import { DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown, Uncon
 import '../assets/css/style.scss'
 import '../assets/css/animation.scss'
 import { H1 } from './Titles';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 try {
     var COMITE_SUMMARY_JSON = require("../assets/comite/summary.json");
 } catch (e) {
@@ -81,7 +82,7 @@ export default () => {
 
   return (
     <>
-    <Separator 
+    <Separator
         title="Le Comité"
         Object={React.createElement(YearSelector, { years: yearsDirectory.map((comite) => comite.year), onSelect: handleYearChange, current: selectedYear })}
     />
@@ -107,6 +108,7 @@ export default () => {
                     <h1>{comite[title].nom}</h1>
                     <h2>{comite[title].poste}</h2>
                     <h3>
+                      <FontAwesomeIcon icon={['fas', 'envelope']}/>
                       <a href={`mailto:${getMailPoste(title)}`} className="email-link">
                         {` ${getMailPoste(title)}`}
                       </a>
@@ -120,6 +122,7 @@ export default () => {
                         <h2>{comite[title].poste}</h2>
                     )}
                     <h3>
+                      <FontAwesomeIcon icon={['fas', 'envelope']}/>
                       <a href={`mailto:${getMailPoste(title)}`} className="email-link">
                         {` ${getMailPoste(title)}`}
                       </a>

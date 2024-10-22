@@ -292,7 +292,7 @@
       backdrop-filter: blur(16px) saturate(120%);
       transition: .3s;
       color: #fff;
-      z-index: 2;
+      z-index: 1;
   }
 
   .contact {
@@ -304,17 +304,9 @@
     padding: 1.5em 1.5em 2em;
     background: #000a;
     backdrop-filter: blur(16px) saturate(120%);
-    transition: .3s ease-in-out;
+    transition: 0s;
     color: #fff;
     z-index: 2;
-  }
-
-  .card:hover .details {
-    bottom: 0;
-  }
-
-  .card:hover .contact {
-    bottom: -100;
   }
 
   .contact h1,
@@ -387,5 +379,17 @@
   .details .cast ul li img {
       width: 100%;
       height: 100%;
+  }
+
+  .contact.visible,
+  .details.visible {
+    bottom: 0; // Fully visible
+    height: auto; // Allow full height to show when visible
+  }
+
+  .contact.hidden,
+  .details.hidden {
+    bottom: -100;
+    opacity: 0;
   }
 }
