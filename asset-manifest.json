@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f9f22d9f.css",
-    "main.js": "/static/js/main.70fcee9c.js",
+    "main.css": "/static/css/main.08c33ddb.css",
+    "main.js": "/static/js/main.e0512d3c.js",
     "static/media/2024-03-11_sf.pdf": "/static/media/2024-03-11_sf.ca190040c8333916559f.pdf",
     "static/media/ecologie.png": "/static/media/ecologie.afbe5d60d747cc4ca97d.png",
     "static/media/2023-11-20_st-v.pdf": "/static/media/2023-11-20_st-v.408ee3b5e0826a990e29.pdf",
@@ -42,8 +42,8 @@
     "static/media/bapteme1.png": "/static/media/bapteme1.a1b769e416234f014a7f.png",
     "static/media/roi.pdf": "/static/media/roi.13e982ca308abf2fa0ae.pdf",
     "static/media/folklore3.png": "/static/media/folklore3.ca93a0d0dd1e9d84a65c.png",
+    "static/media/statuts.pdf": "/static/media/statuts.4f79733948ba9a7e3881.pdf",
     "static/media/cantus2.png": "/static/media/cantus2.115b9a1a2e778eb23f1d.png",
-    "static/media/statuts.pdf": "/static/media/statuts.f6d5b0085fab86c7047f.pdf",
     "static/media/journal.png": "/static/media/journal.942410b980575abc5069.png",
     "static/media/ntv1.png": "/static/media/ntv1.f9e82dbf2938669dc8a9.png",
     "static/media/bapteme3.png": "/static/media/bapteme3.4712471bd2e75f9f943a.png",
@@ -79,6 +79,7 @@
     "static/media/vpe2.png": "/static/media/vpe2.302359844fb5fbc5c3ee.png",
     "static/media/camsaoul2.png": "/static/media/camsaoul2.5a2e7a20835dbff65e4c.png",
     "static/media/balef1.png": "/static/media/balef1.79d1d921dbb697a5feca.png",
+    "static/media/CHAA.png": "/static/media/CHAA.0f346240410081337e46.png",
     "static/media/GG.png": "/static/media/GG.46140ebaa70dec185d64.png",
     "static/media/culture2.png": "/static/media/culture2.3634819bfc7869d67b58.png",
     "static/media/camsaoul3.png": "/static/media/camsaoul3.1fcca08d5d3ab73a65e0.png",
@@ -96,7 +97,6 @@
     "static/media/ACE.png": "/static/media/ACE.c10c4b951ba93c058a09.png",
     "static/media/librex1.png": "/static/media/librex1.cbf3e965281060825567.png",
     "static/media/fsab.png": "/static/media/fsab.eb47f55f4caf5b8d3f11.png",
-    "static/media/CHAA.png": "/static/media/CHAA.fd2dd46b399fa850ffe4.png",
     "static/media/CRom.png": "/static/media/CRom.3ae520e0f8f4afd20e97.png",
     "static/media/CdS.png": "/static/media/CdS.996b4d4a4360bd25a02d.png",
     "static/media/ecologie1.png": "/static/media/ecologie1.4e6c248ba5380adad04b.png",
@@ -104,13 +104,13 @@
     "static/media/Lux.png": "/static/media/Lux.5409a253c100949788e9.png",
     "static/media/AGR.png": "/static/media/AGR.d3668785aee01c68821f.png",
     "static/media/Med.png": "/static/media/Med.d4d0c0f90f9aafc4ef2d.png",
+    "static/media/bea.png": "/static/media/bea.f3729c67df4007538d17.png",
     "static/media/st-v3.png": "/static/media/st-v3.e2969bc2d8db48501362.png",
     "static/media/librex2.png": "/static/media/librex2.fc4bb75ceab0651755b2.png",
     "static/media/Chimacienne.png": "/static/media/Chimacienne.045036d0cb425efbc6dc.png",
     "static/media/Liégeoise.png": "/static/media/Liégeoise.dc8132f9d67b2732889f.png",
     "static/media/CP.png": "/static/media/CP.5c25e6cbbcfe3430e2ea.png",
     "static/media/GM.png": "/static/media/GM.ef20110388e90e007c10.png",
-    "static/media/bea.png": "/static/media/bea.3d7d6e786808cc9118e5.png",
     "static/media/Fronta.png": "/static/media/Fronta.7359ee0e9c2dd3852c7e.png",
     "static/media/social2.png": "/static/media/social2.1a4ab34db6eb38df959a.png",
     "static/media/CECS.png": "/static/media/CECS.9d71a279d910cb3a1341.png",
@@ -197,11 +197,11 @@
     "static/media/GN.md": "/static/media/GN.95ead58c23475094b4d4.md",
     "static/media/GM.md": "/static/media/GM.f5e9140b747276da7b14.md",
     "static/media/GC.md": "/static/media/GC.d39ee67e302cb8ec5650.md",
-    "main.f9f22d9f.css.map": "/static/css/main.f9f22d9f.css.map",
-    "main.70fcee9c.js.map": "/static/js/main.70fcee9c.js.map"
+    "main.08c33ddb.css.map": "/static/css/main.08c33ddb.css.map",
+    "main.e0512d3c.js.map": "/static/js/main.e0512d3c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9f22d9f.css",
-    "static/js/main.70fcee9c.js"
+    "static/css/main.08c33ddb.css",
+    "static/js/main.e0512d3c.js"
   ]
 }
