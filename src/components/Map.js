@@ -58,7 +58,7 @@ export default () => {
                       {SETTINGS.location.phone ? (
                           <li><FontAwesomeIcon icon={['fas', 'phone']}/>{` ${SETTINGS.location.phone}`}</li>
                       ) : SETTINGS.location.local ? (
-                          <li><FontAwesomeIcon icon={['fas', 'handshake']}/>{` ${SETTINGS.location.local}`}</li>
+                          <li><FontAwesomeIcon icon={['fas', 'door-open']}/>{` ${SETTINGS.location.local}`}</li>
                       ) : null
                       }
                       <li>

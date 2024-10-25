@@ -292,7 +292,7 @@
       backdrop-filter: blur(16px) saturate(120%);
       transition: .3s;
       color: #fff;
-      z-index: 1;
+      z-index: 0;
   }
 
   .contact {
@@ -306,7 +306,7 @@
     backdrop-filter: blur(16px) saturate(120%);
     transition: 0s;
     color: #fff;
-    z-index: 2;
+    z-index: 0;
   }
 
   .contact h1,
