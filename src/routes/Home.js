@@ -11,7 +11,7 @@ const contentArrays = [
   {svg: "Beers", id: "events", title: "Événements", width: "120pt", height: "120pt"},
   {svg: "Solidarity", id: "actions", title: "Actions", width: "120pt", height: "120pt"},
   {svg: "Penne", id: "folklore", title: "Folklore", width: "120pt", height: "120pt"},
-  {svg: "ULB", id: "members", title: "Espace Membres", width: "120pt", height: "120pt"},
+  {svg: "ULB", id: "notion", title: "Espace Membres", width: "120pt", height: "120pt"},
 ]
 // eslint-disable-next-line
 export default () => {
