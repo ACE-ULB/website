@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.08c33ddb.css",
-    "main.js": "/static/js/main.0eaed1b5.js",
+    "main.js": "/static/js/main.92a87ec2.js",
     "static/media/2024-03-11_sf.pdf": "/static/media/2024-03-11_sf.ca190040c8333916559f.pdf",
     "static/media/ecologie.png": "/static/media/ecologie.afbe5d60d747cc4ca97d.png",
     "static/media/2023-11-20_st-v.pdf": "/static/media/2023-11-20_st-v.408ee3b5e0826a990e29.pdf",
@@ -16,6 +16,7 @@
     "static/media/7.png": "/static/media/7.4cf1031c31ad196e662a.png",
     "static/media/presidence.png": "/static/media/presidence.f46c1d5bfbec97f67b80.png",
     "static/media/web-comm.png": "/static/media/web-comm.14efd94bdf9c0dce2296.png",
+    "static/media/2024-11-20_st-v.pdf": "/static/media/2024-11-20_st-v.95acae701deff16605c1.pdf",
     "static/media/13.png": "/static/media/13.450e8652f1bfe9f086bd.png",
     "static/media/folklore2.png": "/static/media/folklore2.b8712130e7d62a632ead.png",
     "static/media/balef2.png": "/static/media/balef2.2ffea38613d64f80b559.png",
@@ -38,6 +39,7 @@
     "static/media/ACF veut s_imposer.png": "/static/media/ACF veut s_imposer.2840b607ecc80adf38ef.png",
     "static/media/culture.png": "/static/media/culture.1d44b482841b7bb85795.png",
     "static/media/cantus3.png": "/static/media/cantus3.f24b88339d666342a0e9.png",
+    "static/media/tresorier.png": "/static/media/tresorier.33d02257210ff0601445.png",
     "static/media/librex.png": "/static/media/librex.625d6a9a0a91d3059284.png",
     "static/media/bapteme1.png": "/static/media/bapteme1.a1b769e416234f014a7f.png",
     "static/media/roi.pdf": "/static/media/roi.13e982ca308abf2fa0ae.pdf",
@@ -198,10 +200,10 @@
     "static/media/GM.md": "/static/media/GM.f5e9140b747276da7b14.md",
     "static/media/GC.md": "/static/media/GC.d39ee67e302cb8ec5650.md",
     "main.08c33ddb.css.map": "/static/css/main.08c33ddb.css.map",
-    "main.0eaed1b5.js.map": "/static/js/main.0eaed1b5.js.map"
+    "main.92a87ec2.js.map": "/static/js/main.92a87ec2.js.map"
   },
   "entrypoints": [
     "static/css/main.08c33ddb.css",
-    "static/js/main.0eaed1b5.js"
+    "static/js/main.92a87ec2.js"
   ]
 }
