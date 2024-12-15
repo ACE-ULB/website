@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.08c33ddb.css",
-    "main.js": "/static/js/main.f23bd0dc.js",
+    "main.js": "/static/js/main.2d45344d.js",
     "static/media/2024-03-11_sf.pdf": "/static/media/2024-03-11_sf.ca190040c8333916559f.pdf",
     "static/media/ecologie.png": "/static/media/ecologie.afbe5d60d747cc4ca97d.png",
     "static/media/2023-11-20_st-v.pdf": "/static/media/2023-11-20_st-v.408ee3b5e0826a990e29.pdf",
@@ -44,7 +44,7 @@
     "static/media/bapteme1.png": "/static/media/bapteme1.a1b769e416234f014a7f.png",
     "static/media/roi.pdf": "/static/media/roi.13e982ca308abf2fa0ae.pdf",
     "static/media/folklore3.png": "/static/media/folklore3.ca93a0d0dd1e9d84a65c.png",
-    "static/media/statuts.pdf": "/static/media/statuts.4f79733948ba9a7e3881.pdf",
+    "static/media/statuts.pdf": "/static/media/statuts.1df14d3e8875e8be49d2.pdf",
     "static/media/cantus2.png": "/static/media/cantus2.115b9a1a2e778eb23f1d.png",
     "static/media/journal.png": "/static/media/journal.942410b980575abc5069.png",
     "static/media/ntv1.png": "/static/media/ntv1.f9e82dbf2938669dc8a9.png",
@@ -200,10 +200,10 @@
     "static/media/GM.md": "/static/media/GM.f5e9140b747276da7b14.md",
     "static/media/GC.md": "/static/media/GC.d39ee67e302cb8ec5650.md",
     "main.08c33ddb.css.map": "/static/css/main.08c33ddb.css.map",
-    "main.f23bd0dc.js.map": "/static/js/main.f23bd0dc.js.map"
+    "main.2d45344d.js.map": "/static/js/main.2d45344d.js.map"
   },
   "entrypoints": [
     "static/css/main.08c33ddb.css",
-    "static/js/main.f23bd0dc.js"
+    "static/js/main.2d45344d.js"
   ]
 }
