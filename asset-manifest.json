@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.08c33ddb.css",
-    "main.js": "/static/js/main.3df603ba.js",
+    "main.js": "/static/js/main.626fc4c5.js",
     "static/media/2024-03-11_sf.pdf": "/static/media/2024-03-11_sf.ca190040c8333916559f.pdf",
     "static/media/ecologie.png": "/static/media/ecologie.afbe5d60d747cc4ca97d.png",
     "static/media/2023-11-20_st-v.pdf": "/static/media/2023-11-20_st-v.408ee3b5e0826a990e29.pdf",
@@ -41,7 +41,7 @@
     "static/media/ACF veut s_imposer.png": "/static/media/ACF veut s_imposer.2840b607ecc80adf38ef.png",
     "static/media/culture.png": "/static/media/culture.1d44b482841b7bb85795.png",
     "static/media/cantus3.png": "/static/media/cantus3.f24b88339d666342a0e9.png",
-    "static/media/tresorier.png": "/static/media/tresorier.33d02257210ff0601445.png",
+    "static/media/tresorerie.png": "/static/media/tresorerie.b50b0d80002f6fb18d0f.png",
     "static/media/librex.png": "/static/media/librex.625d6a9a0a91d3059284.png",
     "static/media/bapteme1.png": "/static/media/bapteme1.a1b769e416234f014a7f.png",
     "static/media/roi.pdf": "/static/media/roi.13e982ca308abf2fa0ae.pdf",
@@ -62,7 +62,6 @@
     "static/media/web-comm2.png": "/static/media/web-comm2.b95d2105b4f17eaba1f8.png",
     "static/media/CO.png": "/static/media/CO.f8293165e364d482a1f0.png",
     "static/media/folklore-trez.png": "/static/media/folklore-trez.cd4861487228fbc5fb91.png",
-    "static/media/tresorerie.png": "/static/media/tresorerie.b50b0d80002f6fb18d0f.png",
     "static/media/st-v6.png": "/static/media/st-v6.36a7a6ead78808e0b15c.png",
     "static/media/Agro.png": "/static/media/Agro.08b47d6f24c1c0297064.png",
     "static/media/cercle.png": "/static/media/cercle.ae04b973054e7e2995bd.png",
@@ -201,10 +200,10 @@
     "static/media/GM.md": "/static/media/GM.f5e9140b747276da7b14.md",
     "static/media/GC.md": "/static/media/GC.d39ee67e302cb8ec5650.md",
     "main.08c33ddb.css.map": "/static/css/main.08c33ddb.css.map",
-    "main.3df603ba.js.map": "/static/js/main.3df603ba.js.map"
+    "main.626fc4c5.js.map": "/static/js/main.626fc4c5.js.map"
   },
   "entrypoints": [
     "static/css/main.08c33ddb.css",
-    "static/js/main.3df603ba.js"
+    "static/js/main.626fc4c5.js"
   ]
 }
