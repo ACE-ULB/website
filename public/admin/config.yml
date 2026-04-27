@@ -12,7 +12,7 @@ backend:
   #   - Callback URL      : https://ace-ulb.be/admin/
   # Puis remplacer YOUR_OAUTH_CLIENT_ID par le Client ID obtenu.
   auth_type: pkce
-  app_id: YOUR_OAUTH_CLIENT_ID
+  app_id: Ov23lirhbvrnU9mPffvp
 
 # Langue de l'interface
 locale: fr
