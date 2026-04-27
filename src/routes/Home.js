@@ -5,6 +5,7 @@ import { H3, Text, Center, C1 } from "../components/Titles";
 import { Overlay } from "../components/Images";
 import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
+import homeCarousel from "../data/home-carousel.json";
 
 const contentArrays = [
   {svg: "ACE", id: "cercle", title: "Le Cercle", width: "120pt", height: "120pt"},
@@ -38,22 +39,9 @@ export default () => {
                 autoplay={true}
                 arrows={false}
               >
-              <img src={require("../assets/img/home/1.png")} alt=""/>
-              <img src={require("../assets/img/home/2.png")} alt=""/>
-              <img src={require("../assets/img/home/3.png")} alt=""/>
-              <img src={require("../assets/img/home/4.png")} alt=""/>
-              <img src={require("../assets/img/home/6.png")} alt=""/>
-              <img src={require("../assets/img/home/7.png")} alt=""/>
-              <img src={require("../assets/img/home/8.png")} alt=""/>
-              <img src={require("../assets/img/home/9.png")} alt=""/>
-              <img src={require("../assets/img/home/10.png")} alt=""/>
-              <img src={require("../assets/img/home/11.png")} alt=""/>
-              <img src={require("../assets/img/home/12.png")} alt=""/>
-              <img src={require("../assets/img/home/13.png")} alt=""/>
-              <img src={require("../assets/img/home/14.png")} alt=""/>
-              <img src={require("../assets/img/home/15.png")} alt=""/>
-              <img src={require("../assets/img/home/16.png")} alt=""/>
-              <img src={require("../assets/img/home/17.png")} alt=""/>
+              {homeCarousel.photos.map((item) => (
+                <img key={item.image} src={item.image} alt=""/>
+              ))}
               </Slider>
             </Overlay>
             </Col>

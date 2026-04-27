@@ -1,0 +1,49 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+# Permissions nécessaires pour déployer sur GitHub Pages
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '21'
+          cache: 'npm'
+
+      - name: Installation des dépendances
+        run: npm ci --legacy-peer-deps
+
+      - name: Compilation du contenu (Markdown → JSON)
+        run: npm run compile
+
+      - name: Build React
+        run: npm run build
+        env:
+          REACT_APP_WEBSITE_TITLE: ${{ vars.REACT_APP_WEBSITE_TITLE || 'Association des Cercles Étudiants' }}
+          REACT_APP_WEBSITE_SHORT_TITLE: ${{ vars.REACT_APP_WEBSITE_SHORT_TITLE || 'ACE' }}
+          REACT_APP_WEBSITE_URL: ${{ vars.REACT_APP_WEBSITE_URL || 'https://ace-ulb.be' }}
+          REACT_APP_WEBSITE_DESC: ${{ vars.REACT_APP_WEBSITE_DESC }}
+          REACT_APP_WEBSITE_THEME: ${{ vars.REACT_APP_WEBSITE_THEME || '#3C4040' }}
+          CI: false
+
+      - name: Déploiement sur GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
+          cname: ace-ulb.be
