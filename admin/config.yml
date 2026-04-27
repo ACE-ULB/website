@@ -7,7 +7,7 @@ backend:
   repo: ACE-ULB/website
   branch: main
   auth_type: pkce
-  app_id: Ov23lirhbvrnU9mPffvp
+  app_id: Iv23li6u1s1xZjyXjMhH  
 
 # Langue de l'interface
 locale: fr
