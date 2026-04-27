@@ -6,11 +6,6 @@ backend:
   name: github
   repo: ACE-ULB/website
   branch: main
-  # Authentification PKCE : ne nécessite pas de serveur OAuth.
-  # Créer une GitHub OAuth App sur https://github.com/settings/developers
-  #   - Homepage URL      : https://ace-ulb.be
-  #   - Callback URL      : https://ace-ulb.be/admin/
-  # Puis remplacer YOUR_OAUTH_CLIENT_ID par le Client ID obtenu.
   auth_type: pkce
   app_id: Ov23lirhbvrnU9mPffvp
 
