@@ -1,0 +1,285 @@
+# ─────────────────────────────────────────────
+# Decap CMS — Configuration ACE-ULB
+# ─────────────────────────────────────────────
+
+backend:
+  name: github
+  repo: ACE-ULB/website
+  branch: main
+  # Authentification PKCE : ne nécessite pas de serveur OAuth.
+  # Créer une GitHub OAuth App sur https://github.com/settings/developers
+  #   - Homepage URL      : https://ace-ulb.be
+  #   - Callback URL      : https://ace-ulb.be/admin/
+  # Puis remplacer YOUR_OAUTH_CLIENT_ID par le Client ID obtenu.
+  auth_type: pkce
+  app_id: Ov23lirhbvrnU9mPffvp
+
+# Langue de l'interface
+locale: fr
+
+# Dossier où Decap CMS dépose les images uploadées (par défaut)
+media_folder: public/static/img/uploads
+public_folder: /static/img/uploads
+
+# ─────────────────────────────────────────────
+# COLLECTIONS
+# ─────────────────────────────────────────────
+collections:
+
+  # ── 1. Page d'accueil ───────────────────────
+  - name: home
+    label: "🏠 Page d'accueil"
+    files:
+      - name: carousel
+        label: "Carrousel de photos"
+        file: src/data/home-carousel.json
+        format: json
+        description: >
+          Ajoutez, supprimez ou réordonnez les photos du carrousel
+          affiché sur la page d'accueil.
+        fields:
+          - name: photos
+            label: Photos
+            label_singular: Photo
+            widget: list
+            summary: "{{fields.image}}"
+            fields:
+              - name: image
+                label: Image
+                widget: image
+                media_folder: /public/static/img/home
+                public_folder: /static/img/home
+                hint: >
+                  Format recommandé : PNG ou JPEG, ratio 4:3,
+                  minimum 800×600 px.
+
+  # ── 2. Comité de l'année en cours ──────────
+  - name: comite
+    label: "👥 Comité"
+    label_singular: "Année de comité"
+    folder: src/assets/comite
+    path: "{{year}}/comite"
+    extension: md
+    format: yaml-frontmatter
+    create: true
+    identifier_field: year
+    summary: "Comité {{year}}"
+    sortable_fields: [year]
+    fields:
+      - name: year
+        label: Année académique
+        widget: number
+        value_type: int
+        hint: "Ex : 2025 pour l'année 2024–2025"
+
+      - &membre
+        name: presidence
+        label: Présidence
+        widget: object
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Présidence"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - name: img
+            label: "Photo disponible ?"
+            widget: boolean
+            default: false
+            hint: >
+              Cochez si une photo existe dans
+              src/assets/comite/{année}/photos/{poste}.png
+
+      - <<: *membre
+        name: vpe
+        label: Vice-Présidence Externe
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Vice-Présidence Externe"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: vpi
+        label: Vice-Présidence Interne
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Vice-Présidence Interne"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: tresorerie
+        label: Trésorerie
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Trésorerie"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: secretaire
+        label: Secrétariat
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Secrétariat"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: folklore-trez
+        label: Folklore-Trésorerie
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Folklore-Trésorerie"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: folklore1
+        label: Folklore 1
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Folklore"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: folklore2
+        label: Folklore 2
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Folklore"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: balef1
+        label: "Bal & Fêtes 1"
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Bal & Fêtes"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: balef2
+        label: "Bal & Fêtes 2"
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Bal & Fêtes"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: ecologie
+        label: Écologie
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Écologie"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: rdr
+        label: Réduction des Risques
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Réduction des Risques"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: librex
+        label: Engagement-Librex
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Engagement-Librex"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: cantus
+        label: Cantus
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Cantus"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: web-comm
+        label: Web-Communication
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Web-Communication"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: social
+        label: Social
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Social"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: culture
+        label: Culture
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Culture"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+      - <<: *membre
+        name: "e&i"
+        label: "Égalité & Inclusivité"
+        fields:
+          - {name: poste,  label: Poste,   widget: string, default: "Égalité & Inclusivité"}
+          - {name: nom,    label: Nom,     widget: string}
+          - {name: cercle, label: Cercle,  widget: string}
+          - {name: img,    label: "Photo disponible ?", widget: boolean, default: false}
+
+  # ── 3. Cercles ──────────────────────────────
+  - name: cercles
+    label: "🎓 Cercles"
+    label_singular: Cercle
+    folder: src/assets/cercles/md
+    extension: md
+    format: yaml-frontmatter
+    create: true
+    identifier_field: acronyme
+    summary: "{{acronyme}} — {{cercle}}"
+    sortable_fields: [acronyme, cercle, date]
+    fields:
+      - {name: acronyme,   label: Acronyme,          widget: string}
+      - {name: cercle,     label: "Nom complet",      widget: string}
+      - {name: website,    label: Site web,            widget: string,   required: false}
+      - {name: facebook,   label: Facebook,            widget: string,   required: false}
+      - {name: instagram,  label: Instagram,           widget: string,   required: false}
+      - {name: brief,      label: "Description courte", widget: string}
+      - name: baptismal
+        label: Cercle baptismal ?
+        widget: boolean
+        default: false
+      - {name: color,      label: Couleur (hex),       widget: color,    required: false}
+      - {name: date,       label: "Année de fondation", widget: number,  value_type: int, required: false}
+
+  # ── 4. Guildes ──────────────────────────────
+  - name: guildes
+    label: "🎵 Guildes"
+    label_singular: Guilde
+    folder: src/assets/guildes/md
+    extension: md
+    format: yaml-frontmatter
+    create: true
+    identifier_field: acronyme
+    summary: "{{acronyme}} — {{cercle}}"
+    fields:
+      - {name: acronyme,  label: Acronyme,           widget: string}
+      - {name: cercle,    label: "Nom complet",       widget: string}
+      - {name: facebook,  label: Facebook,             widget: string,  required: false}
+      - {name: instagram, label: Instagram,            widget: string,  required: false}
+      - {name: brief,     label: "Description courte", widget: string}
+      - {name: color,     label: Couleur (hex),        widget: color,   required: false}
