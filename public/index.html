@@ -14,6 +14,16 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|IBM+Plex+Sans:500|Open+Sans|Oswald:600|Roboto|Roboto+Condensed:700|Source+Sans+Pro:300,400&display=swap" rel="stylesheet">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      // Redirige vers /admin/ si le lien contient un token Netlify Identity
+      if (window.location.hash && (
+        window.location.hash.indexOf('invite_token') > -1 ||
+        window.location.hash.indexOf('confirmation_token') > -1 ||
+        window.location.hash.indexOf('recovery_token') > -1
+      )) {
+        window.location.replace('/admin/' + window.location.hash);
+      }
+    </script>
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // https://github.com/rafrex/spa-github-pages
