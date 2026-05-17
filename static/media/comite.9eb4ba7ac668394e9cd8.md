@@ -4,78 +4,78 @@ vpi: {
     poste: Vice-Présidence Interne,
     nom: Barnabé Dardenne, 
     cercle: CPS,
-    img: true}
+    img: ""}
 vpe: {
     poste: Vice-Présidence Externe, 
     nom: Loïc Nanga, 
     cercle: CP,
-    img: true}
+    img: ""}
 secretaire: {
     poste: Secrétariat,
     nom: Abigaël Gillard,
     cercle: CdH,
-    img: true}
+    img: ""}
 web-comm1: {
     poste: Web-Comm - Coopté Folklore Trez - Trésorier Remplaçant,
     nom: Julien Leclercq,
     cercle: CI,
-    img: true}
+    img: ""}
 folklore1: {
     poste: Folklore,
     nom: Melanie Cavaleri,
     cercle: CARé,
-    img: true}
+    img: ""}
 folklore2: {
     poste: Folklore,
     nom: Adrien Yandiola,
     cercle: CPS,
-    img: true}
+    img: ""}
 balef1: {
     poste: Bal & Fêtes,
     nom: Romane Frères,
     cercle: CJC,
-    img: true}
+    img: ""}
 balef2: {
     poste: Bal & Fêtes,
     nom: Alexis Misselyn,
     cercle: CP,
-    img: true}
+    img: ""}
 ecologie: {
     poste: Écologie - Coopté RdR,
     nom: Carlos Queiros,
     cercle: CPS,
-    img: true}
+    img: ""}
 cantus: {
     poste: Cantus,
     nom: Ysaline Dupont,
     cercle: CdH,
-    img: true}
+    img: ""}
 web-comm2: {
     poste: Coopté Web-Communication,
     nom: Laura Renard,
     cercle: CARé,
-    img: true}
+    img: ""}
 social2: {
     poste: Coopté Social,
     nom: Mark Dimitrov,
     cercle: CI,
-    img: true}
+    img: ""}
 social1: {
     poste: Social - Coopté Culture,
     nom: Nao Vermylen,
     cercle: CdS,
     dem: true,
-    img: true}
+    img: ""}
 e&i: {
     poste: Égalité & Inclusivité,
     nom: Agathe Bouchat,
     cercle: CdH,
     dem: true,
-    img: true}
+    img: ""}
 presidence: {
     poste: Présidence - Coopté Trésorerie, 
     nom: Pierre Brancart, 
     cercle: CS,
     dem: true,
-    img: true}
+    img: ""}
 ---

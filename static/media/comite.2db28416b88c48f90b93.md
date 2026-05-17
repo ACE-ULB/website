@@ -4,12 +4,12 @@ presidence: {
     poste: Présidence,
     nom: Marie Gillotay,
     cercle: CdS,
-    img: true}
+    img: ""}
 tresorerie: {
     poste: Trésorerie,
     nom: Valentien Knaepen,
     cercle: CS,
-    img: true}
+    img: ""}
 vpi: {
     poste: Vice-Présidence Interne,
     nom: , 
@@ -23,7 +23,7 @@ vpe2: {
     poste: Vice-Présidence Externe, 
     nom: Clara Michel, 
     cercle: CKO,
-    img: true}
+    img: ""}
 secretaire: {
     poste: Secrétariat,
     nom: ,
@@ -54,7 +54,7 @@ ecologie: {
     poste: Écologie,
     nom: Loïc Nanga,
     cercle: CP,
-    img: true}
+    img: ""}
 rdr: {
     poste: Réduction des Risques, 
     nom: Anissa Benbakoura, 

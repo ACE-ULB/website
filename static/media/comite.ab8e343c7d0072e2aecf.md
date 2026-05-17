@@ -4,37 +4,37 @@ presidence: {
     poste: Présidence - Coopté E&I, 
     nom: Sarah Rousseau, 
     cercle: CPS,
-    img: true}
+    img: ""}
 tresorerie: {
     poste: Trésorerie, 
     nom: Marie Gillotay, 
     cercle: CdS,
-    img: true}
+    img: ""}
 vpi: {
     poste: Vice-Présidence Interne,
     nom: Manon de Vinck, 
     cercle: CPS,
-    img: true}
+    img: ""}
 vpe: {
     poste: Vice-Présidence Externe, 
     nom: Clara Michel, 
     cercle: CKO,
-    img: true}
+    img: ""}
 secretaire: {
     poste: Secrétariat,
     nom: Edwige Loems,
     cercle: CM,
-    img: true}
+    img: ""}
 folklore-trez: {
     poste: Folklore-Trésorerie, 
     nom: Valentien Knaepen, 
     cercle: CS,
-    img: true}
+    img: ""}
 folklore1: {
     poste: Folklore,
     nom: Fanny Segers,
     cercle: CPS,
-    img: true}
+    img: ""}
 folklore2: {
     poste: Folklore,
     nom: ,
@@ -43,12 +43,12 @@ balef1: {
     poste: Bal & Fêtes,
     nom: Esteban Welschen,
     cercle: CP,
-    img: true}
+    img: ""}
 balef2: {
     poste: Bal & Fêtes,
     nom: Loïc Aradszki,
     cercle: CP,
-    img: true}
+    img: ""}
 archives: {
     poste: Archives,
     nom: Timour Smolderen,
@@ -57,17 +57,17 @@ ecologie: {
     poste: Écologie,
     nom: Sam Rush,
     cercle: CdS,
-    img: true}
+    img: ""}
 rdr: {
     poste: Réduction des Risques, 
     nom: Saara Saskia Sutt, 
     cercle: CP,
-    img: true}
+    img: ""}
 librex: {
     poste: Engagement-Librex, 
     nom: Yza Belkalem, 
     cercle: CPS,
-    img: true}
+    img: ""}
 cantus1: {
     poste: Cantus,
     nom: Tiziana Baroncelli,
@@ -76,31 +76,31 @@ cantus2: {
     poste: Cantus,
     nom: Ara Ter Stepanian,
     cercle: CD,
-    img: true}
+    img: ""}
 cantus3: {
     poste: Cantus,
     nom: Martin Onufrzyk,
     cercle: ,
-    img: true}
+    img: ""}
 web-comm: {
     poste: Web-Communication,
     nom: Nell Tytgat,
     cercle: CdS,
-    img: true}
+    img: ""}
 social: {
     poste: Social,
     nom: Brice Prince,
     cercle: CdH,
-    img: true}
+    img: ""}
 culture: {
     poste: Culture, 
     nom: Timour Smolderen, 
     cercle: CPS,
-    img: true}
+    img: ""}
 e&i: {
     poste: Égalité & Inclusivité,
     nom: Camille Van Humbeeck,
     cercle: CPL,
-    img: true}
+    img: ""}
 
 ---
