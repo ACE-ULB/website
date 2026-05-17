@@ -55,7 +55,7 @@ collections:
     format: yaml-frontmatter
     create: true
     identifier_field: year
-    summary: "Comité {{year}}"
+    summary: "Comité {{fields.year}}"
     sortable_fields: [year]
     fields:
       - name: year
