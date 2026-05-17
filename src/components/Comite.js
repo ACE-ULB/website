@@ -57,10 +57,16 @@ export default () => {
   }
 
   const getPicture = (comite, title) => {
-    return (comite[title].img ? (
-        <img src={require(`../assets/comite/${comite.year}/photos/${title}.png`)} alt={title}/>
-    ) : (
-        <img src={require(`../assets/comite/empty.png`)} alt={title}/>))
+    const imgValue = comite[title].img;
+    // Nouveau format CMS : chemin direct vers public/
+    if (typeof imgValue === 'string' && imgValue.length > 0) {
+      return <img src={imgValue} alt={title}/>;
+    }
+    // Ancien format : booléen true → photo dans src/assets/comite/{year}/photos/
+    if (imgValue === true) {
+      return <img src={require(`../assets/comite/${comite.year}/photos/${title}.png`)} alt={title}/>;
+    }
+    return <img src={require(`../assets/comite/empty.png`)} alt={title}/>;
   };
 
   const getCercle = (comite, title) => {
