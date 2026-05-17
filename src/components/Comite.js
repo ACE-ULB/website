@@ -41,6 +41,7 @@ const YearSelector = ({ years, onSelect, current }) => {
     </span>
   );
 };
+
 // eslint-disable-next-line
 export default () => {
   const yearsDirectory = filterYears(COMITE_SUMMARY_JSON, 'src/assets/comite');
@@ -48,21 +49,22 @@ export default () => {
   const postesContent = require('../assets/comite/postes.json');
   const postesMail = require('../assets/comite/mails.json');
 
+  // ── Legacy helpers (named-object format, years 2019-2024) ──────────────
+
   const getContentPoste = (poste) => {
     return postesContent[poste.replace(/\d+$/, '')] || "Aucune description disponible";
   };
 
-   const getMailPoste = (poste) => {
-     return postesMail[poste.replace(/\d+$/, '')] || "Aucune mail disponible";
-  }
+  const getMailPoste = (poste) => {
+    return postesMail[poste.replace(/\d+$/, '')] || "Aucune mail disponible";
+  };
 
+  // Returns an <img> for the legacy named-object format
   const getPicture = (comite, title) => {
     const imgValue = comite[title].img;
-    // Nouveau format CMS : chemin direct vers public/
     if (typeof imgValue === 'string' && imgValue.length > 0) {
       return <img src={imgValue} alt={title}/>;
     }
-    // Ancien format : booléen true → photo dans src/assets/comite/{year}/photos/
     if (imgValue === true) {
       return <img src={require(`../assets/comite/${comite.year}/photos/${title}.png`)} alt={title}/>;
     }
@@ -76,10 +78,37 @@ export default () => {
         <img src={require(`../assets/comite/unknow.png`)} alt=""/>))
   };
 
-  const [openCard, setOpenCard] = useState(null); // Track which card is open
+  // ── New helpers (membres[] array format, 2025+) ────────────────────────
 
-  const handleCardClick = (title) => {
-    setOpenCard(openCard === title ? null : title);// Toggle open card
+  // Returns an <img> for the new list-based format
+  const getPictureFromMembre = (membre) => {
+    if (typeof membre.img === 'string' && membre.img.length > 0) {
+      return <img src={membre.img} alt={membre.nom}/>;
+    }
+    return <img src={require(`../assets/comite/empty.png`)} alt={membre.nom}/>;
+  };
+
+  const getCercleFromMembre = (membre) => {
+    if (membre.cercle) {
+      try {
+        return (
+          <a href={`cercle/#${membre.cercle}`}>
+            <img src={require(`../assets/cercles/logos/${membre.cercle}.png`)} alt={membre.cercle}/>
+          </a>
+        );
+      } catch (e) {
+        // cercle logo not found
+      }
+    }
+    return <img src={require(`../assets/comite/unknow.png`)} alt=""/>;
+  };
+
+  // ── State ──────────────────────────────────────────────────────────────
+
+  const [openCard, setOpenCard] = useState(null);
+
+  const handleCardClick = (key) => {
+    setOpenCard(openCard === key ? null : key);
   };
 
   const handleYearChange = (year) => {
@@ -98,55 +127,98 @@ export default () => {
         {yearsDirectory
         .filter((comite) => comite.year.toString() === selectedYear)
         .map((comite) => (
-            <>
-            {Object.keys(comite).map((title) => (
-                (title !== "year" && comite[title].nom ? (
-                <div className="wrapper card-item" onClick={() => handleCardClick(title)}>
-                <div className="card">
-                    {comite[title].dem ? (
-                    <div className="poster demission">
-                    {getPicture(comite, title)}
-                    </div>) : (
-                    <div className="poster">
-                        {getPicture(comite, title)}
-                    </div>)}
-                  <div className={`contact ${openCard === title ? 'hidden' : 'visible'}`}>
-                    <h1>{comite[title].nom}</h1>
-                    <h2>{comite[title].poste}</h2>
-                    <h3>
-                      <FontAwesomeIcon icon={['fas', 'envelope']}/>
-                      <a href={`mailto:${getMailPoste(title)}`} className="email-link">
-                        {` ${getMailPoste(title)}`}
-                      </a>
-                    </h3>
-                  </div>
-                  <div className={`details ${openCard === title ? 'visible' : 'hidden'}`}>
-                    <h1>{comite[title].nom}</h1>
-                    {comite[title].dem ? (
-                        <h2>Démissionnaire - {comite[title].poste}</h2>
-                    ) : (
-                        <h2>{comite[title].poste}</h2>
-                    )}
-                    <h3>
-                      <FontAwesomeIcon icon={['fas', 'envelope']}/>
-                      <a href={`mailto:${getMailPoste(title)}`} className="email-link">
-                        {` ${getMailPoste(title)}`}
-                      </a>
-                    </h3>
-                    <p className="desc">
-                      {getContentPoste(title)}
-                    </p>
-                    <div className="cast">
-                      <ul>
-                        <li>{getCercle(comite, title)}</li>
-                      </ul>
+            <React.Fragment key={comite.year}>
+
+              {/* ── New format : membres[] array (CMS list widget) ── */}
+              {Array.isArray(comite.membres) ? (
+                comite.membres.map((membre, index) => {
+                  const cardKey = `${comite.year}-${index}`;
+                  return (
+                    <div key={cardKey} className="wrapper card-item" onClick={() => handleCardClick(cardKey)}>
+                    <div className="card">
+                        {membre.dem ? (
+                          <div className="poster demission">
+                            {getPictureFromMembre(membre)}
+                          </div>
+                        ) : (
+                          <div className="poster">
+                            {getPictureFromMembre(membre)}
+                          </div>
+                        )}
+                        <div className={`contact ${openCard === cardKey ? 'hidden' : 'visible'}`}>
+                          <h1>{membre.nom}</h1>
+                          <h2>{membre.poste}</h2>
+                        </div>
+                        <div className={`details ${openCard === cardKey ? 'visible' : 'hidden'}`}>
+                          <h1>{membre.nom}</h1>
+                          {membre.dem ? (
+                            <h2>Démissionnaire·e - {membre.poste}</h2>
+                          ) : (
+                            <h2>{membre.poste}</h2>
+                          )}
+                          <div className="cast">
+                            <ul>
+                              <li>{getCercleFromMembre(membre)}</li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                  );
+                })
+
+              ) : (
+                /* ── Legacy format : named-object keys (2019-2024) ── */
+                Object.keys(comite).map((title) => (
+                  (title !== "year" && comite[title].nom ? (
+                  <div key={title} className="wrapper card-item" onClick={() => handleCardClick(title)}>
+                  <div className="card">
+                      {comite[title].dem ? (
+                      <div className="poster demission">
+                      {getPicture(comite, title)}
+                      </div>) : (
+                      <div className="poster">
+                          {getPicture(comite, title)}
+                      </div>)}
+                    <div className={`contact ${openCard === title ? 'hidden' : 'visible'}`}>
+                      <h1>{comite[title].nom}</h1>
+                      <h2>{comite[title].poste}</h2>
+                      <h3>
+                        <FontAwesomeIcon icon={['fas', 'envelope']}/>
+                        <a href={`mailto:${getMailPoste(title)}`} className="email-link">
+                          {` ${getMailPoste(title)}`}
+                        </a>
+                      </h3>
+                    </div>
+                    <div className={`details ${openCard === title ? 'visible' : 'hidden'}`}>
+                      <h1>{comite[title].nom}</h1>
+                      {comite[title].dem ? (
+                          <h2>Démissionnaire - {comite[title].poste}</h2>
+                      ) : (
+                          <h2>{comite[title].poste}</h2>
+                      )}
+                      <h3>
+                        <FontAwesomeIcon icon={['fas', 'envelope']}/>
+                        <a href={`mailto:${getMailPoste(title)}`} className="email-link">
+                          {` ${getMailPoste(title)}`}
+                        </a>
+                      </h3>
+                      <p className="desc">
+                        {getContentPoste(title)}
+                      </p>
+                      <div className="cast">
+                        <ul>
+                          <li>{getCercle(comite, title)}</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-                </div>
-                ) : null)
-            ))}
-            </>
+                  </div>
+                  ) : null)
+                ))
+              )}
+
+            </React.Fragment>
         ))}
     </div>
     </section>

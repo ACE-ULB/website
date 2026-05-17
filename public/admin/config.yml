@@ -64,13 +64,23 @@ collections:
         value_type: int
         hint: "Ex : 2025 pour l'année 2024–2025"
 
-      - &membre
-        name: presidence
-        label: Présidence
-        widget: object
+      - name: membres
+        label: Membres
+        label_singular: Membre
+        widget: list
+        summary: "{{fields.nom}} — {{fields.poste}}"
         fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Présidence"}
-          - {name: nom,    label: Nom,     widget: string}
+          - {name: nom,   label: Nom,   widget: string}
+          - name: poste
+            label: Poste
+            widget: string
+            hint: >
+              Postes habituels : Présidence, Vice-Présidence Externe,
+              Vice-Présidence Interne, Trésorerie, Secrétariat,
+              Folklore-Trésorerie, Folklore, Bal & Fêtes, Écologie,
+              Réduction des Risques, Engagement-Librex, Cantus,
+              Web-Communication, Social, Culture, Égalité & Inclusivité.
+              Écris le poste exact (tu peux en ajouter librement).
           - name: cercle
             label: Cercle d'origine
             widget: select
@@ -83,227 +93,11 @@ collections:
             media_folder: public/static/img/comite
             public_folder: /static/img/comite
             hint: "Format recommandé : carré, minimum 300×300 px."
-
-      - <<: *membre
-        name: vpe
-        label: Vice-Présidence Externe
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Vice-Présidence Externe"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
+          - name: dem
+            label: Démissionnaire·e
+            widget: boolean
             required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: vpi
-        label: Vice-Présidence Interne
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Vice-Présidence Interne"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: tresorerie
-        label: Trésorerie
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Trésorerie"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: secretaire
-        label: Secrétariat
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Secrétariat"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: folklore-trez
-        label: Folklore-Trésorerie
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Folklore-Trésorerie"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: folklore1
-        label: Folklore 1
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Folklore"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: folklore2
-        label: Folklore 2
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Folklore"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: balef1
-        label: "Bal & Fêtes 1"
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Bal & Fêtes"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: balef2
-        label: "Bal & Fêtes 2"
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Bal & Fêtes"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: ecologie
-        label: Écologie
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Écologie"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: rdr
-        label: Réduction des Risques
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Réduction des Risques"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: librex
-        label: Engagement-Librex
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Engagement-Librex"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: cantus
-        label: Cantus
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Cantus"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: web-comm
-        label: Web-Communication
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Web-Communication"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: social
-        label: Social
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Social"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: culture
-        label: Culture
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Culture"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
-
-      - <<: *membre
-        name: "e&i"
-        label: "Égalité & Inclusivité"
-        fields:
-          - {name: poste,  label: Poste,   widget: string, default: "Égalité & Inclusivité"}
-          - {name: nom,    label: Nom,     widget: string}
-          - name: cercle
-            label: Cercle d'origine
-            widget: select
-            required: false
-            options: [Agro, CARé, CD, CEBULB, CECS, CELB, CGéo, CHAA, CI, CIGa, CJC, CKO, CM, CO, CP, CPL, CPS, CPSY, CRom, CS, CdH, CdS, CePHA, Chimacienne, Fronta, ISEP, ISTI, Librex, Liégeoise, Lux, Semeur]
-          - {name: img,    label: "Photo", widget: image, required: false, media_folder: public/static/img/comite, public_folder: /static/img/comite}
+            default: false
 
   # ── 3. Cercles ──────────────────────────────
   - name: cercles
