@@ -16,7 +16,7 @@ vpe: {
     poste: Vice-Présidence Externe, 
     nom: Sarah Rousseau, 
     cercle: CPS,
-    img: true}
+    img: ""}
 secretaire: {
     poste: Secrétariat,
     nom: Ruth Janet Maguena,
@@ -25,7 +25,7 @@ folklore-trez: {
     poste: Folklore-Trésorerie, 
     nom: Yza Belkalem, 
     cercle: CPS,
-    img: true}
+    img: ""}
 folklore1: {
     poste: Folklore,
     nom: Gaël Mayer,
@@ -78,7 +78,7 @@ eco-resp1: {
     poste: Éco-Responsable, 
     nom: Manon de Vinck, 
     cercle: CPS,
-    img: true}
+    img: ""}
 eco-resp2: {
     poste: Éco-Responsable, 
     nom: Claudia Cubeta, 

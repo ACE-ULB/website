@@ -4,12 +4,12 @@ presidence: {
     poste: Présidence - Coopté E&I, 
     nom: Sarah Rousseau, 
     cercle: CPS,
-    img: true}
+    img: ""}
 tresorerie: {
     poste: Trésorerie, 
     nom: Yza Belkalem, 
     cercle: CPS,
-    img: true}
+    img: ""}
 vpi: {
     poste: Vice-Présidence Interne,
     nom: Steven Da Mota Duarte, 
@@ -18,7 +18,7 @@ vpe: {
     poste: Vice-Présidence Externe, 
     nom: Manon de Vinck, 
     cercle: CPS,
-    img: true}
+    img: ""}
 secretaire: {
     poste: Secrétariat,
     nom: Louise Delwiche,
@@ -31,7 +31,7 @@ folklore1: {
     poste: Folklore,
     nom: Fanny Segers,
     cercle: CPS,
-    img: true}
+    img: ""}
 folklore2: {
     poste: Folklore,
     nom: Gillian Baker,
@@ -64,7 +64,7 @@ cantus: {
     poste: Cantus - Balef,
     nom: Edwige Loems,
     cercle: CM,
-    img: true}
+    img: ""}
 web-comm: {
     poste: Web-Communication,
     nom: Hélène Delwiche,
