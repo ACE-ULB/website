@@ -62,11 +62,18 @@ export default () => {
   // Returns an <img> for the legacy named-object format
   const getPicture = (comite, title) => {
     const imgValue = comite[title].img;
+    // New CMS upload: absolute path string like "/static/img/comite/…"
     if (typeof imgValue === 'string' && imgValue.length > 0) {
       return <img src={imgValue} alt={title}/>;
     }
-    if (imgValue === true) {
-      return <img src={require(`../assets/comite/${comite.year}/photos/${title}.png`)} alt={title}/>;
+    // Legacy: `true` (original format) OR `""` (replaced for CMS compat)
+    // → load the pre-existing photo from src/assets, bundled by webpack
+    if (imgValue === true || imgValue === '') {
+      try {
+        return <img src={require(`../assets/comite/${comite.year}/photos/${title}.png`)} alt={title}/>;
+      } catch (e) {
+        return <img src={require(`../assets/comite/empty.png`)} alt={title}/>;
+      }
     }
     return <img src={require(`../assets/comite/empty.png`)} alt={title}/>;
   };
