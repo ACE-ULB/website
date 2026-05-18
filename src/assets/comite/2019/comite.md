@@ -1,90 +1,55 @@
 ---
 year: 2019
-presidence: {
-    poste: Présidence, 
-    nom: Baptiste Conversano, 
-    cercle: CD}
-tresorerie: {
-    poste: Trésorerie, 
-    nom: Juliette Renard, 
-    cercle: CM}
-vpi: {
-    poste: Vice-Présidence Interne,
-    nom: Ignacio Sanchez Casanova, 
-    cercle: CP}
-vpe: {
-    poste: Vice-Présidence Externe, 
-    nom: Sarah Rousseau, 
-    cercle: CPS,
-    img: ""}
-secretaire: {
-    poste: Secrétariat,
-    nom: Ruth Janet Maguena,
-    cercle: CePHA}
-folklore-trez: {
-    poste: Folklore-Trésorerie, 
-    nom: Yza Belkalem, 
-    cercle: CPS,
-    img: ""}
-folklore1: {
-    poste: Folklore,
-    nom: Gaël Mayer,
-    cercle: CM}
-folklore2: {
-    poste: Folklore - Librex,
-    nom: Rita Rodrigues,
-    cercle: ISTI}
-balef1: {
-    poste: Bal & Fêtes,
-    nom: Rebecca Ndifo,
-    cercle: CPS}
-balef2: {
-    poste: Bal & Fêtes - Sponsors,
-    nom: Tamara Danloy,
-    cercle: CPS}
-ecologie: {
-    poste: Écologie,
-    nom: ,
-    cercle: }
-archives: {
-    poste: Archives - Coopté Culture,
-    nom: Sarah Guion,
-    cercle: CIGa}
-rdr: {
-    poste: Réduction des Risques, 
-    nom: , 
-    cercle: }
-librex: {
-    poste: Engagement-Librex, 
-    nom: , 
-    cercle: }
-cantus: {
-    poste: Cantus - Balef,
-    nom: Camille Rutten,
-    cercle: ISTI}
-web-comm: {
-    poste: Web-Communication,
-    nom: Jihame Karym,
-    cercle: CD}
-social: {
-    poste: Social,
-    nom: Laura Moualhi,
-    cercle: CARé}
-culture: {
-    poste: Culture, 
-    nom: , 
-    cercle: }
-eco-resp1: {
-    poste: Éco-Responsable, 
-    nom: Manon de Vinck, 
-    cercle: CPS,
-    img: ""}
-eco-resp2: {
-    poste: Éco-Responsable, 
-    nom: Claudia Cubeta, 
-    cercle: CPS}
-e&i: {
-    poste: Égalité & Inclusivité,
-    nom: ,
-    cercle: }
+membres:
+  - nom: Baptiste Conversano
+    poste: Présidence
+    cercle: CD
+  - nom: Juliette Renard
+    poste: Trésorerie
+    cercle: CM
+  - nom: Ignacio Sanchez Casanova
+    poste: Vice-Présidence Interne
+    cercle: CP
+  - nom: Sarah Rousseau
+    poste: Vice-Présidence Externe
+    cercle: CPS
+    img: /static/img/comite/2019/vpe.png
+  - nom: Ruth Janet Maguena
+    poste: Secrétariat
+    cercle: CePHA
+  - nom: Yza Belkalem
+    poste: Folklore-Trésorerie
+    cercle: CPS
+    img: /static/img/comite/2019/folklore-trez.png
+  - nom: Gaël Mayer
+    poste: Folklore
+    cercle: CM
+  - nom: Rita Rodrigues
+    poste: Folklore - Librex
+    cercle: ISTI
+  - nom: Rebecca Ndifo
+    poste: Bal & Fêtes
+    cercle: CPS
+  - nom: Tamara Danloy
+    poste: Bal & Fêtes - Sponsors
+    cercle: CPS
+  - nom: Sarah Guion
+    poste: Archives - Coopté Culture
+    cercle: CIGa
+  - nom: Camille Rutten
+    poste: Cantus - Balef
+    cercle: ISTI
+  - nom: Jihame Karym
+    poste: Web-Communication
+    cercle: CD
+  - nom: Laura Moualhi
+    poste: Social
+    cercle: CARé
+  - nom: Manon de Vinck
+    poste: Éco-Responsable
+    cercle: CPS
+    img: /static/img/comite/2019/eco-resp1.png
+  - nom: Claudia Cubeta
+    poste: Éco-Responsable
+    cercle: CPS
 ---

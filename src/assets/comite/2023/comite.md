@@ -1,81 +1,69 @@
 ---
 year: 2023
-vpi: {
-    poste: Vice-Présidence Interne,
-    nom: Barnabé Dardenne, 
-    cercle: CPS,
-    img: ""}
-vpe: {
-    poste: Vice-Présidence Externe, 
-    nom: Loïc Nanga, 
-    cercle: CP,
-    img: ""}
-secretaire: {
-    poste: Secrétariat,
-    nom: Abigaël Gillard,
-    cercle: CdH,
-    img: ""}
-web-comm1: {
-    poste: Web-Comm - Coopté Folklore Trez - Trésorier Remplaçant,
-    nom: Julien Leclercq,
-    cercle: CI,
-    img: ""}
-folklore1: {
-    poste: Folklore,
-    nom: Melanie Cavaleri,
-    cercle: CARé,
-    img: ""}
-folklore2: {
-    poste: Folklore,
-    nom: Adrien Yandiola,
-    cercle: CPS,
-    img: ""}
-balef1: {
-    poste: Bal & Fêtes,
-    nom: Romane Frères,
-    cercle: CJC,
-    img: ""}
-balef2: {
-    poste: Bal & Fêtes,
-    nom: Alexis Misselyn,
-    cercle: CP,
-    img: ""}
-ecologie: {
-    poste: Écologie - Coopté RdR,
-    nom: Carlos Queiros,
-    cercle: CPS,
-    img: ""}
-cantus: {
-    poste: Cantus,
-    nom: Ysaline Dupont,
-    cercle: CdH,
-    img: ""}
-web-comm2: {
-    poste: Coopté Web-Communication,
-    nom: Laura Renard,
-    cercle: CARé,
-    img: ""}
-social2: {
-    poste: Coopté Social,
-    nom: Mark Dimitrov,
-    cercle: CI,
-    img: ""}
-social1: {
-    poste: Social - Coopté Culture,
-    nom: Nao Vermylen,
-    cercle: CdS,
-    dem: true,
-    img: ""}
-e&i: {
-    poste: Égalité & Inclusivité,
-    nom: Agathe Bouchat,
-    cercle: CdH,
-    dem: true,
-    img: ""}
-presidence: {
-    poste: Présidence - Coopté Trésorerie, 
-    nom: Pierre Brancart, 
-    cercle: CS,
-    dem: true,
-    img: ""}
+membres:
+  - nom: Barnabé Dardenne
+    poste: Vice-Présidence Interne
+    cercle: CPS
+    img: /static/img/comite/2023/vpi.png
+  - nom: Loïc Nanga
+    poste: Vice-Présidence Externe
+    cercle: CP
+    img: /static/img/comite/2023/vpe.png
+  - nom: Abigaël Gillard
+    poste: Secrétariat
+    cercle: CdH
+    img: /static/img/comite/2023/secretaire.png
+  - nom: Julien Leclercq
+    poste: Web-Comm - Coopté Folklore Trez - Trésorier Remplaçant
+    cercle: CI
+    img: /static/img/comite/2023/web-comm1.png
+  - nom: Melanie Cavaleri
+    poste: Folklore
+    cercle: CARé
+    img: /static/img/comite/2023/folklore1.png
+  - nom: Adrien Yandiola
+    poste: Folklore
+    cercle: CPS
+    img: /static/img/comite/2023/folklore2.png
+  - nom: Romane Frères
+    poste: Bal & Fêtes
+    cercle: CJC
+    img: /static/img/comite/2023/balef1.png
+  - nom: Alexis Misselyn
+    poste: Bal & Fêtes
+    cercle: CP
+    img: /static/img/comite/2023/balef2.png
+  - nom: Carlos Queiros
+    poste: Écologie - Coopté RdR
+    cercle: CPS
+    img: /static/img/comite/2023/ecologie.png
+  - nom: Ysaline Dupont
+    poste: Cantus
+    cercle: CdH
+    img: /static/img/comite/2023/cantus.png
+  - nom: Laura Renard
+    poste: Web-Communication
+    cercle: CARé
+    img: /static/img/comite/2023/web-comm2.png
+    coopte: true
+  - nom: Mark Dimitrov
+    poste: Social
+    cercle: CI
+    img: /static/img/comite/2023/social2.png
+    coopte: true
+  - nom: Nao Vermylen
+    poste: Social - Coopté Culture
+    cercle: CdS
+    img: /static/img/comite/2023/social1.png
+    dem: true
+  - nom: Agathe Bouchat
+    poste: Égalité & Inclusivité
+    cercle: CdH
+    img: /static/img/comite/2023/e&i.png
+    dem: true
+  - nom: Pierre Brancart
+    poste: Présidence - Coopté Trésorerie
+    cercle: CS
+    img: /static/img/comite/2023/presidence.png
+    dem: true
 ---

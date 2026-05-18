@@ -1,96 +1,52 @@
 ---
 year: 2022
-presidence: {
-    poste: Présidence,
-    nom: Marie Gillotay,
-    cercle: CdS,
-    img: ""}
-tresorerie: {
-    poste: Trésorerie,
-    nom: Valentien Knaepen,
-    cercle: CS,
-    img: ""}
-vpi: {
-    poste: Vice-Présidence Interne,
-    nom: , 
-    cercle: }
-vpe1: {
-    poste: Vice-Présidence Externe, 
-    nom: Basile Tomé, 
-    cercle: CGéo,
-    dem: true}
-vpe2: {
-    poste: Vice-Présidence Externe, 
-    nom: Clara Michel, 
-    cercle: CKO,
-    img: ""}
-secretaire: {
-    poste: Secrétariat,
-    nom: ,
-    cercle: }
-folklore-trez: {
-    poste: Folklore-Trésorerie, 
-    nom: , 
-    cercle: }
-folklore1: {
-    poste: Folklore,
-    nom: Diego Di Giannantonio,
-    cercle: CPL,
-    dem: true}
-folklore2: {
-    poste: Folklore,
-    nom: ,
-    cercle: }
-balef1: {
-    poste: Bal & Fêtes,
-    nom: Carla Tournay,
-    cercle: CS,
-    dem: true}
-balef2: {
-    poste: Bal & Fêtes,
-    nom: ,
-    cercle: }
-ecologie: {
-    poste: Écologie,
-    nom: Loïc Nanga,
-    cercle: CP,
-    img: ""}
-rdr: {
-    poste: Réduction des Risques, 
-    nom: Anissa Benbakoura, 
-    cercle: ,
-    dem: true}
-librex: {
-    poste: Engagement-Librex, 
-    nom: Mathieu Zuinen, 
-    cercle: ,
-    dem: true}
-cantus: {
-    poste: Cantus,
-    nom: Sarah Paul,
-    cercle: ,
-    dem: true}
-web-comm: {
-    poste: Web-Communication,
-    nom: Chloé Bridoux,
-    cercle: ,
-    dem: true}
-social: {
-    poste: Social,
-    nom: ,
-    cercle: }
-culture: {
-    poste: Culture, 
-    nom: , 
-    cercle: }
-e&i1: {
-    poste: Égalité & Inclusivité,
-    nom: Margaux Dagorne,
-    cercle: CKO,
-    dem: true}
-e&i2: {
-    poste: Égalité & Inclusivité,
-    nom: Inès Vivier,
-    cercle: CdS,
-    dem: true}
+membres:
+  - nom: Marie Gillotay
+    poste: Présidence
+    cercle: CdS
+    img: /static/img/comite/2022/presidence.png
+  - nom: Valentien Knaepen
+    poste: Trésorerie
+    cercle: CS
+    img: /static/img/comite/2022/tresorerie.png
+  - nom: Basile Tomé
+    poste: Vice-Présidence Externe
+    cercle: CGéo
+    dem: true
+  - nom: Clara Michel
+    poste: Vice-Présidence Externe
+    cercle: CKO
+    img: /static/img/comite/2022/vpe2.png
+  - nom: Diego Di Giannantonio
+    poste: Folklore
+    cercle: CPL
+    dem: true
+  - nom: Carla Tournay
+    poste: Bal & Fêtes
+    cercle: CS
+    dem: true
+  - nom: Loïc Nanga
+    poste: Écologie
+    cercle: CP
+    img: /static/img/comite/2022/ecologie.png
+  - nom: Anissa Benbakoura
+    poste: Réduction des Risques
+    dem: true
+  - nom: Mathieu Zuinen
+    poste: Engagement-Librex
+    dem: true
+  - nom: Sarah Paul
+    poste: Cantus
+    dem: true
+  - nom: Chloé Bridoux
+    poste: Web-Communication
+    dem: true
+  - nom: Margaux Dagorne
+    poste: Égalité & Inclusivité
+    cercle: CKO
+    dem: true
+  - nom: Inès Vivier
+    poste: Égalité & Inclusivité
+    cercle: CdS
+    dem: true
 ---

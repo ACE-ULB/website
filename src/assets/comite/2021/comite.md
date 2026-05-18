@@ -1,106 +1,81 @@
 ---
 year: 2021
-presidence: {
-    poste: Présidence - Coopté E&I, 
-    nom: Sarah Rousseau, 
-    cercle: CPS,
-    img: ""}
-tresorerie: {
-    poste: Trésorerie, 
-    nom: Marie Gillotay, 
-    cercle: CdS,
-    img: ""}
-vpi: {
-    poste: Vice-Présidence Interne,
-    nom: Manon de Vinck, 
-    cercle: CPS,
-    img: ""}
-vpe: {
-    poste: Vice-Présidence Externe, 
-    nom: Clara Michel, 
-    cercle: CKO,
-    img: ""}
-secretaire: {
-    poste: Secrétariat,
-    nom: Edwige Loems,
-    cercle: CM,
-    img: ""}
-folklore-trez: {
-    poste: Folklore-Trésorerie, 
-    nom: Valentien Knaepen, 
-    cercle: CS,
-    img: ""}
-folklore1: {
-    poste: Folklore,
-    nom: Fanny Segers,
-    cercle: CPS,
-    img: ""}
-folklore2: {
-    poste: Folklore,
-    nom: ,
-    cercle: }
-balef1: {
-    poste: Bal & Fêtes,
-    nom: Esteban Welschen,
-    cercle: CP,
-    img: ""}
-balef2: {
-    poste: Bal & Fêtes,
-    nom: Loïc Aradszki,
-    cercle: CP,
-    img: ""}
-archives: {
-    poste: Archives,
-    nom: Timour Smolderen,
-    cercle: CPS}
-ecologie: {
-    poste: Écologie,
-    nom: Sam Rush,
-    cercle: CdS,
-    img: ""}
-rdr: {
-    poste: Réduction des Risques, 
-    nom: Saara Saskia Sutt, 
-    cercle: CP,
-    img: ""}
-librex: {
-    poste: Engagement-Librex, 
-    nom: Yza Belkalem, 
-    cercle: CPS,
-    img: ""}
-cantus1: {
-    poste: Cantus,
-    nom: Tiziana Baroncelli,
-    cercle: CePHA}
-cantus2: {
-    poste: Cantus,
-    nom: Ara Ter Stepanian,
-    cercle: CD,
-    img: ""}
-cantus3: {
-    poste: Cantus,
-    nom: Martin Onufrzyk,
-    cercle: ,
-    img: ""}
-web-comm: {
-    poste: Web-Communication,
-    nom: Nell Tytgat,
-    cercle: CdS,
-    img: ""}
-social: {
-    poste: Social,
-    nom: Brice Prince,
-    cercle: CdH,
-    img: ""}
-culture: {
-    poste: Culture, 
-    nom: Timour Smolderen, 
-    cercle: CPS,
-    img: ""}
-e&i: {
-    poste: Égalité & Inclusivité,
-    nom: Camille Van Humbeeck,
-    cercle: CPL,
-    img: ""}
-
+membres:
+  - nom: Sarah Rousseau
+    poste: Présidence - Coopté E&I
+    cercle: CPS
+    img: /static/img/comite/2021/presidence.png
+  - nom: Marie Gillotay
+    poste: Trésorerie
+    cercle: CdS
+    img: /static/img/comite/2021/tresorerie.png
+  - nom: Manon de Vinck
+    poste: Vice-Présidence Interne
+    cercle: CPS
+    img: /static/img/comite/2021/vpi.png
+  - nom: Clara Michel
+    poste: Vice-Présidence Externe
+    cercle: CKO
+    img: /static/img/comite/2021/vpe.png
+  - nom: Edwige Loems
+    poste: Secrétariat
+    cercle: CM
+    img: /static/img/comite/2021/secretaire.png
+  - nom: Valentien Knaepen
+    poste: Folklore-Trésorerie
+    cercle: CS
+    img: /static/img/comite/2021/folklore-trez.png
+  - nom: Fanny Segers
+    poste: Folklore
+    cercle: CPS
+    img: /static/img/comite/2021/folklore1.png
+  - nom: Esteban Welschen
+    poste: Bal & Fêtes
+    cercle: CP
+    img: /static/img/comite/2021/balef1.png
+  - nom: Loïc Aradszki
+    poste: Bal & Fêtes
+    cercle: CP
+    img: /static/img/comite/2021/balef2.png
+  - nom: Timour Smolderen
+    poste: Archives
+    cercle: CPS
+  - nom: Sam Rush
+    poste: Écologie
+    cercle: CdS
+    img: /static/img/comite/2021/ecologie.png
+  - nom: Saara Saskia Sutt
+    poste: Réduction des Risques
+    cercle: CP
+    img: /static/img/comite/2021/rdr.png
+  - nom: Yza Belkalem
+    poste: Engagement-Librex
+    cercle: CPS
+    img: /static/img/comite/2021/librex.png
+  - nom: Tiziana Baroncelli
+    poste: Cantus
+    cercle: CePHA
+  - nom: Ara Ter Stepanian
+    poste: Cantus
+    cercle: CD
+    img: /static/img/comite/2021/cantus2.png
+  - nom: Martin Onufrzyk
+    poste: Cantus
+    img: /static/img/comite/2021/cantus3.png
+  - nom: Nell Tytgat
+    poste: Web-Communication
+    cercle: CdS
+    img: /static/img/comite/2021/web-comm.png
+  - nom: Brice Prince
+    poste: Social
+    cercle: CdH
+    img: /static/img/comite/2021/social.png
+  - nom: Timour Smolderen
+    poste: Culture
+    cercle: CPS
+    img: /static/img/comite/2021/culture.png
+  - nom: Camille Van Humbeeck
+    poste: Égalité & Inclusivité
+    cercle: CPL
+    img: /static/img/comite/2021/e&i.png
 ---

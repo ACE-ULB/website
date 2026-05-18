@@ -73,14 +73,30 @@ collections:
           - {name: nom,   label: Nom,   widget: string}
           - name: poste
             label: Poste
-            widget: string
-            hint: >
-              Postes habituels : Présidence, Vice-Présidence Externe,
-              Vice-Présidence Interne, Trésorerie, Secrétariat,
-              Folklore-Trésorerie, Folklore, Bal & Fêtes, Écologie,
-              Réduction des Risques, Engagement-Librex, Cantus,
-              Web-Communication, Social, Culture, Égalité & Inclusivité.
-              Écris le poste exact (tu peux en ajouter librement).
+            widget: select
+            options:
+              - Présidence
+              - Vice-Présidence Externe
+              - Vice-Présidence Interne
+              - Trésorerie
+              - Secrétariat
+              - Folklore-Trésorerie
+              - Folklore
+              - "Bal & Fêtes"
+              - Écologie
+              - Réduction des Risques
+              - Engagement-Librex
+              - Cantus
+              - Web-Communication
+              - Social
+              - Culture
+              - "Égalité & Inclusivité"
+          - name: coopte
+            label: "Coopté·e"
+            widget: boolean
+            required: false
+            default: false
+            hint: "Cocher si la personne a été cooptée à ce poste (affiche « Coopté·e » devant le poste sur le site)"
           - name: cercle
             label: Cercle d'origine
             widget: select

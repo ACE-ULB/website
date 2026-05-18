@@ -85,7 +85,37 @@ export default () => {
         <img src={require(`../assets/comite/unknow.png`)} alt=""/>))
   };
 
-  // ── New helpers (membres[] array format, 2025+) ────────────────────────
+  // ── New helpers (membres[] array format) ──────────────────────────────
+
+  // Maps select value → postes.json key for description lookup
+  const POSTE_DESC_KEYS = {
+    "Présidence":               "presidence",
+    "Vice-Présidence Externe":  "vpe",
+    "Vice-Présidence Interne":  "vpi",
+    "Trésorerie":               "tresorerie",
+    "Secrétariat":              "secretaire",
+    "Folklore-Trésorerie":      "folkore-trez",
+    "Folklore":                 "folklore",
+    "Bal & Fêtes":              "balef",
+    "Écologie":                 "ecologie",
+    "Réduction des Risques":    "RdR",
+    "Engagement-Librex":        "librex",
+    "Cantus":                   "cantus",
+    "Web-Communication":        "web-comm",
+    "Social":                   "social",
+    "Culture":                  "culture",
+    "Égalité & Inclusivité":    "e&i",
+  };
+
+  // Display label: prepends "Coopté·e" when the flag is set
+  const getPosteLabel = (membre) =>
+    membre.coopte ? `Coopté·e ${membre.poste}` : membre.poste;
+
+  // Description from postes.json (empty string for custom/unknown postes)
+  const getDescriptionFromMembre = (membre) => {
+    const key = POSTE_DESC_KEYS[membre.poste];
+    return key ? (postesContent[key] || '') : '';
+  };
 
   // Returns an <img> for the new list-based format
   const getPictureFromMembre = (membre) => {
@@ -154,14 +184,17 @@ export default () => {
                         )}
                         <div className={`contact ${openCard === cardKey ? 'hidden' : 'visible'}`}>
                           <h1>{membre.nom}</h1>
-                          <h2>{membre.poste}</h2>
+                          <h2>{getPosteLabel(membre)}</h2>
                         </div>
                         <div className={`details ${openCard === cardKey ? 'visible' : 'hidden'}`}>
                           <h1>{membre.nom}</h1>
                           {membre.dem ? (
-                            <h2>Démissionnaire·e - {membre.poste}</h2>
+                            <h2>Démissionnaire·e — {getPosteLabel(membre)}</h2>
                           ) : (
-                            <h2>{membre.poste}</h2>
+                            <h2>{getPosteLabel(membre)}</h2>
+                          )}
+                          {getDescriptionFromMembre(membre) && (
+                            <p className="desc">{getDescriptionFromMembre(membre)}</p>
                           )}
                           <div className="cast">
                             <ul>

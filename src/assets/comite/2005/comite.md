@@ -1,75 +1,26 @@
 ---
 year: 2005
-presidence: {
-    poste: Présidence, 
-    nom: Fabian Teheux, 
-    cercle: }
-tresorerie: {
-    poste: Trésorerie, 
-    nom: Benjamin Mertens, 
-    cercle: }
-vpi: {
-    poste: Vice-Présidence Interne,
-    nom: Jonathan Leclerc, 
-    cercle: }
-vpe: {
-    poste: Vice-Présidence Externe, 
-    nom: David Pieroux, 
-    cercle: }
-secretaire: {
-    poste: Secrétariat,
-    nom: Juliette Lemaire,
-    cercle: }
-folklore-trez: {
-    poste: Folklore-Trésorerie, 
-    nom: , 
-    cercle: }
-folklore1: {
-    poste: Folklore,
-    nom: François Lacrosse,
-    cercle: }
-folklore2: {
-    poste: Folklore,
-    nom: Mehdi Hedhili,
-    cercle: }
-balef1: {
-    poste: Bal & Fêtes,
-    nom: Barbara Boutriau,
-    cercle: }
-balef2: {
-    poste: Bal & Fêtes,
-    nom: ,
-    cercle: }
-ecologie: {
-    poste: Écologie,
-    nom: ,
-    cercle: }
-rdr: {
-    poste: Réduction des Risques, 
-    nom: , 
-    cercle: }
-librex: {
-    poste: Engagement-Librex, 
-    nom: , 
-    cercle: }
-cantus: {
-    poste: Cantus,
-    nom: ,
-    cercle: }
-web-comm: {
-    poste: Web-Communication,
-    nom: Dimitri Defrance,
-    cercle: }
-social: {
-    poste: Social,
-    nom: Karolina Dudek,
-    cercle: }
-culture: {
-    poste: Culture, 
-    nom: Arnaud Quertinmont, 
-    cercle: }
-e&i: {
-    poste: Égalité & Inclusivité,
-    nom: ,
-    cercle: }
+membres:
+  - nom: Fabian Teheux
+    poste: Présidence
+  - nom: Benjamin Mertens
+    poste: Trésorerie
+  - nom: Jonathan Leclerc
+    poste: Vice-Présidence Interne
+  - nom: David Pieroux
+    poste: Vice-Présidence Externe
+  - nom: Juliette Lemaire
+    poste: Secrétariat
+  - nom: François Lacrosse
+    poste: Folklore
+  - nom: Mehdi Hedhili
+    poste: Folklore
+  - nom: Barbara Boutriau
+    poste: Bal & Fêtes
+  - nom: Dimitri Defrance
+    poste: Web-Communication
+  - nom: Karolina Dudek
+    poste: Social
+  - nom: Arnaud Quertinmont
+    poste: Culture
 ---
