@@ -23,7 +23,7 @@ membres:
     img: /static/img/comite/2024/folklore2.png
   - nom: Charlotte Deltour
     poste: Réduction des Risques
-    cercle: CPS
+    cercle: Semeur
     img: /static/img/comite/2024/RdR.png
   - nom: Youssef Arrouf
     poste: Égalité & Inclusivité
@@ -37,6 +37,7 @@ membres:
     poste: Culture
     cercle: CdH
     img: /static/img/comite/2024/culture.png
+    dem: true
   - nom: Aleyna Pulat
     poste: Engagement-Librex
     cercle: CPSY
