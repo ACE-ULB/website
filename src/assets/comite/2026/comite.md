@@ -1,89 +1,31 @@
 ---
-year: 2025
+year: 2026
 membres:
-  - coopte: false
-    dem: false
-    nom: Carlos Queiros
+  - nom: Charlotte Deltour
     poste: Présidence
-    cercle: CPS
-  - coopte: false
-    dem: false
-    nom: Mark Dimitrov
-    poste: Vice-Présidence Externe
-    cercle: CI
-  - coopte: false
-    dem: false
-    nom: Julia Kolodowska
-    poste: Vice-Présidence Interne
-    cercle: CGéo
-  - coopte: false
-    dem: false
-    nom: Cristobal Homage
-    poste: Trésorerie
-    cercle: CM
-  - coopte: false
-    dem: false
-    nom: Aleyna Pulat
-    poste: Secrétariat
-    cercle: CPSY
-  - coopte: false
-    dem: false
-    nom: Dominique Gilbert
-    poste: Folklore
-    cercle: ISTI
-  - coopte: false
-    dem: false
-    nom: Luci Grimm
-    poste: Folklore
-    cercle: CPL
-  - coopte: false
-    dem: false
-    nom: Louis Burton
-    poste: Folklore-Trésorerie
-    cercle: CPL
-  - coopte: false
-    dem: false
-    nom: Charlotte Deltour
-    poste: Égalité & Inclusivité
     cercle: Semeur
-  - coopte: false
-    dem: false
-    nom: Artémis Kyramarios
-    poste: Égalité & Inclusivité
-    cercle: CM
-  - coopte: false
-    dem: false
-    nom: Mathias Van Ranst
-    poste: Culture
+  - nom: Mathias Van Ranst
+    poste: Trésorerie
     cercle: CHAA
-  - coopte: false
-    dem: false
-    nom: Margaux Vanier
-    poste: Social
-    cercle: CIGa
-  - coopte: false
-    dem: false
-    nom: Ismael Morssli
-    poste: Engagement-Librex
-    cercle: CM
-  - coopte: false
-    dem: false
-    nom: Doriane Delbe-Katakora
-    poste: Bal & Fêtes
-    cercle: CARé
-  - coopte: false
-    dem: false
-    nom: Pauline Charels
-    poste: Bal & Fêtes
-    cercle: CPS
-  - coopte: false
-    dem: false
-    nom: Petya Kamenova
-    poste: Web-Communication
+  - nom: Petya Kamenova
+    poste: Secrétariat
     cercle: Agro
-  - coopte: true
-    dem: false
-    nom: Mayra Sheikh
+  - nom: Dominique Gilbert
+    poste: Vice-Présidence Externe
+    cercle: ISTI
+  - nom: Garance Lacroix--Cornez
+    poste: Social
+    cercle: CdS
+  - nom: Margaux Vanier
+    poste: Folklore
+    cercle: CIGa
+  - nom: Basile Moinil
+    poste: Folklore
+    cercle: CPL
+  - nom: Mayra Sheikh
     poste: Culture
     cercle: CARé
+  - nom: Anne-Catherine Kellner
+    poste: Web-Communication
+    cercle: CPL
 ---
