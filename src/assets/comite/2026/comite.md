@@ -34,4 +34,5 @@ membres:
   - nom: Anne-Catherine Kellner
     poste: Web-Communication
     cercle: CPL
+    img: /static/img/comite/2026/web-comm.jpg
 ---
