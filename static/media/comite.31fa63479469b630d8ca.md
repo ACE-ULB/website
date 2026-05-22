@@ -4,18 +4,23 @@ membres:
   - nom: Carlos Queiros
     poste: Présidence
     cercle: CPS
+    img: /static/img/comite/2025/presidence.png
   - nom: Mark Dimitrov
     poste: Vice-Présidence Externe
     cercle: CI
+    img: /static/img/comite/2025/vpe.png
   - nom: Julia Kolodowska
     poste: Vice-Présidence Interne
     cercle: CGéo
+    img: /static/img/comite/2025/vpi.jpg
   - nom: Cristobal Homage
     poste: Trésorerie
     cercle: CM
+    img: /static/img/comite/2025/tresorier.jpg
   - nom: Aleyna Pulat
     poste: Secrétariat
     cercle: CPSY
+    img: /static/img/comite/2025/secretaire.png
   - nom: Dominique Gilbert
     poste: Folklore
     cercle: ISTI
@@ -28,6 +33,7 @@ membres:
   - nom: Charlotte Deltour
     poste: "Égalité & Inclusivité"
     cercle: Semeur
+    img: /static/img/comite/2025/ei1.png
   - nom: Artémis Kyramarios
     poste: "Égalité & Inclusivité"
     cercle: CM
@@ -40,6 +46,7 @@ membres:
   - nom: Ismael Morssli
     poste: Engagement-Librex
     cercle: CM
+    img: /static/img/comite/2025/librex.jpg
   - nom: Doriane Delbe-Katakora
     poste: "Bal & Fêtes"
     cercle: CARé
@@ -49,8 +56,10 @@ membres:
   - nom: Petya Kamenova
     poste: Web-Communication
     cercle: Agro
+    img: /static/img/comite/2025/web-comm.png
   - nom: Mayra Sheikh
     poste: Culture
     cercle: CARé
     coopte: true
+    img: /static/img/comite/2025/cooptee-culture.jpg
 ---
