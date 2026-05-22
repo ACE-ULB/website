@@ -23,10 +23,10 @@ membres:
   - nom: Margaux Vanier
     poste: Folklore
     cercle: CIGa
-    img: /static/img/comite/2026/folklore1.jpg
   - nom: Basile Moinil
     poste: Folklore
     cercle: CPL
+    img: /static/img/comite/2026/folklore1.jpg
   - nom: Mayra Sheikh
     poste: Culture
     cercle: CARé
