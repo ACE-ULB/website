@@ -8,6 +8,7 @@ membres:
   - nom: Mathias Van Ranst
     poste: Trésorerie
     cercle: CHAA
+    img: /static/img/comite/2026/tresorier.jpg
   - nom: Petya Kamenova
     poste: Secrétariat
     cercle: Agro
