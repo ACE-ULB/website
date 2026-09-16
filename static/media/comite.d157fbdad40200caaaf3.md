@@ -41,4 +41,9 @@ membres:
     nom: Noah Devos
     poste: Web-Communication
     cercle: CARé
+  - coopte: false
+    dem: false
+    nom: Diane Da Ross
+    poste: Bal & Fêtes
+    cercle: ISTI
 ---
