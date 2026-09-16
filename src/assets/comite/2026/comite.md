@@ -43,7 +43,7 @@ membres:
     cercle: CARé
   - coopte: false
     dem: false
-    nom: Diane Da Ross
+    nom: Diane Da Ros
     poste: Bal & Fêtes
     cercle: ISTI
 ---
