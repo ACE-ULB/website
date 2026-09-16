@@ -36,4 +36,9 @@ membres:
     poste: Web-Communication
     cercle: CPL
     img: /static/img/comite/2026/web-comm.jpg
+  - coopte: true
+    dem: false
+    nom: Noah Devos
+    poste: Web-Communication
+    cercle: CARé
 ---
