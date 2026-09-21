@@ -41,6 +41,7 @@ membres:
     nom: Noah Devos
     poste: Web-Communication
     cercle: CARé
+    img: /static/img/comite/1000081500.webp
   - coopte: false
     dem: false
     nom: Diane Da Ros

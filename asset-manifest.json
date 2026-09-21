@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.08c33ddb.css",
-    "main.js": "/static/js/main.ae89a431.js",
+    "main.js": "/static/js/main.f2c7d272.js",
     "static/media/2024-03-11_sf.pdf": "/static/media/2024-03-11_sf.ca190040c8333916559f.pdf",
     "static/media/ecologie.png": "/static/media/ecologie.afbe5d60d747cc4ca97d.png",
     "static/media/2023-11-20_st-v.pdf": "/static/media/2023-11-20_st-v.408ee3b5e0826a990e29.pdf",
@@ -106,6 +106,7 @@
     "static/media/Med.png": "/static/media/Med.d4d0c0f90f9aafc4ef2d.png",
     "static/media/bea.png": "/static/media/bea.f3729c67df4007538d17.png",
     "static/media/st-v3.png": "/static/media/st-v3.e2969bc2d8db48501362.png",
+    "static/media/1000081500.webp": "/static/media/1000081500.93dc35847fa7fc7da55c.webp",
     "static/media/librex2.png": "/static/media/librex2.fc4bb75ceab0651755b2.png",
     "static/media/Chimacienne.png": "/static/media/Chimacienne.045036d0cb425efbc6dc.png",
     "static/media/Liégeoise.png": "/static/media/Liégeoise.dc8132f9d67b2732889f.png",
@@ -198,10 +199,10 @@
     "static/media/GM.md": "/static/media/GM.f5e9140b747276da7b14.md",
     "static/media/GC.md": "/static/media/GC.d39ee67e302cb8ec5650.md",
     "main.08c33ddb.css.map": "/static/css/main.08c33ddb.css.map",
-    "main.ae89a431.js.map": "/static/js/main.ae89a431.js.map"
+    "main.f2c7d272.js.map": "/static/js/main.f2c7d272.js.map"
   },
   "entrypoints": [
     "static/css/main.08c33ddb.css",
-    "static/js/main.ae89a431.js"
+    "static/js/main.f2c7d272.js"
   ]
 }
